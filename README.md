@@ -1,14 +1,14 @@
-# Applied Anthropology Knowledge Base
+# Applied Anthropology Knowledgebase
 
-**AI-powered secular dharma & evolutionary anthropology expert with 777K+ scholarly segments from leading researchers.**
+**DrAA: AI-powered secular dharma & evolutionary anthropology expert with 777K+ scholarly segments.**
 
 ---
 
 ## Overview
 
-The **Applied Anthropology Knowledge Base** is a comprehensive AI-powered semantic search system specialized in **secular dharma studies, evolutionary anthropology, and human behavioral biology**. Built using the CustomKB framework, it serves as an expert resource (DrAA - Doctor of Applied Anthropology) for understanding dharma as ethical pathways adopted by individuals and groups from a scientific, anthropological perspective.
+The **Applied Anthropology Knowledgebase** serves as DrAA (Doctor of Applied Anthropology), a world-leading AI expert specializing in secular dharma studies, evolutionary anthropology, and human behavioral biology. Built upon 777,553 meticulously curated document segments from over 500 scholarly works by preeminent thinkers including David Graeber, Robert Sapolsky, Christopher Boehm, Stephen Batchelor, Richard Wrangham, and Rutger Bregman, this comprehensive system provides evidence-based insights into human nature, cultural evolution, and ethical frameworks from a rigorously scientific, non-religious perspective.
 
-This cutting-edge system represents a convergence of AI technology, rigorous academic research, and secular dharma studies, built upon **777,553 document segments** from over **500 scholarly works** by leading anthropologists, evolutionary biologists, and philosophers including David Graeber, Robert Sapolsky, Christopher Boehm, Stephen Batchelor, Richard Wrangham, Rutger Bregman, and other distinguished scholars.
+The knowledgebase specializes in treating dharma not as a singular universal truth but as diverse, adaptive ethical pathways that emerge across cultures through evolutionary processes. Drawing from evolutionary biology, cultural anthropology, philosophy, psychology, and neuroscience, it maintains that secular dharmas are equally valid as religious interpretations, offering objective analysis of human cooperation, social organization, and the biological foundations of ethics.
 
 ### Key Characteristics
 
@@ -33,7 +33,7 @@ This project addresses the critical need for:
 
 ### Philosophical Framework
 
-The knowledge base specializes in secular dharma studies, conceptualizing **dharma not as a single universal truth** but as diverse ethical pathways that individuals and groups adapt to their specific environments. Drawing from evolutionary biology, human behavioral biology, cultural anthropology, philosophy, and psychology, it maintains that **secular dharmas are equally valid** and scientifically grounded as religious interpretations.
+The knowledgebase serves the growing global demographic of academics, researchers, secular Buddhist practitioners, policy professionals, mental health practitioners, and the broader "spiritual but not religious" community seeking scientific perspectives on meaning-making and ethical living. This approach bridges cutting-edge AI technology with rigorous academic research, providing intellectually sophisticated yet accessible analysis for understanding human behavior, cultural development, and evidence-based approaches to ethical living in contemporary global contexts.
 
 ---
 
@@ -63,7 +63,7 @@ Advanced degree holders valuing scientific rationalism, cultural pluralism, and 
 
 ### Technology Stack
 
-- **Knowledge Base System**: CustomKB framework with Python backend
+- **Knowledgebase System**: CustomKB framework with Python backend
 - **Vector Search Engine**: FAISS (7.9GB index) with OpenAI text-embedding-3-large (1024 dimensions)
 - **AI Query Processing**: GPT-4o with specialized anthropology expertise (temperature: 0.2335)
 - **Data Storage**: SQLite database (2.2GB) with 777,553 document segments
@@ -73,7 +73,7 @@ Advanced degree holders valuing scientific rationalism, cultural pluralism, and 
 ### Data Sources & Content
 
 - **Primary Data**: Symlinked to `/ai/datasets/sd/sd_gpt/` containing scholarly materials
-- **Key Authors**: David Graeber, Robert Sapolsky, Christopher Boehm, Stephen Batchelor, Richard Wrangham, and 100+ others
+- **Key Authors**: David Graeber, Robert Sapolsky, Christopher Boehm, Stephen Batchelor, Richard Wrangham, Rutger Bregman, and 100+ others
 - **Content Areas**: Evolutionary biology, anthropology, philosophy, psychology, cultural studies, secular dharma
 - **Text Cache**: 94 processed directories with structured academic materials
 
@@ -120,10 +120,15 @@ appliedanthropology/
 
 #### Methodological Approach:
 - Maintain rigorous scientific objectivity while remaining intellectually accessible
-- Draw comprehensively from both provided contextual segments AND internal knowledge base
+- Draw comprehensively from both provided contextual segments AND internal knowledgebase
 - Emphasize evidence-based analysis rooted in empirical research and cross-cultural data
 - Avoid privileging religious or metaphysical interpretations over secular, naturalistic approaches
 - Provide nuanced analysis that bridges academic rigor with practical, actionable insights
+- Reference specific authors, studies, or theoretical frameworks when relevant
+- Use clear GitHub markdown formatting for optimal readability and structure
+
+#### Response Framework:
+Provide objective, reflective, and scientifically grounded analysis on questions of humanity, evolution, cooperation, social organization, and the human condition. Your responses should demonstrate the sophisticated integration of biological, cultural, and philosophical perspectives that characterizes applied anthropological inquiry, always maintaining respect for the complexity and diversity of human experience while grounding insights in empirical evidence and cross-cultural research.
 
 ### 3. Dharma-Centric Definitions
 
@@ -312,8 +317,8 @@ customkb optimize appliedanthropology.cfg
 
 ## Integration & Extensibility
 
-### Related Knowledge Bases
-- Links to `prosocial.world` and `wayang.net` knowledge bases
+### Related Knowledgebases
+- Links to `prosocial.world` and `wayang.net` knowledgebases
 - Shared caching infrastructure across vectordbs ecosystem
 - Cross-referencing capabilities with other anthropological resources
 
@@ -347,7 +352,7 @@ customkb optimize appliedanthropology.cfg
 ### Storage and Indexing
 - **Database Tables**: `docs` (777,553 records) and `citations` (15,143 records)
 - **Vector Index**: 7.9GB FAISS index with 1024-dimensional embeddings
-- **Cache Management**: Query results cached for 30 days, embedding cache shared across knowledge bases
+- **Cache Management**: Query results cached for 30 days, embedding cache shared across knowledgebases
 
 ---
 
@@ -372,7 +377,7 @@ customkb optimize appliedanthropology.cfg
 
 ## Contributing & Support
 
-This knowledge base represents a sophisticated intersection of AI technology, anthropological research, and secular dharma studies, providing evidence-based insights into human nature, cultural evolution, and ethical living from an applied anthropological perspective. The system has been recently updated (July 2025) with comprehensive coverage and optimized performance characteristics.
+This knowledgebase represents a sophisticated intersection of AI technology, anthropological research, and secular dharma studies, providing evidence-based insights into human nature, cultural evolution, and ethical living from an applied anthropological perspective. The system has been recently updated (July 2025) with comprehensive coverage and optimized performance characteristics.
 
 ### Areas for Contribution
 - Additional source material for inclusion in the dataset
@@ -383,4 +388,4 @@ This knowledge base represents a sophisticated intersection of AI technology, an
 
 ---
 
-**The Applied Anthropology Knowledge Base serves as a bridge between ancient wisdom traditions and contemporary scientific understanding, providing rigorous academic frameworks grounded in peer-reviewed research while addressing contemporary challenges in ethical living, meaning-making, and human flourishing.**
+**The Applied Anthropology Knowledgebase serves as a bridge between ancient wisdom traditions and contemporary scientific understanding, providing rigorous academic frameworks grounded in peer-reviewed research while addressing contemporary challenges in ethical living, meaning-making, and human flourishing for the growing global community seeking evidence-based approaches to secular spirituality and cultural understanding.**
