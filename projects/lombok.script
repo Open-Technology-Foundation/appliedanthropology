@@ -1,0 +1,59 @@
+#!/bin/bash
+set -euo pipefail
+
+export RESEARCH_MODEL=o1 RESEARCH_MAX_TOKENS=25000 RESEARCH_TEMPERATURE='0.2'
+
+export QUERY_MODEL=sonnet QUERY_MAX_TOKENS=16000 QUERY_TEMPERATURE='0.2'
+
+# Queries in sequence
+declare -a Queries=(
+	"Describe the Sasak culture of Lombok." 
+  "Describe Sasak Islam." 
+  "Describe the tension between modernist Sunni Islam of the majority of Indonesia and Sasak Islam." \
+) 
+
+# Templates to use
+declare -a Templates=( AskOkusi DrAA JP )
+
+declare -p Templates
+declare -p RESEARCH_MODEL RESEARCH_MAX_TOKENS RESEARCH_TEMPERATURE
+declare -p QUERY_MODEL QUERY_MAX_TOKENS QUERY_TEMPERATURE Queries
+
+declare -a Files=()
+for template in "${Templates[@]}"; do
+	file=/tmp/lombok-sasak-"${template,,}".md
+	Files+=( "$file" )
+	basename -s .md "$file"
+	dv2 --template "$template" \
+  	  --model "$RESEARCH_MODEL" \
+    	--temperature "$RESEARCH_TEMPERATURE" \
+    	--max-tokens "$RESEARCH_MAX_TOKENS" \
+			"${Queries[@]}" \
+  	>"$file"
+done
+
+printf -v references "%s," "${Files[@]}"
+references=${references%,}  # Remove trailing comma
+
+summary=/tmp/lombok-sasak-concise-summary.md
+basename "$summary"
+dv2 --reference "$references" \
+    --template DrAA \
+    --model "$QUERY_MODEL" \
+    --temperature "$QUERY_TEMPERATURE" \
+    --max-tokens "$QUERY_MAX_TOKENS" \
+    \
+    "Write a concise summary of Sasak culture, Sasak Islam, and religious-cultural tensions with the modernist Islam dominant in Indonesia." \
+    \
+    "Please review and rewrite your response. Output no other commentary or preamble. Do not enclose final output in code fences or such-like." \
+    \
+  >"$summary"
+
+cat "$summary"
+
+echo
+echo "Research:"
+declare -p Files
+echo "Summary:"
+declare -p summary
+
