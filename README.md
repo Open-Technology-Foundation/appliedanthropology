@@ -81,18 +81,13 @@ Advanced degree holders valuing scientific rationalism, cultural pluralism, and 
 
 ```
 appliedanthropology/
-├── appliedanthropology.cfg                 # Main configuration file
-├── appliedanthropology.db                  # SQLite database (777K+ segments)
-├── appliedanthropology.faiss               # Vector search index (7.9GB)
-├── appliedanthropology_primary_prompt.md   # AI assistant personality
-├── appliedanthropology.build.conf          # Build process configuration
-├── 0_build.sh                             # Comprehensive build automation
-├── build.sh                               # Legacy build script
-├── embed_data -> /ai/datasets/sd/sd_gpt/  # Source data symlink
-├── embed_data.text/                       # Processed text cache
-├── docs/                                  # Documentation
-├── logs/                                  # Application logs
-└── backups/                               # Configuration backups
+├── appliedanthropology.cfg               # Main configuration file
+├── appliedanthropology.db                # SQLite database (777K+ segments)
+├── appliedanthropology.faiss             # Vector search index (7.9GB)
+├── appliedanthropology_primary_prompt.md # AI assistant personality
+├── build.sh                              # Comprehensive build automation
+├── docs/                                 # Documentation files
+└── logs/                                 # Application logs
 ```
 
 ---
