@@ -237,7 +237,7 @@ validate_tools
 
 if ((do_create_text_cache)); then
   cd "$KBdir"
-  time "$PRGDIR"/create_text_cache.sh
+  time "$PRGDIR"/create_staging.text.sh
   chownsysadmin "$KBdir"
 fi
 
@@ -262,11 +262,11 @@ fi
 
 if ((do_append_citations)); then
   cd "$KBdir"
+  #shellcheck disable=SC2046 
   append-citations  \
     --database "$dbname" \
     --no-backup \
     --context "$KB_CONTEXT" \
-    #shellcheck disable=SC2046
     $( ((VERBOSE)) || echo '\--verbose') \
     "$staging_text"
   chownsysadmin "$KBdir"
