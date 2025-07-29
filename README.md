@@ -85,9 +85,18 @@ appliedanthropology/
 ├── appliedanthropology.db                # SQLite database (777K+ segments)
 ├── appliedanthropology.faiss             # Vector search index (7.9GB)
 ├── appliedanthropology_primary_prompt.md # AI assistant personality
-├── build.sh                              # Comprehensive build automation
+├── appliedanthropology.build.conf        # Build configuration settings
+├── build.sh                              # Symlink to build/build.sh
+├── build/                                # Build scripts and utilities
+│   ├── build.sh                          # Main build orchestrator
+│   ├── version.sh                        # Version tracking script
+│   ├── create_staging.text.sh            # Text preprocessing script
+│   ├── add_version_tracking.sql          # Database schema for versioning
+│   └── staging.text.zip                  # Cached text data
 ├── docs/                                 # Documentation files
-└── logs/                                 # Application logs
+├── logs/                                 # Application logs
+├── staging.text/                         # Processed text cache (94 directories)
+└── workshops/                            # Symlink to source data
 ```
 
 ---
@@ -136,7 +145,7 @@ The system operates with specific definitions:
 
 ### 4. Build and Maintenance Pipeline
 
-**6-Stage Build Process (`0_build.sh`):**
+**6-Stage Build Process (`build.sh`):**
 
 1. **Text Caching** (`-0`): Process source materials into structured cache
 2. **Citation Generation** (`-1`): AI-enhanced metadata using GPT-4.1-mini
@@ -144,6 +153,12 @@ The system operates with specific definitions:
 4. **Database Import** (`-3`): Import processed texts to SQLite
 5. **Vector Embedding** (`-4`): Generate embeddings and build FAISS index
 6. **Testing** (`-5`): Automated query validation
+
+Build configuration is managed through `appliedanthropology.build.conf` which controls:
+- Citation model settings (GPT-4.1-mini, temperature 0.25)
+- Parallel processing (43 threads)
+- Context definitions
+- Test query specifications
 
 ---
 
@@ -190,18 +205,20 @@ customkb query appliedanthropology.cfg "dharma" --context-only
 #### Build and Maintenance
 ```bash
 # Full rebuild (all stages)
-./0_build.sh -a -y
+./build.sh -a -y
 
 # Individual stages
-./0_build.sh -0    # Create text cache from source data
-./0_build.sh -1    # Generate AI citations (GPT-4.1-mini)
-./0_build.sh -2    # Append citations to database
-./0_build.sh -3    # Import text to database
-./0_build.sh -4    # Create vector embeddings
-./0_build.sh -5    # Run test query
+./build.sh -0    # Create text cache from source data
+./build.sh -1    # Generate AI citations (GPT-4.1-mini)
+./build.sh -2    # Append citations to database
+./build.sh -3    # Import text to database
+./build.sh -4    # Create vector embeddings
+./build.sh -5    # Run test query
 
-# Simple rebuild (legacy)
-./build.sh
+# Version management
+./build/version.sh show      # Display current version
+./build/version.sh bump      # Increment version (patch by default)
+./build/version.sh history   # Show version history
 ```
 
 #### Database Management
@@ -293,13 +310,23 @@ customkb optimize appliedanthropology.cfg
 
 ### Adding New Content
 1. Add source materials to symlinked embed_data directory
-2. Run `./0_build.sh -0` to update text cache
-3. Complete rebuild with `./0_build.sh -1 -2 -3 -4` or full `./0_build.sh -a`
+2. Run `./build.sh -0` to update text cache
+3. Complete rebuild with `./build.sh -1 -2 -3 -4` or full `./build.sh -a`
 
 ### Configuration Updates
 - Edit `appliedanthropology.cfg` for search parameters
 - Modify `appliedanthropology_primary_prompt.md` for AI behavior
 - Update `appliedanthropology.build.conf` for build settings
+
+### Build Directory Organization
+The `build/` directory contains all build-related scripts and utilities:
+- `build.sh` - Main build orchestrator with 6-stage pipeline
+- `version.sh` - Version tracking and history management
+- `create_staging.text.sh` - Text preprocessing from source materials
+- `add_version_tracking.sql` - Database schema for version history
+- `staging.text.zip` - Cached processed text data
+
+The main `build.sh` in the root directory is a symlink to `build/build.sh` for convenience.
 
 ### Quality Assurance
 - Test queries are automatically run during build process
