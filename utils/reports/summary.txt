@@ -1,0 +1,211 @@
+
+Categorization Summary - appliedanthropology
+==================================================
+Generated: 2025-08-20T06:12:55.011270
+
+Knowledgebase: appliedanthropology
+Database: appliedanthropology.db
+
+Statistics:
+-----------
+Total articles: 100
+Successfully categorized: 100
+Failed: 0
+Success rate: 100.0% if total > 0 else 0
+
+Model: openai:gpt-4o-mini
+Average processing time: 2.9s
+
+Top Categories:
+---------------
+Human Behavioral Biology: 82 articles (82.0%)
+Cultural Anthropology: 77 articles (77.0%)
+Ethics & Moral Philosophy: 51 articles (51.0%)
+Political Anthropology: 30 articles (30.0%)
+Secular Dharma/Buddhism: 27 articles (27.0%)
+Evolutionary Biology: 26 articles (26.0%)
+Philosophy of Mind: 24 articles (24.0%)
+Sociology: 22 articles (22.0%)
+Evolutionary Sociology: 21 articles (21.0%)
+Psychology: 16 articles (16.0%)
+History & Civilization Studies: 14 articles (14.0%)
+Cultural Studies: 12 articles (12.0%)
+Applied Anthropology: 11 articles (11.0%)
+Existentialism: 11 articles (11.0%)
+Meditation & Mindfulness: 10 articles (10.0%)
+Technology & AI Ethics: 8 articles (8.0%)
+Archaeology: 7 articles (7.0%)
+Primatology: 5 articles (5.0%)
+Philosophical Anthropology: 5 articles (5.0%)
+Trauma & Healing: 4 articles (4.0%)
+
+Dynamic Categories Discovered:
+-------------------------------
+- AI Ethics and Governance
+- AI Impact on Society
+- AI and Consciousness Ethics
+- AI and Cultural Dynamics
+- AI and Social Stability
+- Academic Discourse in Anarchism
+- Activism and Social Movements
+- Agricultural Ritual Studies
+- Alternative Governance Models
+- Altruism and Egoism Dynamics
+- Altruism and Hierarchy Studies
+- Altruism and Social Dynamics
+- Ancient Ritual Practices
+- Anthropological Critique of Positivism
+- Artistic Self-Representation
+- Asabiyyah Studies
+- Automation and Workforce Dynamics
+- Biocultural Evolution Frameworks
+- Buddhist Ethical Frameworks
+- Buddhist Metaphysical Practices
+- Buddhist Monasticism in Modern Society
+- Buddhist Psychological Practices
+- Chimpanzee Social Dynamics
+- Civilizational Studies
+- Civilizational Transformation Dynamics
+- Clinical Narrative Studies
+- Cognitive Communication in Social Structures
+- Cognitive Enhancement Ethics
+- Cognitive Proliferation Dynamics
+- Collaborative Academic Discourse
+- Communication Studies
+- Complexity in Early Societal Structures
+- Complexity in Human Evolution
+- Complexity in Human Nature
+- Complexity in Social Structures
+- Consumer Behavior in Society
+- Contemplative Ethics
+- Contemplative Ethics in Daily Life
+- Contemplative Ethics in Modern Society
+- Contemplative Practices in Literature
+- Contemporary American Societal Dynamics
+- Contemporary Buddhist Practices
+- Contemporary Social Theory
+- Copyright and Technology Ethics
+- Cosmological Evolution Studies
+- Creative Flow and Non-Reactivity
+- Critique of Agricultural Narratives
+- Critique of Eurocentrism
+- Cross-Cultural Historical Narratives
+- Cultural Critique in Philosophy
+- Cultural Dynamics in Historical Contexts
+- Cultural Dynamics in Indigenous Societies
+- Cultural Dynamics of Citizenship
+- Cultural Dynamics of Evolutionary Thought
+- Cultural Ethical Frameworks
+- Cultural Evolution Studies
+- Cultural Evolution in Prehistoric Societies
+- Cultural Identity and Schismogenesis
+- Cultural Narratives of Human Flourishing
+- Cultural Reflections in Modern Media
+- Cultural Reflections in Poetry
+- Cyclical History Analysis
+- Decentralized Governance in Ancient Societies
+- Decentralized Political Structures
+- Democratic Governance in Indigenous Societies
+- Dependent Arising Studies
+- Digital Consciousness Studies
+- Digital Culture Studies
+- Dukkha Studies
+- Dukkha and Human Experience
+- Dynamic Social Structures in Prehistoric Societies
+- Ecological Flexibility in Early Societies
+- Education and Knowledge Systems
+- Egalitarian Dynamics in Tribal Societies
+- Egalitarian Political Structures in Prehistoric Societies
+- Egalitarian Social Dynamics
+- Egalitarian Social Structures
+- Egalitarian Social Structures in Early Societies
+- Egalitarianism Studies
+- Egalitarianism Studies in Human Evolution
+- Egalitarianism in Hunter-Gatherer Cultures
+- Ethical Decision-Making Frameworks
+- Ethical Decision-Making in Uncertain Contexts
+- Ethical Flourishing Models
+- Ethical Frameworks in Technology
+- Ethical Intelligence Development
+- Ethics of AI Development
+- Evolutionary Political Behavior
+- Evolutionary Social Dynamics
+- Evolutionary Sociology
+- Existential Ethics
+- Existential Skill Development
+- Future of Work and Technology
+- Global Technology Governance
+- Health and Wellbeing in Buddhism
+- Hierarchy and Egalitarianism Studies
+- Historical Agricultural Dynamics
+- Historical Governance Dynamics
+- Historical Narrative Critique
+- Historical Perspectives on Democracy
+- Historical Political Dynamics
+- Human Flourishing Practices
+- Human Flourishing in Buddhism
+- Impact of Automation on Human Intelligence
+- Impact of Technology on Human Intelligence
+- Indigenous Governance Studies
+- Indigenous Historical Narratives
+- Indigenous Intellectual Exchange
+- Indigenous Political Philosophy
+- Inequality and Social Change Studies
+- Integration of Artistic Practices in Literature
+- Intergroup Conflict and Social Structures
+- Literary Existentialism
+- Literary Reflections on Human Experience
+- Meditative Art Practices
+- Metaphysical Propositions in Buddhism
+- Metaphysical Propositions in Secular Contexts
+- Mindful Communication Practices
+- Mindful Communication in Ethical Dilemmas
+- Mindful Integration Practices
+- Mindfulness Practices in Modern Society
+- Mindfulness in Contemporary Society
+- Mindfulness-Based Ethical Living
+- Mongol Empire Studies
+- Narrative History Studies
+- Narrative Structures in Evolutionary Discourse
+- Narrative Therapy
+- Narrative Therapy Practices
+- Neoliberalism and Academic Discourse
+- Neolithic Economy Studies
+- Neolithic Social Dynamics
+- Nuanced Historical Narratives
+- Oral Tradition Studies
+- Pandemic Ethics
+- Participatory Democracy in Ancient Societies
+- Path Formation in Human Flourishing
+- Philosophical Anthropology
+- Philosophy of Emotion
+- Poetic Expression and Human Experience
+- Political Egalitarianism Studies
+- Political Engagement in Secular Contexts
+- Political Self-Consciousness Studies
+- Pre-Agricultural Societal Dynamics
+- Prehistoric Social Dynamics
+- Primate Social Dynamics
+- Professional-Managerial Class Dynamics
+- Public Health and Trauma Response
+- Resource Management in Prehistoric Societies
+- Rituals and Political Awareness
+- Science Fiction and Philosophy
+- Seasonal Festival Dynamics in Social Evolution
+- Secular Ethical Frameworks
+- Secular Ethical Practices
+- Social Control Mechanisms in Hunter-Gatherer Societies
+- Social Evolution Critique
+- Social Hierarchy Dynamics
+- Social Organization Dynamics
+- Social Stratification in Prehistoric Societies
+- Societal Progress and Development
+- Solitude Studies
+- Speech Ethics
+- Therapeutic Applications of Mindfulness
+- Traffic Psychology
+- Transdisciplinary Foresight Studies
+- Transformative Practices in Secular Contexts
+- Urban Democracy in Ancient Societies
+- Urban Evolution Studies
+- Urban Governance in Ancient Civilizations

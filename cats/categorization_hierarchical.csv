@@ -1,0 +1,51 @@
+article,category,category_path,domain,level,confidence,is_inherited,is_primary,total_chunks,processing_time,model_used
+the-genies-are-out-of-the-bottle-and-there-s-no-putting-them-back_sonnet-3.7.md,Human Behavioral Evolution,general/Human Behavioral Evolution,general,1,0.95,False,True,45,2.6253490447998047,openai:gpt-4o-mini
+the-genies-are-out-of-the-bottle-and-there-s-no-putting-them-back_sonnet-3.7.md,Ethics in Science,general/Ethics in Science,general,1,0.85,False,False,45,2.6253490447998047,openai:gpt-4o-mini
+the-genies-are-out-of-the-bottle-and-there-s-no-putting-them-back_sonnet-3.7.md,Cultural Anthropology,general/Cultural Anthropology,general,1,0.8,False,False,45,2.6253490447998047,openai:gpt-4o-mini
+the-genies-are-out-of-the-bottle-and-there-s-no-putting-them-back_sonnet-3.7.md,Mindfulness and Well-being,general/Mindfulness and Well-being,general,1,0.75,False,False,45,2.6253490447998047,openai:gpt-4o-mini
+the-genies-are-out-of-the-bottle-and-there-s-no-putting-them-back_sonnet-3.7.md,Social Dynamics,general/Social Dynamics,general,1,0.7,False,False,45,2.6253490447998047,openai:gpt-4o-mini
+human-vs-ai-consciousness.md,Philosophy of Existence,general/Philosophy of Existence,general,1,0.95,False,True,170,2.6810708045959473,openai:gpt-4o-mini
+human-vs-ai-consciousness.md,Human Behavioral Evolution,general/Human Behavioral Evolution,general,1,0.85,False,False,170,2.6810708045959473,openai:gpt-4o-mini
+human-vs-ai-consciousness.md,Cultural Anthropology,general/Cultural Anthropology,general,1,0.75,False,False,170,2.6810708045959473,openai:gpt-4o-mini
+human-vs-ai-consciousness.md,Interconnectedness,general/Interconnectedness,general,1,0.65,False,False,170,2.6810708045959473,openai:gpt-4o-mini
+human-vs-ai-consciousness.md,Ethics in Science,general/Ethics in Science,general,1,0.6,False,False,170,2.6810708045959473,openai:gpt-4o-mini
+Are-You-Ready-To-Be-Automated.md,Human Behavioral Evolution,general/Human Behavioral Evolution,general,1,0.95,False,True,41,3.219668388366699,openai:gpt-4o-mini
+Are-You-Ready-To-Be-Automated.md,Evolutionary Biology,general/Evolutionary Biology,general,1,0.85,False,False,41,3.219668388366699,openai:gpt-4o-mini
+Are-You-Ready-To-Be-Automated.md,Cultural Anthropology,general/Cultural Anthropology,general,1,0.75,False,False,41,3.219668388366699,openai:gpt-4o-mini
+Are-You-Ready-To-Be-Automated.md,Social Dynamics,general/Social Dynamics,general,1,0.7,False,False,41,3.219668388366699,openai:gpt-4o-mini
+Are-You-Ready-To-Be-Automated.md,Ethics in Science,general/Ethics in Science,general,1,0.65,False,False,41,3.219668388366699,openai:gpt-4o-mini
+machines-of-loving-grace.md,Human Behavioral Evolution,general/Human Behavioral Evolution,general,1,0.95,False,True,309,3.3154854774475098,openai:gpt-4o-mini
+machines-of-loving-grace.md,Cultural Anthropology,general/Cultural Anthropology,general,1,0.85,False,False,309,3.3154854774475098,openai:gpt-4o-mini
+machines-of-loving-grace.md,Mindfulness and Well-being,general/Mindfulness and Well-being,general,1,0.75,False,False,309,3.3154854774475098,openai:gpt-4o-mini
+machines-of-loving-grace.md,Philosophy of Existence,general/Philosophy of Existence,general,1,0.7,False,False,309,3.3154854774475098,openai:gpt-4o-mini
+machines-of-loving-grace.md,Evolutionary Biology,general/Evolutionary Biology,general,1,0.65,False,False,309,3.3154854774475098,openai:gpt-4o-mini
+China-AI.md,Cultural Anthropology,general/Cultural Anthropology,general,1,0.85,False,True,166,3.63577938079834,openai:gpt-4o-mini
+China-AI.md,Human Behavioral Evolution,general/Human Behavioral Evolution,general,1,0.75,False,False,166,3.63577938079834,openai:gpt-4o-mini
+China-AI.md,Social Dynamics,general/Social Dynamics,general,1,0.7,False,False,166,3.63577938079834,openai:gpt-4o-mini
+China-AI.md,Ethics in Science,general/Ethics in Science,general,1,0.65,False,False,166,3.63577938079834,openai:gpt-4o-mini
+China-AI.md,Philosophy of Existence,general/Philosophy of Existence,general,1,0.6,False,False,166,3.63577938079834,openai:gpt-4o-mini
+Kevin-Roberts_Dawns-Early-Light.md,Human Behavioral Evolution,general/Human Behavioral Evolution,general,1,0.85,False,True,1668,2.6134707927703857,openai:gpt-4o-mini
+Kevin-Roberts_Dawns-Early-Light.md,Cultural Anthropology,general/Cultural Anthropology,general,1,0.75,False,False,1668,2.6134707927703857,openai:gpt-4o-mini
+Kevin-Roberts_Dawns-Early-Light.md,Social Dynamics,general/Social Dynamics,general,1,0.7,False,False,1668,2.6134707927703857,openai:gpt-4o-mini
+Kevin-Roberts_Dawns-Early-Light.md,Civic Engagement,general/Civic Engagement,general,1,0.65,False,False,1668,2.6134707927703857,openai:gpt-4o-mini
+Kevin-Roberts_Dawns-Early-Light.md,Philosophy of Existence,general/Philosophy of Existence,general,1,0.6,False,False,1668,2.6134707927703857,openai:gpt-4o-mini
+The-Body-Keeps-the-Score_Bessel-van-Der-Kolk.md,Mindfulness and Well-being,general/Mindfulness and Well-being,general,1,0.95,False,True,2602,3.2677979469299316,openai:gpt-4o-mini
+The-Body-Keeps-the-Score_Bessel-van-Der-Kolk.md,Human Behavioral Evolution,general/Human Behavioral Evolution,general,1,0.85,False,False,2602,3.2677979469299316,openai:gpt-4o-mini
+The-Body-Keeps-the-Score_Bessel-van-Der-Kolk.md,Cultural Anthropology,general/Cultural Anthropology,general,1,0.75,False,False,2602,3.2677979469299316,openai:gpt-4o-mini
+The-Body-Keeps-the-Score_Bessel-van-Der-Kolk.md,Psychology of Humor,general/Psychology of Humor,general,1,0.65,False,False,2602,3.2677979469299316,openai:gpt-4o-mini
+The-Body-Keeps-the-Score_Bessel-van-Der-Kolk.md,Ethics in Science,general/Ethics in Science,general,1,0.6,False,False,2602,3.2677979469299316,openai:gpt-4o-mini
+Sabine-Hossenfelder_AI-is-becoming-dangerous_are-we-ready.md,Human Behavioral Evolution,general/Human Behavioral Evolution,general,1,0.95,False,True,15,2.6878128051757812,openai:gpt-4o-mini
+Sabine-Hossenfelder_AI-is-becoming-dangerous_are-we-ready.md,Cultural Anthropology,general/Cultural Anthropology,general,1,0.85,False,False,15,2.6878128051757812,openai:gpt-4o-mini
+Sabine-Hossenfelder_AI-is-becoming-dangerous_are-we-ready.md,Philosophy of Existence,general/Philosophy of Existence,general,1,0.75,False,False,15,2.6878128051757812,openai:gpt-4o-mini
+Sabine-Hossenfelder_AI-is-becoming-dangerous_are-we-ready.md,Mindfulness and Well-being,general/Mindfulness and Well-being,general,1,0.7,False,False,15,2.6878128051757812,openai:gpt-4o-mini
+Sabine-Hossenfelder_AI-is-becoming-dangerous_are-we-ready.md,Social Dynamics,general/Social Dynamics,general,1,0.65,False,False,15,2.6878128051757812,openai:gpt-4o-mini
+the-genies-are-out-of-the-bottle-and-there-s-no-putting-them-back_o3-mini.md,Human Behavioral Evolution,general/Human Behavioral Evolution,general,1,0.95,False,True,31,3.3673529624938965,openai:gpt-4o-mini
+the-genies-are-out-of-the-bottle-and-there-s-no-putting-them-back_o3-mini.md,Ethics in Science,general/Ethics in Science,general,1,0.85,False,False,31,3.3673529624938965,openai:gpt-4o-mini
+the-genies-are-out-of-the-bottle-and-there-s-no-putting-them-back_o3-mini.md,Cultural Anthropology,general/Cultural Anthropology,general,1,0.8,False,False,31,3.3673529624938965,openai:gpt-4o-mini
+the-genies-are-out-of-the-bottle-and-there-s-no-putting-them-back_o3-mini.md,Interconnectedness,general/Interconnectedness,general,1,0.75,False,False,31,3.3673529624938965,openai:gpt-4o-mini
+the-genies-are-out-of-the-bottle-and-there-s-no-putting-them-back_o3-mini.md,Social Dynamics,general/Social Dynamics,general,1,0.7,False,False,31,3.3673529624938965,openai:gpt-4o-mini
+How-Money-Works_Are-You-Ready-To-Be-Automated.md,Evolutionary Biology,general/Evolutionary Biology,general,1,0.85,False,True,38,3.8520398139953613,openai:gpt-4o-mini
+How-Money-Works_Are-You-Ready-To-Be-Automated.md,Human Behavioral Evolution,general/Human Behavioral Evolution,general,1,0.8,False,False,38,3.8520398139953613,openai:gpt-4o-mini
+How-Money-Works_Are-You-Ready-To-Be-Automated.md,Cultural Anthropology,general/Cultural Anthropology,general,1,0.75,False,False,38,3.8520398139953613,openai:gpt-4o-mini
+How-Money-Works_Are-You-Ready-To-Be-Automated.md,Social Dynamics,general/Social Dynamics,general,1,0.7,False,False,38,3.8520398139953613,openai:gpt-4o-mini
+How-Money-Works_Are-You-Ready-To-Be-Automated.md,Ethics in Science,general/Ethics in Science,general,1,0.65,False,False,38,3.8520398139953613,openai:gpt-4o-mini

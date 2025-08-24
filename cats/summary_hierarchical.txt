@@ -1,0 +1,60 @@
+
+Hierarchical Categorization Summary - appliedanthropology
+============================================================
+Generated: 2025-08-20T08:08:50.485983
+
+Knowledgebase: appliedanthropology
+Database: appliedanthropology.db
+
+Statistics:
+-----------
+Total articles: 10
+Successfully categorized: 10
+Failed: 0
+Success rate: 100.0%
+
+Model: openai:gpt-4o-mini
+Average processing time: 3.1s
+
+Category Hierarchy Usage:
+-------------------------
+
+Distribution by Level:
+  Level 1: 50 assignments
+
+Distribution by Domain:
+  general: 50 assignments (100.0%)
+
+Inheritance Statistics:
+  Direct matches: 50
+  Inherited matches: 0
+
+Top Category Paths:
+------------------------------
+Human Behavioral Evolution: 10 articles
+Cultural Anthropology: 10 articles
+Ethics in Science: 7 articles
+Social Dynamics: 7 articles
+Philosophy of Existence: 5 articles
+Mindfulness and Well-being: 4 articles
+Evolutionary Biology: 3 articles
+Interconnectedness: 2 articles
+Civic Engagement: 1 articles
+Psychology of Humor: 1 articles
+
+Top Category Co-occurrences:
+------------------------------
+  Cultural Anthropology <-> Human Behavioral Evolution: 10 co-occurrences
+  Human Behavioral Evolution <-> Social Dynamics: 7 co-occurrences
+  Ethics in Science <-> Human Behavioral Evolution: 7 co-occurrences
+  Cultural Anthropology <-> Ethics in Science: 7 co-occurrences
+  Cultural Anthropology <-> Social Dynamics: 7 co-occurrences
+  Human Behavioral Evolution <-> Philosophy of Existence: 5 co-occurrences
+  Ethics in Science <-> Social Dynamics: 5 co-occurrences
+  Cultural Anthropology <-> Philosophy of Existence: 5 co-occurrences
+  Human Behavioral Evolution <-> Mindfulness and Well-being: 4 co-occurrences
+  Cultural Anthropology <-> Mindfulness and Well-being: 4 co-occurrences
+
+Dynamic Subcategories Suggested:
+------------------------------
+  core_sciences/Evolutionary Biology/Impact of Automation on Human Roles

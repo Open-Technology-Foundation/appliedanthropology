@@ -1,0 +1,12 @@
+
+Categorization Complete
+======================
+Articles processed: 15228
+Successful: 15228
+Failed: 0
+Unique categories: 170
+Dynamic categories added: 8
+
+Results saved to:
+- /var/lib/vectordbs/appliedanthropology/cats/categorization.json
+- /var/lib/vectordbs/appliedanthropology/cats/categorization.csv

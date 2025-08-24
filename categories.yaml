@@ -1,0 +1,106 @@
+'# Auto-generated categories for': appliedanthropology
+'# Generated': '2025-08-20T06:53:21.718376'
+domain: Interdisciplinary studies focusing on human behavior, evolution, culture,
+  and mindfulness
+content_type: mixed
+categories:
+  general:
+  - name: Mindfulness and Well-being
+    keywords:
+    - mindfulness
+    - well-being
+    - present moment
+    description: Exploration of mindfulness practices and their impact on well-being.
+  - name: Evolutionary Biology
+    keywords:
+    - evolution
+    - biology
+    - natural selection
+    description: Study of evolutionary processes and their implications for human
+      behavior.
+  - name: Cultural Anthropology
+    keywords:
+    - culture
+    - anthropology
+    - social behavior
+    description: Examination of cultural practices and their influence on human behavior.
+  - name: Human Behavioral Evolution
+    keywords:
+    - behavioral evolution
+    - human nature
+    - evolutionary psychology
+    description: Analysis of how evolutionary principles apply to human behavior.
+  - name: Philosophy of Existence
+    keywords:
+    - existence
+    - philosophy
+    - consciousness
+    description: Philosophical discussions on the nature of existence and consciousness.
+  - name: Interconnectedness
+    keywords:
+    - interconnectedness
+    - identity
+    - relationships
+    description: Concept of interconnectedness in life and its implications for personal
+      identity.
+  - name: Social Dynamics
+    keywords:
+    - social dynamics
+    - community
+    - trust
+    description: Study of social structures and their impact on individual behavior.
+  - name: Extremism Studies
+    keywords:
+    - extremism
+    - terrorism
+    - radicalization
+    description: Research on the causes and implications of extremist behavior.
+  - name: Literary Analysis
+    keywords:
+    - literature
+    - analysis
+    - cultural studies
+    description: Examination of literary works and their cultural significance.
+  - name: Decolonization
+    keywords:
+    - decolonization
+    - ecology
+    - science
+    description: Exploration of decolonization in various fields including science
+      and ecology.
+  - name: Communication Studies
+    keywords:
+    - communication
+    - language
+    - media
+    description: Analysis of communication processes and their societal impacts.
+  - name: Psychology of Humor
+    keywords:
+    - humor
+    - psychology
+    - well-being
+    description: Study of humor and its psychological effects on individuals.
+  - name: Civic Engagement
+    keywords:
+    - civic engagement
+    - activism
+    - community service
+    description: Research on civic participation and its role in society.
+  - name: Ethics in Science
+    keywords:
+    - ethics
+    - science
+    - research integrity
+    description: Discussion on ethical considerations in scientific research.
+  - name: Historical Perspectives
+    keywords:
+    - history
+    - perspectives
+    - context
+    description: Analysis of historical events and their relevance to contemporary
+      issues.
+classification:
+  confidence_threshold: 0.3
+  max_categories: 5
+  primary_threshold: 0.6
+  allow_new_categories: true

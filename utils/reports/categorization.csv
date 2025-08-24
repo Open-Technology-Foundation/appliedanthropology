@@ -1,0 +1,501 @@
+article,category,confidence,is_primary,total_chunks,processing_time,model_used
+sd-homework-april-right-speech-14323.md,Ethics & Moral Philosophy,0.9,True,21,2.544578790664673,openai:gpt-4o-mini
+sd-homework-april-right-speech-14323.md,Human Behavioral Biology,0.85,False,21,2.544578790664673,openai:gpt-4o-mini
+sd-homework-april-right-speech-14323.md,Applied Anthropology,0.8,False,21,2.544578790664673,openai:gpt-4o-mini
+sd-homework-april-right-speech-14323.md,Psychology,0.75,False,21,2.544578790664673,openai:gpt-4o-mini
+sd-homework-april-right-speech-14323.md,Cultural Studies,0.7,False,21,2.544578790664673,openai:gpt-4o-mini
+Einzelganger.txt,Stoicism,0.95,True,5217,2.653425693511963,openai:gpt-4o-mini
+Einzelganger.txt,Human Behavioral Biology,0.85,False,5217,2.653425693511963,openai:gpt-4o-mini
+Einzelganger.txt,Cultural Anthropology,0.75,False,5217,2.653425693511963,openai:gpt-4o-mini
+Einzelganger.txt,Psychology,0.7,False,5217,2.653425693511963,openai:gpt-4o-mini
+Einzelganger.txt,Meditation & Mindfulness,0.65,False,5217,2.653425693511963,openai:gpt-4o-mini
+Einzelganger_When-Walking-Away-Is-the-ONLY-Answer_A-Hermits-Philosophy.txt,Philosophy of Mind,0.85,True,39,2.6493334770202637,openai:gpt-4o-mini
+Einzelganger_When-Walking-Away-Is-the-ONLY-Answer_A-Hermits-Philosophy.txt,Existentialism,0.8,False,39,2.6493334770202637,openai:gpt-4o-mini
+Einzelganger_When-Walking-Away-Is-the-ONLY-Answer_A-Hermits-Philosophy.txt,Cultural Anthropology,0.7,False,39,2.6493334770202637,openai:gpt-4o-mini
+Einzelganger_When-Walking-Away-Is-the-ONLY-Answer_A-Hermits-Philosophy.txt,Human Behavioral Biology,0.65,False,39,2.6493334770202637,openai:gpt-4o-mini
+Einzelganger_When-Walking-Away-Is-the-ONLY-Answer_A-Hermits-Philosophy.txt,Meditation & Mindfulness,0.6,False,39,2.6493334770202637,openai:gpt-4o-mini
+m-bel-9849.md,Secular Dharma/Buddhism,0.95,True,177,2.851041793823242,openai:gpt-4o-mini
+m-bel-9849.md,Meditation & Mindfulness,0.9,False,177,2.851041793823242,openai:gpt-4o-mini
+m-bel-9849.md,Ethics & Moral Philosophy,0.85,False,177,2.851041793823242,openai:gpt-4o-mini
+m-bel-9849.md,Human Behavioral Biology,0.7,False,177,2.851041793823242,openai:gpt-4o-mini
+m-bel-9849.md,Applied Anthropology,0.65,False,177,2.851041793823242,openai:gpt-4o-mini
+narrative-23377.md,Psychology,0.95,True,120,2.772346019744873,openai:gpt-4o-mini
+narrative-23377.md,Applied Anthropology,0.85,False,120,2.772346019744873,openai:gpt-4o-mini
+narrative-23377.md,Trauma & Healing,0.75,False,120,2.772346019744873,openai:gpt-4o-mini
+narrative-23377.md,Human Behavioral Biology,0.7,False,120,2.772346019744873,openai:gpt-4o-mini
+narrative-23377.md,Cultural Studies,0.65,False,120,2.772346019744873,openai:gpt-4o-mini
+sd-homework-sb2-10251.md,Meditation & Mindfulness,0.95,True,14,2.904965877532959,openai:gpt-4o-mini
+sd-homework-sb2-10251.md,Secular Dharma/Buddhism,0.9,False,14,2.904965877532959,openai:gpt-4o-mini
+sd-homework-sb2-10251.md,Human Behavioral Biology,0.85,False,14,2.904965877532959,openai:gpt-4o-mini
+sd-homework-sb2-10251.md,Psychology,0.8,False,14,2.904965877532959,openai:gpt-4o-mini
+sd-homework-sb2-10251.md,Cultural Anthropology,0.7,False,14,2.904965877532959,openai:gpt-4o-mini
+Sabine-Hossenfelder_AI-is-becoming-dangerous_are-we-ready.md,Technology & AI Ethics,0.9,True,15,3.0435962677001953,openai:gpt-4o-mini
+Sabine-Hossenfelder_AI-is-becoming-dangerous_are-we-ready.md,Human Behavioral Biology,0.85,False,15,3.0435962677001953,openai:gpt-4o-mini
+Sabine-Hossenfelder_AI-is-becoming-dangerous_are-we-ready.md,Evolutionary Biology,0.75,False,15,3.0435962677001953,openai:gpt-4o-mini
+Sabine-Hossenfelder_AI-is-becoming-dangerous_are-we-ready.md,Applied Anthropology,0.65,False,15,3.0435962677001953,openai:gpt-4o-mini
+Sabine-Hossenfelder_AI-is-becoming-dangerous_are-we-ready.md,Cultural Studies,0.6,False,15,3.0435962677001953,openai:gpt-4o-mini
+Enlightenment_Now.md,Human Behavioral Biology,0.85,True,2925,3.0651333332061768,openai:gpt-4o-mini
+Enlightenment_Now.md,Cultural Anthropology,0.8,False,2925,3.0651333332061768,openai:gpt-4o-mini
+Enlightenment_Now.md,Philosophy of Mind,0.75,False,2925,3.0651333332061768,openai:gpt-4o-mini
+Enlightenment_Now.md,Education,0.7,False,2925,3.0651333332061768,openai:gpt-4o-mini
+Enlightenment_Now.md,Sociology,0.65,False,2925,3.0651333332061768,openai:gpt-4o-mini
+Are-You-Ready-To-Be-Automated.md,Human Behavioral Biology,0.85,True,41,3.262010097503662,openai:gpt-4o-mini
+Are-You-Ready-To-Be-Automated.md,Technology & AI Ethics,0.8,False,41,3.262010097503662,openai:gpt-4o-mini
+Are-You-Ready-To-Be-Automated.md,Applied Anthropology,0.7,False,41,3.262010097503662,openai:gpt-4o-mini
+Are-You-Ready-To-Be-Automated.md,Economics & Political Economy,0.65,False,41,3.262010097503662,openai:gpt-4o-mini
+Are-You-Ready-To-Be-Automated.md,Neuroscience & Brain Science,0.6,False,41,3.262010097503662,openai:gpt-4o-mini
+lawrence-lessig_free-culture_how-big-media-uses-technology-and-the-law-to-lock-down-culture-and-control-creativity.txt,Cultural Studies,0.85,True,1731,3.4922585487365723,openai:gpt-4o-mini
+lawrence-lessig_free-culture_how-big-media-uses-technology-and-the-law-to-lock-down-culture-and-control-creativity.txt,Economics & Political Economy,0.75,False,1731,3.4922585487365723,openai:gpt-4o-mini
+lawrence-lessig_free-culture_how-big-media-uses-technology-and-the-law-to-lock-down-culture-and-control-creativity.txt,Technology & AI Ethics,0.7,False,1731,3.4922585487365723,openai:gpt-4o-mini
+lawrence-lessig_free-culture_how-big-media-uses-technology-and-the-law-to-lock-down-culture-and-control-creativity.txt,Applied Anthropology,0.65,False,1731,3.4922585487365723,openai:gpt-4o-mini
+lawrence-lessig_free-culture_how-big-media-uses-technology-and-the-law-to-lock-down-culture-and-control-creativity.txt,Human Behavioral Biology,0.6,False,1731,3.4922585487365723,openai:gpt-4o-mini
+Gary-Dean_Aggressive-Coalitions-in-Primates.md,Primatology,0.95,True,9,2.0895094871520996,openai:gpt-4o-mini
+Gary-Dean_Aggressive-Coalitions-in-Primates.md,Evolutionary Biology,0.85,False,9,2.0895094871520996,openai:gpt-4o-mini
+Gary-Dean_Aggressive-Coalitions-in-Primates.md,Human Behavioral Biology,0.75,False,9,2.0895094871520996,openai:gpt-4o-mini
+Gary-Dean_Aggressive-Coalitions-in-Primates.md,Cultural Anthropology,0.65,False,9,2.0895094871520996,openai:gpt-4o-mini
+Gary-Dean_Aggressive-Coalitions-in-Primates.md,Sociology,0.6,False,9,2.0895094871520996,openai:gpt-4o-mini
+the-genies-are-out-of-the-bottle-and-there-s-no-putting-them-back_sonnet-3.7.md,Ethics & Moral Philosophy,0.95,True,45,2.636056900024414,openai:gpt-4o-mini
+the-genies-are-out-of-the-bottle-and-there-s-no-putting-them-back_sonnet-3.7.md,Technology & AI Ethics,0.85,False,45,2.636056900024414,openai:gpt-4o-mini
+the-genies-are-out-of-the-bottle-and-there-s-no-putting-them-back_sonnet-3.7.md,Cultural Anthropology,0.7,False,45,2.636056900024414,openai:gpt-4o-mini
+the-genies-are-out-of-the-bottle-and-there-s-no-putting-them-back_sonnet-3.7.md,Human Behavioral Biology,0.65,False,45,2.636056900024414,openai:gpt-4o-mini
+the-genies-are-out-of-the-bottle-and-there-s-no-putting-them-back_sonnet-3.7.md,Philosophy of Mind,0.6,False,45,2.636056900024414,openai:gpt-4o-mini
+tips-from-the-homework-23165.md,Human Behavioral Biology,0.85,True,51,2.541123628616333,openai:gpt-4o-mini
+tips-from-the-homework-23165.md,Cultural Anthropology,0.8,False,51,2.541123628616333,openai:gpt-4o-mini
+tips-from-the-homework-23165.md,Philosophy of Mind,0.75,False,51,2.541123628616333,openai:gpt-4o-mini
+tips-from-the-homework-23165.md,Ethics & Moral Philosophy,0.7,False,51,2.541123628616333,openai:gpt-4o-mini
+tips-from-the-homework-23165.md,Trauma & Healing,0.65,False,51,2.541123628616333,openai:gpt-4o-mini
+sd-workbook-24622.md,Secular Dharma/Buddhism,0.95,True,201,2.7656900882720947,openai:gpt-4o-mini
+sd-workbook-24622.md,Meditation & Mindfulness,0.85,False,201,2.7656900882720947,openai:gpt-4o-mini
+sd-workbook-24622.md,Human Behavioral Biology,0.7,False,201,2.7656900882720947,openai:gpt-4o-mini
+sd-workbook-24622.md,Ethics & Moral Philosophy,0.65,False,201,2.7656900882720947,openai:gpt-4o-mini
+sd-workbook-24622.md,Cultural Anthropology,0.6,False,201,2.7656900882720947,openai:gpt-4o-mini
+Dawn-of-Everything.md,Cultural Anthropology,0.95,True,3571,2.5632126331329346,openai:gpt-4o-mini
+Dawn-of-Everything.md,Evolutionary Biology,0.85,False,3571,2.5632126331329346,openai:gpt-4o-mini
+Dawn-of-Everything.md,Human Behavioral Biology,0.8,False,3571,2.5632126331329346,openai:gpt-4o-mini
+Dawn-of-Everything.md,Sociology,0.7,False,3571,2.5632126331329346,openai:gpt-4o-mini
+Dawn-of-Everything.md,History & Civilization Studies,0.65,False,3571,2.5632126331329346,openai:gpt-4o-mini
+the-genies-are-out-of-the-bottle-and-there-s-no-putting-them-back_o3-mini.md,Ethics & Moral Philosophy,0.85,True,31,2.591975450515747,openai:gpt-4o-mini
+the-genies-are-out-of-the-bottle-and-there-s-no-putting-them-back_o3-mini.md,Technology & AI Ethics,0.8,False,31,2.591975450515747,openai:gpt-4o-mini
+the-genies-are-out-of-the-bottle-and-there-s-no-putting-them-back_o3-mini.md,Cultural Anthropology,0.7,False,31,2.591975450515747,openai:gpt-4o-mini
+the-genies-are-out-of-the-bottle-and-there-s-no-putting-them-back_o3-mini.md,Human Behavioral Biology,0.65,False,31,2.591975450515747,openai:gpt-4o-mini
+the-genies-are-out-of-the-bottle-and-there-s-no-putting-them-back_o3-mini.md,Sociology,0.6,False,31,2.591975450515747,openai:gpt-4o-mini
+Dharma.md,Secular Dharma/Buddhism,0.95,True,33,2.538989305496216,openai:gpt-4o-mini
+Dharma.md,Cultural Anthropology,0.75,False,33,2.538989305496216,openai:gpt-4o-mini
+Dharma.md,Human Behavioral Biology,0.65,False,33,2.538989305496216,openai:gpt-4o-mini
+Dharma.md,Psychology,0.6,False,33,2.538989305496216,openai:gpt-4o-mini
+Dharma.md,Ethics & Moral Philosophy,0.55,False,33,2.538989305496216,openai:gpt-4o-mini
+China-AI.md,Political Anthropology,0.85,True,166,3.395226240158081,openai:gpt-4o-mini
+China-AI.md,Economics & Political Economy,0.8,False,166,3.395226240158081,openai:gpt-4o-mini
+China-AI.md,Cultural Anthropology,0.75,False,166,3.395226240158081,openai:gpt-4o-mini
+China-AI.md,Technology & AI Ethics,0.7,False,166,3.395226240158081,openai:gpt-4o-mini
+China-AI.md,Ethics & Moral Philosophy,0.65,False,166,3.395226240158081,openai:gpt-4o-mini
+how-long-to-develop-secular-dharma.txt,Secular Dharma/Buddhism,0.95,True,9,3.1404354572296143,openai:gpt-4o-mini
+how-long-to-develop-secular-dharma.txt,Ethics & Moral Philosophy,0.85,False,9,3.1404354572296143,openai:gpt-4o-mini
+how-long-to-develop-secular-dharma.txt,Mindfulness-Based Ethical Living,0.8,False,9,3.1404354572296143,openai:gpt-4o-mini
+how-long-to-develop-secular-dharma.txt,Cultural Anthropology,0.7,False,9,3.1404354572296143,openai:gpt-4o-mini
+how-long-to-develop-secular-dharma.txt,Human Behavioral Biology,0.65,False,9,3.1404354572296143,openai:gpt-4o-mini
+Dawn_of_Everything-David_Graeber.md,Cultural Anthropology,0.95,True,3457,2.959848642349243,openai:gpt-4o-mini
+Dawn_of_Everything-David_Graeber.md,Human Behavioral Biology,0.85,False,3457,2.959848642349243,openai:gpt-4o-mini
+Dawn_of_Everything-David_Graeber.md,Evolutionary Biology,0.75,False,3457,2.959848642349243,openai:gpt-4o-mini
+Dawn_of_Everything-David_Graeber.md,History & Civilization Studies,0.7,False,3457,2.959848642349243,openai:gpt-4o-mini
+Dawn_of_Everything-David_Graeber.md,Sociology,0.65,False,3457,2.959848642349243,openai:gpt-4o-mini
+human-vs-ai-consciousness.md,Philosophy of Mind,0.95,True,170,2.6329832077026367,openai:gpt-4o-mini
+human-vs-ai-consciousness.md,Consciousness Studies,0.85,False,170,2.6329832077026367,openai:gpt-4o-mini
+human-vs-ai-consciousness.md,Human Behavioral Biology,0.7,False,170,2.6329832077026367,openai:gpt-4o-mini
+human-vs-ai-consciousness.md,Ethics & Moral Philosophy,0.65,False,170,2.6329832077026367,openai:gpt-4o-mini
+human-vs-ai-consciousness.md,Cultural Anthropology,0.6,False,170,2.6329832077026367,openai:gpt-4o-mini
+01.00-chapter.md,Cultural Anthropology,0.85,True,8,2.6639668941497803,openai:gpt-4o-mini
+01.00-chapter.md,Human Behavioral Biology,0.75,False,8,2.6639668941497803,openai:gpt-4o-mini
+01.00-chapter.md,Evolutionary Biology,0.7,False,8,2.6639668941497803,openai:gpt-4o-mini
+01.00-chapter.md,Sociology,0.65,False,8,2.6639668941497803,openai:gpt-4o-mini
+01.00-chapter.md,Ethics & Moral Philosophy,0.6,False,8,2.6639668941497803,openai:gpt-4o-mini
+How-Money-Works_Are-You-Ready-To-Be-Automated.md,Automation and Workforce Dynamics,0.95,True,38,2.7197511196136475,openai:gpt-4o-mini
+How-Money-Works_Are-You-Ready-To-Be-Automated.md,Human Behavioral Biology,0.8,False,38,2.7197511196136475,openai:gpt-4o-mini
+How-Money-Works_Are-You-Ready-To-Be-Automated.md,Cultural Anthropology,0.7,False,38,2.7197511196136475,openai:gpt-4o-mini
+How-Money-Works_Are-You-Ready-To-Be-Automated.md,Technology & AI Ethics,0.65,False,38,2.7197511196136475,openai:gpt-4o-mini
+How-Money-Works_Are-You-Ready-To-Be-Automated.md,Economics & Political Economy,0.6,False,38,2.7197511196136475,openai:gpt-4o-mini
+00.00-preface.md,Cultural Anthropology,0.85,True,4,2.988245725631714,openai:gpt-4o-mini
+00.00-preface.md,Archaeology,0.8,False,4,2.988245725631714,openai:gpt-4o-mini
+00.00-preface.md,Human Behavioral Biology,0.7,False,4,2.988245725631714,openai:gpt-4o-mini
+00.00-preface.md,Evolutionary Biology,0.65,False,4,2.988245725631714,openai:gpt-4o-mini
+00.00-preface.md,Political Anthropology,0.6,False,4,2.988245725631714,openai:gpt-4o-mini
+Homework3.md,Secular Dharma/Buddhism,0.95,True,21,2.8357627391815186,openai:gpt-4o-mini
+Homework3.md,Human Behavioral Biology,0.8,False,21,2.8357627391815186,openai:gpt-4o-mini
+Homework3.md,Psychology,0.75,False,21,2.8357627391815186,openai:gpt-4o-mini
+Homework3.md,Ethics & Moral Philosophy,0.7,False,21,2.8357627391815186,openai:gpt-4o-mini
+Homework3.md,Existentialism,0.65,False,21,2.8357627391815186,openai:gpt-4o-mini
+The-Body-Keeps-the-Score_Bessel-van-Der-Kolk.md,Trauma & Healing,0.95,True,2602,2.3040521144866943,openai:gpt-4o-mini
+The-Body-Keeps-the-Score_Bessel-van-Der-Kolk.md,Psychology,0.85,False,2602,2.3040521144866943,openai:gpt-4o-mini
+The-Body-Keeps-the-Score_Bessel-van-Der-Kolk.md,Applied Anthropology,0.75,False,2602,2.3040521144866943,openai:gpt-4o-mini
+The-Body-Keeps-the-Score_Bessel-van-Der-Kolk.md,Meditation & Mindfulness,0.7,False,2602,2.3040521144866943,openai:gpt-4o-mini
+The-Body-Keeps-the-Score_Bessel-van-Der-Kolk.md,Cultural Studies,0.65,False,2602,2.3040521144866943,openai:gpt-4o-mini
+GaiaHouseJuly18.md,Secular Dharma/Buddhism,0.95,True,34,3.2958195209503174,openai:gpt-4o-mini
+GaiaHouseJuly18.md,Philosophy of Mind,0.85,False,34,3.2958195209503174,openai:gpt-4o-mini
+GaiaHouseJuly18.md,Human Behavioral Biology,0.7,False,34,3.2958195209503174,openai:gpt-4o-mini
+GaiaHouseJuly18.md,Cultural Anthropology,0.65,False,34,3.2958195209503174,openai:gpt-4o-mini
+GaiaHouseJuly18.md,Ethics & Moral Philosophy,0.6,False,34,3.2958195209503174,openai:gpt-4o-mini
+02.00-chapter.md,Cultural Anthropology,0.95,True,8,2.5080175399780273,openai:gpt-4o-mini
+02.00-chapter.md,Political Anthropology,0.85,False,8,2.5080175399780273,openai:gpt-4o-mini
+02.00-chapter.md,Human Behavioral Biology,0.7,False,8,2.5080175399780273,openai:gpt-4o-mini
+02.00-chapter.md,Ethics & Moral Philosophy,0.65,False,8,2.5080175399780273,openai:gpt-4o-mini
+02.00-chapter.md,History & Civilization Studies,0.6,False,8,2.5080175399780273,openai:gpt-4o-mini
+SD_homework_ight_speech.md,Ethics & Moral Philosophy,0.95,True,22,2.6846323013305664,openai:gpt-4o-mini
+SD_homework_ight_speech.md,Cultural Anthropology,0.85,False,22,2.6846323013305664,openai:gpt-4o-mini
+SD_homework_ight_speech.md,Secular Dharma/Buddhism,0.8,False,22,2.6846323013305664,openai:gpt-4o-mini
+SD_homework_ight_speech.md,Communication Studies,0.7,False,22,2.6846323013305664,openai:gpt-4o-mini
+SD_homework_ight_speech.md,Human Behavioral Biology,0.65,False,22,2.6846323013305664,openai:gpt-4o-mini
+machines-of-loving-grace.md,Human Behavioral Biology,0.85,True,309,3.0036051273345947,openai:gpt-4o-mini
+machines-of-loving-grace.md,Neuroscience & Brain Science,0.8,False,309,3.0036051273345947,openai:gpt-4o-mini
+machines-of-loving-grace.md,Cultural Anthropology,0.7,False,309,3.0036051273345947,openai:gpt-4o-mini
+machines-of-loving-grace.md,Philosophy of Mind,0.65,False,309,3.0036051273345947,openai:gpt-4o-mini
+machines-of-loving-grace.md,Existentialism,0.6,False,309,3.0036051273345947,openai:gpt-4o-mini
+03.00-chapter.md,Human Behavioral Biology,0.85,True,7,2.6157171726226807,openai:gpt-4o-mini
+03.00-chapter.md,Evolutionary Biology,0.8,False,7,2.6157171726226807,openai:gpt-4o-mini
+03.00-chapter.md,Applied Anthropology,0.75,False,7,2.6157171726226807,openai:gpt-4o-mini
+03.00-chapter.md,Cultural Anthropology,0.7,False,7,2.6157171726226807,openai:gpt-4o-mini
+03.00-chapter.md,Philosophical Anthropology,0.65,False,7,2.6157171726226807,openai:gpt-4o-mini
+03.01-chapter.md,Anthropology,0.85,True,6,2.331051826477051,openai:gpt-4o-mini
+03.01-chapter.md,Sociology,0.8,False,6,2.331051826477051,openai:gpt-4o-mini
+03.01-chapter.md,Human Behavioral Biology,0.75,False,6,2.331051826477051,openai:gpt-4o-mini
+03.01-chapter.md,Cultural Anthropology,0.7,False,6,2.331051826477051,openai:gpt-4o-mini
+03.01-chapter.md,Political Anthropology,0.65,False,6,2.331051826477051,openai:gpt-4o-mini
+nicholas-a-christakis_blueprint_the-evolutionary-origins-of-a-good-society.md,Human Behavioral Biology,0.85,True,2556,2.4043145179748535,openai:gpt-4o-mini
+nicholas-a-christakis_blueprint_the-evolutionary-origins-of-a-good-society.md,Cultural Anthropology,0.75,False,2556,2.4043145179748535,openai:gpt-4o-mini
+nicholas-a-christakis_blueprint_the-evolutionary-origins-of-a-good-society.md,Evolutionary Biology,0.7,False,2556,2.4043145179748535,openai:gpt-4o-mini
+nicholas-a-christakis_blueprint_the-evolutionary-origins-of-a-good-society.md,Sociology,0.65,False,2556,2.4043145179748535,openai:gpt-4o-mini
+nicholas-a-christakis_blueprint_the-evolutionary-origins-of-a-good-society.md,Psychology,0.6,False,2556,2.4043145179748535,openai:gpt-4o-mini
+Secular_Buddhism.md,Secular Dharma/Buddhism,0.95,True,1298,2.760160207748413,openai:gpt-4o-mini
+Secular_Buddhism.md,Philosophy of Mind,0.8,False,1298,2.760160207748413,openai:gpt-4o-mini
+Secular_Buddhism.md,Existentialism,0.75,False,1298,2.760160207748413,openai:gpt-4o-mini
+Secular_Buddhism.md,Cultural Anthropology,0.65,False,1298,2.760160207748413,openai:gpt-4o-mini
+Secular_Buddhism.md,Ethics & Moral Philosophy,0.6,False,1298,2.760160207748413,openai:gpt-4o-mini
+Body_Keeps_Score.md,Trauma & Healing,0.95,True,2529,2.2559001445770264,openai:gpt-4o-mini
+Body_Keeps_Score.md,Psychology,0.85,False,2529,2.2559001445770264,openai:gpt-4o-mini
+Body_Keeps_Score.md,Human Behavioral Biology,0.75,False,2529,2.2559001445770264,openai:gpt-4o-mini
+Body_Keeps_Score.md,Cultural Anthropology,0.65,False,2529,2.2559001445770264,openai:gpt-4o-mini
+Body_Keeps_Score.md,Social Justice & Activism,0.55,False,2529,2.2559001445770264,openai:gpt-4o-mini
+A Worldly Eightfold Path.txt,Secular Dharma/Buddhism,0.95,True,167,2.263838768005371,openai:gpt-4o-mini
+A Worldly Eightfold Path.txt,Ethics & Moral Philosophy,0.85,False,167,2.263838768005371,openai:gpt-4o-mini
+A Worldly Eightfold Path.txt,Philosophical Anthropology,0.75,False,167,2.263838768005371,openai:gpt-4o-mini
+A Worldly Eightfold Path.txt,Mindfulness-Based Ethical Living,0.7,False,167,2.263838768005371,openai:gpt-4o-mini
+A Worldly Eightfold Path.txt,Political Anthropology,0.65,False,167,2.263838768005371,openai:gpt-4o-mini
+Christopher-Boehm_Hierarchy-in-the-Forest_The-Evolution-of-Egalitarian-Behavior_HarvardUP-1999.md,Human Behavioral Biology,0.85,True,2547,2.2521841526031494,openai:gpt-4o-mini
+Christopher-Boehm_Hierarchy-in-the-Forest_The-Evolution-of-Egalitarian-Behavior_HarvardUP-1999.md,Evolutionary Biology,0.8,False,2547,2.2521841526031494,openai:gpt-4o-mini
+Christopher-Boehm_Hierarchy-in-the-Forest_The-Evolution-of-Egalitarian-Behavior_HarvardUP-1999.md,Primatology,0.75,False,2547,2.2521841526031494,openai:gpt-4o-mini
+Christopher-Boehm_Hierarchy-in-the-Forest_The-Evolution-of-Egalitarian-Behavior_HarvardUP-1999.md,Cultural Anthropology,0.7,False,2547,2.2521841526031494,openai:gpt-4o-mini
+Christopher-Boehm_Hierarchy-in-the-Forest_The-Evolution-of-Egalitarian-Behavior_HarvardUP-1999.md,Psychology,0.65,False,2547,2.2521841526031494,openai:gpt-4o-mini
+04.00-chapter.md,Cultural Anthropology,0.95,True,9,2.9364354610443115,openai:gpt-4o-mini
+04.00-chapter.md,Human Behavioral Biology,0.85,False,9,2.9364354610443115,openai:gpt-4o-mini
+04.00-chapter.md,Evolutionary Biology,0.75,False,9,2.9364354610443115,openai:gpt-4o-mini
+04.00-chapter.md,Sociology,0.7,False,9,2.9364354610443115,openai:gpt-4o-mini
+04.00-chapter.md,Archaeology,0.65,False,9,2.9364354610443115,openai:gpt-4o-mini
+04.01-chapter.md,Human Behavioral Biology,0.85,False,6,2.54457688331604,openai:gpt-4o-mini
+04.01-chapter.md,Cultural Anthropology,0.8,True,6,2.54457688331604,openai:gpt-4o-mini
+04.01-chapter.md,Archaeology,0.75,False,6,2.54457688331604,openai:gpt-4o-mini
+04.01-chapter.md,Evolutionary Biology,0.7,False,6,2.54457688331604,openai:gpt-4o-mini
+04.01-chapter.md,Political Anthropology,0.65,False,6,2.54457688331604,openai:gpt-4o-mini
+After-Buddhism.md,Secular Dharma/Buddhism,0.95,True,2017,2.8151512145996094,openai:gpt-4o-mini
+After-Buddhism.md,Philosophical Anthropology,0.75,False,2017,2.8151512145996094,openai:gpt-4o-mini
+After-Buddhism.md,Ethics & Moral Philosophy,0.65,False,2017,2.8151512145996094,openai:gpt-4o-mini
+After-Buddhism.md,Human Behavioral Biology,0.55,False,2017,2.8151512145996094,openai:gpt-4o-mini
+After-Buddhism.md,Cultural Anthropology,0.5,False,2017,2.8151512145996094,openai:gpt-4o-mini
+00-preface.md,Human Behavioral Biology,0.85,True,6,2.6714532375335693,openai:gpt-4o-mini
+00-preface.md,Evolutionary Biology,0.8,False,6,2.6714532375335693,openai:gpt-4o-mini
+00-preface.md,Cultural Anthropology,0.75,False,6,2.6714532375335693,openai:gpt-4o-mini
+00-preface.md,Political Anthropology,0.7,False,6,2.6714532375335693,openai:gpt-4o-mini
+00-preface.md,Sociology,0.65,False,6,2.6714532375335693,openai:gpt-4o-mini
+After_Buddhism-a_workbook.md,Secular Dharma/Buddhism,0.95,True,542,2.2795584201812744,openai:gpt-4o-mini
+After_Buddhism-a_workbook.md,Cultural Anthropology,0.8,False,542,2.2795584201812744,openai:gpt-4o-mini
+After_Buddhism-a_workbook.md,Human Behavioral Biology,0.7,False,542,2.2795584201812744,openai:gpt-4o-mini
+After_Buddhism-a_workbook.md,Philosophy of Mind,0.65,False,542,2.2795584201812744,openai:gpt-4o-mini
+After_Buddhism-a_workbook.md,Meditation & Mindfulness,0.6,False,542,2.2795584201812744,openai:gpt-4o-mini
+05.00-chapter.md,Cultural Anthropology,0.95,True,8,2.3779735565185547,openai:gpt-4o-mini
+05.00-chapter.md,Evolutionary Sociology,0.85,False,8,2.3779735565185547,openai:gpt-4o-mini
+05.00-chapter.md,Human Behavioral Biology,0.75,False,8,2.3779735565185547,openai:gpt-4o-mini
+05.00-chapter.md,Political Anthropology,0.7,False,8,2.3779735565185547,openai:gpt-4o-mini
+05.00-chapter.md,Ethics & Moral Philosophy,0.65,False,8,2.3779735565185547,openai:gpt-4o-mini
+01-chapter.md,Evolutionary Biology,0.95,True,5,2.288539409637451,openai:gpt-4o-mini
+01-chapter.md,Human Behavioral Biology,0.85,False,5,2.288539409637451,openai:gpt-4o-mini
+01-chapter.md,Cultural Anthropology,0.75,False,5,2.288539409637451,openai:gpt-4o-mini
+01-chapter.md,Sociology,0.7,False,5,2.288539409637451,openai:gpt-4o-mini
+01-chapter.md,Ethics & Moral Philosophy,0.65,False,5,2.288539409637451,openai:gpt-4o-mini
+After_Buddhism_and_Beyond.md,Secular Dharma/Buddhism,0.95,True,812,2.532240390777588,openai:gpt-4o-mini
+After_Buddhism_and_Beyond.md,Human Behavioral Biology,0.85,False,812,2.532240390777588,openai:gpt-4o-mini
+After_Buddhism_and_Beyond.md,Philosophy of Mind,0.75,False,812,2.532240390777588,openai:gpt-4o-mini
+After_Buddhism_and_Beyond.md,Ethics & Moral Philosophy,0.7,False,812,2.532240390777588,openai:gpt-4o-mini
+After_Buddhism_and_Beyond.md,Cultural Anthropology,0.65,False,812,2.532240390777588,openai:gpt-4o-mini
+02-chapter.md,Evolutionary Biology,0.95,True,6,2.4842751026153564,openai:gpt-4o-mini
+02-chapter.md,Primatology,0.9,False,6,2.4842751026153564,openai:gpt-4o-mini
+02-chapter.md,Human Behavioral Biology,0.85,False,6,2.4842751026153564,openai:gpt-4o-mini
+02-chapter.md,Cultural Anthropology,0.7,False,6,2.4842751026153564,openai:gpt-4o-mini
+02-chapter.md,Psychology,0.65,False,6,2.4842751026153564,openai:gpt-4o-mini
+05.01-chapter.md,Cultural Anthropology,0.95,True,7,2.7479774951934814,openai:gpt-4o-mini
+05.01-chapter.md,Political Anthropology,0.85,False,7,2.7479774951934814,openai:gpt-4o-mini
+05.01-chapter.md,Human Behavioral Biology,0.75,False,7,2.7479774951934814,openai:gpt-4o-mini
+05.01-chapter.md,Ethics & Moral Philosophy,0.7,False,7,2.7479774951934814,openai:gpt-4o-mini
+05.01-chapter.md,Evolutionary Sociology,0.65,False,7,2.7479774951934814,openai:gpt-4o-mini
+Art_of_Solitude.md,Philosophy of Mind,0.85,True,603,2.347567319869995,openai:gpt-4o-mini
+Art_of_Solitude.md,Meditation & Mindfulness,0.8,False,603,2.347567319869995,openai:gpt-4o-mini
+Art_of_Solitude.md,Existentialism,0.75,False,603,2.347567319869995,openai:gpt-4o-mini
+Art_of_Solitude.md,Cultural Studies,0.7,False,603,2.347567319869995,openai:gpt-4o-mini
+Art_of_Solitude.md,Human Behavioral Biology,0.65,False,603,2.347567319869995,openai:gpt-4o-mini
+06.00-chapter.md,Cultural Anthropology,0.85,True,9,2.5522074699401855,openai:gpt-4o-mini
+06.00-chapter.md,Archaeology,0.8,False,9,2.5522074699401855,openai:gpt-4o-mini
+06.00-chapter.md,Human Behavioral Biology,0.7,False,9,2.5522074699401855,openai:gpt-4o-mini
+06.00-chapter.md,Evolutionary Sociology,0.65,False,9,2.5522074699401855,openai:gpt-4o-mini
+06.00-chapter.md,Ecology & Environmental Science,0.6,False,9,2.5522074699401855,openai:gpt-4o-mini
+Interview_with_Stephen_Batchelor_on_Mindfulness_Based_Ethical_Living_MBEL.txt,Mindfulness-Based Ethical Living,0.95,True,86,2.371922492980957,openai:gpt-4o-mini
+Interview_with_Stephen_Batchelor_on_Mindfulness_Based_Ethical_Living_MBEL.txt,Secular Dharma/Buddhism,0.85,False,86,2.371922492980957,openai:gpt-4o-mini
+Interview_with_Stephen_Batchelor_on_Mindfulness_Based_Ethical_Living_MBEL.txt,Human Behavioral Biology,0.75,False,86,2.371922492980957,openai:gpt-4o-mini
+Interview_with_Stephen_Batchelor_on_Mindfulness_Based_Ethical_Living_MBEL.txt,Ethics & Moral Philosophy,0.7,False,86,2.371922492980957,openai:gpt-4o-mini
+Interview_with_Stephen_Batchelor_on_Mindfulness_Based_Ethical_Living_MBEL.txt,Cultural Anthropology,0.65,False,86,2.371922492980957,openai:gpt-4o-mini
+04-chapter.md,Evolutionary Sociology,0.95,True,7,2.095712423324585,openai:gpt-4o-mini
+04-chapter.md,Cultural Evolution Studies,0.85,False,7,2.095712423324585,openai:gpt-4o-mini
+04-chapter.md,Human Behavioral Biology,0.75,False,7,2.095712423324585,openai:gpt-4o-mini
+04-chapter.md,Applied Anthropology,0.7,False,7,2.095712423324585,openai:gpt-4o-mini
+04-chapter.md,Social Organization Dynamics,0.65,False,7,2.095712423324585,openai:gpt-4o-mini
+03-chapter.md,Evolutionary Biology,0.95,True,7,3.3837852478027344,openai:gpt-4o-mini
+03-chapter.md,Cultural Anthropology,0.85,False,7,3.3837852478027344,openai:gpt-4o-mini
+03-chapter.md,Human Behavioral Biology,0.8,False,7,3.3837852478027344,openai:gpt-4o-mini
+03-chapter.md,Sociology,0.75,False,7,3.3837852478027344,openai:gpt-4o-mini
+03-chapter.md,Ethics & Moral Philosophy,0.7,False,7,3.3837852478027344,openai:gpt-4o-mini
+MBEL.md,Mindfulness-Based Ethical Living,0.95,True,180,2.4639346599578857,openai:gpt-4o-mini
+MBEL.md,Secular Dharma/Buddhism,0.85,False,180,2.4639346599578857,openai:gpt-4o-mini
+MBEL.md,Human Behavioral Biology,0.7,False,180,2.4639346599578857,openai:gpt-4o-mini
+MBEL.md,Cultural Anthropology,0.65,False,180,2.4639346599578857,openai:gpt-4o-mini
+MBEL.md,Community & Social Capital,0.6,False,180,2.4639346599578857,openai:gpt-4o-mini
+06.01-chapter.md,Evolutionary Biology,0.95,True,5,2.660525321960449,openai:gpt-4o-mini
+06.01-chapter.md,Cultural Anthropology,0.85,False,5,2.660525321960449,openai:gpt-4o-mini
+06.01-chapter.md,Human Behavioral Biology,0.75,False,5,2.660525321960449,openai:gpt-4o-mini
+06.01-chapter.md,Sociology,0.7,False,5,2.660525321960449,openai:gpt-4o-mini
+06.01-chapter.md,Ethics & Moral Philosophy,0.65,False,5,2.660525321960449,openai:gpt-4o-mini
+On-Being-Alone.txt,Philosophy of Mind,0.85,True,117,2.407522439956665,openai:gpt-4o-mini
+On-Being-Alone.txt,Meditation & Mindfulness,0.8,False,117,2.407522439956665,openai:gpt-4o-mini
+On-Being-Alone.txt,Existentialism,0.75,False,117,2.407522439956665,openai:gpt-4o-mini
+On-Being-Alone.txt,Ethics & Moral Philosophy,0.7,False,117,2.407522439956665,openai:gpt-4o-mini
+On-Being-Alone.txt,Cultural Studies,0.65,False,117,2.407522439956665,openai:gpt-4o-mini
+07.00-chapter.md,Ecology & Environmental Science,0.95,True,10,2.771676540374756,openai:gpt-4o-mini
+07.00-chapter.md,Evolutionary Biology,0.85,False,10,2.771676540374756,openai:gpt-4o-mini
+07.00-chapter.md,Applied Anthropology,0.8,False,10,2.771676540374756,openai:gpt-4o-mini
+07.00-chapter.md,Cultural Anthropology,0.75,False,10,2.771676540374756,openai:gpt-4o-mini
+07.00-chapter.md,Archaeology,0.7,False,10,2.771676540374756,openai:gpt-4o-mini
+08.00-chapter.md,Archaeology,0.95,True,7,2.363778591156006,openai:gpt-4o-mini
+08.00-chapter.md,Cultural Anthropology,0.85,False,7,2.363778591156006,openai:gpt-4o-mini
+08.00-chapter.md,Human Behavioral Biology,0.75,False,7,2.363778591156006,openai:gpt-4o-mini
+08.00-chapter.md,Evolutionary Sociology,0.7,False,7,2.363778591156006,openai:gpt-4o-mini
+08.00-chapter.md,Political Anthropology,0.65,False,7,2.363778591156006,openai:gpt-4o-mini
+06-chapter.md,Evolutionary Biology,0.95,True,5,2.7751283645629883,openai:gpt-4o-mini
+06-chapter.md,Human Behavioral Biology,0.85,False,5,2.7751283645629883,openai:gpt-4o-mini
+06-chapter.md,Cultural Anthropology,0.75,False,5,2.7751283645629883,openai:gpt-4o-mini
+06-chapter.md,Political Anthropology,0.7,False,5,2.7751283645629883,openai:gpt-4o-mini
+06-chapter.md,Sociology,0.65,False,5,2.7751283645629883,openai:gpt-4o-mini
+05-chapter.md,Evolutionary Sociology,0.95,True,6,3.623316764831543,openai:gpt-4o-mini
+05-chapter.md,Cultural Anthropology,0.85,False,6,3.623316764831543,openai:gpt-4o-mini
+05-chapter.md,Human Behavioral Biology,0.8,False,6,3.623316764831543,openai:gpt-4o-mini
+05-chapter.md,Ethics & Moral Philosophy,0.7,False,6,3.623316764831543,openai:gpt-4o-mini
+05-chapter.md,Political Anthropology,0.65,False,6,3.623316764831543,openai:gpt-4o-mini
+08.01-chapter.md,Archaeology,0.95,True,6,2.076105833053589,openai:gpt-4o-mini
+08.01-chapter.md,Cultural Anthropology,0.85,False,6,2.076105833053589,openai:gpt-4o-mini
+08.01-chapter.md,Political Anthropology,0.75,False,6,2.076105833053589,openai:gpt-4o-mini
+08.01-chapter.md,Evolutionary Sociology,0.7,False,6,2.076105833053589,openai:gpt-4o-mini
+08.01-chapter.md,Human Behavioral Biology,0.65,False,6,2.076105833053589,openai:gpt-4o-mini
+SIM_retreat.txt,Secular Dharma/Buddhism,0.85,True,2375,2.3245205879211426,openai:gpt-4o-mini
+SIM_retreat.txt,Ethics & Moral Philosophy,0.8,False,2375,2.3245205879211426,openai:gpt-4o-mini
+SIM_retreat.txt,Human Behavioral Biology,0.65,False,2375,2.3245205879211426,openai:gpt-4o-mini
+SIM_retreat.txt,Applied Anthropology,0.6,False,2375,2.3245205879211426,openai:gpt-4o-mini
+SIM_retreat.txt,Mindfulness Practices in Modern Society,0.55,False,2375,2.3245205879211426,openai:gpt-4o-mini
+10.00-chapter.md,Political Anthropology,0.85,True,7,2.094773769378662,openai:gpt-4o-mini
+10.00-chapter.md,Sociology,0.75,False,7,2.094773769378662,openai:gpt-4o-mini
+10.00-chapter.md,Evolutionary Sociology,0.7,False,7,2.094773769378662,openai:gpt-4o-mini
+10.00-chapter.md,Cultural Anthropology,0.65,False,7,2.094773769378662,openai:gpt-4o-mini
+10.00-chapter.md,History & Civilization Studies,0.6,False,7,2.094773769378662,openai:gpt-4o-mini
+09.00-chapter.md,Cultural Anthropology,0.95,True,6,2.844151735305786,openai:gpt-4o-mini
+09.00-chapter.md,Political Anthropology,0.85,False,6,2.844151735305786,openai:gpt-4o-mini
+09.00-chapter.md,History & Civilization Studies,0.8,False,6,2.844151735305786,openai:gpt-4o-mini
+09.00-chapter.md,Evolutionary Sociology,0.7,False,6,2.844151735305786,openai:gpt-4o-mini
+09.00-chapter.md,Egalitarianism Studies,0.65,False,6,2.844151735305786,openai:gpt-4o-mini
+abb-2-1-parable-of-snake-21747.md,Secular Dharma/Buddhism,0.9,True,22,2.3793911933898926,openai:gpt-4o-mini
+abb-2-1-parable-of-snake-21747.md,Human Behavioral Biology,0.85,False,22,2.3793911933898926,openai:gpt-4o-mini
+abb-2-1-parable-of-snake-21747.md,Ethics & Moral Philosophy,0.8,False,22,2.3793911933898926,openai:gpt-4o-mini
+abb-2-1-parable-of-snake-21747.md,Cultural Anthropology,0.75,False,22,2.3793911933898926,openai:gpt-4o-mini
+abb-2-1-parable-of-snake-21747.md,Philosophy of Mind,0.65,False,22,2.3793911933898926,openai:gpt-4o-mini
+07-chapter.md,Evolutionary Biology,0.95,True,6,3.3874619007110596,openai:gpt-4o-mini
+07-chapter.md,Human Behavioral Biology,0.85,False,6,3.3874619007110596,openai:gpt-4o-mini
+07-chapter.md,Primatology,0.8,False,6,3.3874619007110596,openai:gpt-4o-mini
+07-chapter.md,Cultural Anthropology,0.7,False,6,3.3874619007110596,openai:gpt-4o-mini
+07-chapter.md,Sociology,0.65,False,6,3.3874619007110596,openai:gpt-4o-mini
+08-chapter.md,Evolutionary Biology,0.95,True,6,2.5760345458984375,openai:gpt-4o-mini
+08-chapter.md,Human Behavioral Biology,0.85,False,6,2.5760345458984375,openai:gpt-4o-mini
+08-chapter.md,Cultural Anthropology,0.75,False,6,2.5760345458984375,openai:gpt-4o-mini
+08-chapter.md,Primatology,0.7,False,6,2.5760345458984375,openai:gpt-4o-mini
+08-chapter.md,Sociology,0.65,False,6,2.5760345458984375,openai:gpt-4o-mini
+a-worldly-eightfold-path-30211.md,Secular Dharma/Buddhism,0.95,True,144,3.1417245864868164,openai:gpt-4o-mini
+a-worldly-eightfold-path-30211.md,Ethics & Moral Philosophy,0.85,False,144,3.1417245864868164,openai:gpt-4o-mini
+a-worldly-eightfold-path-30211.md,Cultural Anthropology,0.7,False,144,3.1417245864868164,openai:gpt-4o-mini
+a-worldly-eightfold-path-30211.md,Human Behavioral Biology,0.65,False,144,3.1417245864868164,openai:gpt-4o-mini
+a-worldly-eightfold-path-30211.md,Political Anthropology,0.6,False,144,3.1417245864868164,openai:gpt-4o-mini
+09-chapter.md,Evolutionary Biology,0.95,True,6,2.41383695602417,openai:gpt-4o-mini
+09-chapter.md,Human Behavioral Biology,0.85,False,6,2.41383695602417,openai:gpt-4o-mini
+09-chapter.md,Cultural Anthropology,0.75,False,6,2.41383695602417,openai:gpt-4o-mini
+09-chapter.md,Psychology,0.65,False,6,2.41383695602417,openai:gpt-4o-mini
+09-chapter.md,Ethics & Moral Philosophy,0.6,False,6,2.41383695602417,openai:gpt-4o-mini
+11.01-chapter.md,Political Anthropology,0.95,True,7,2.1231014728546143,openai:gpt-4o-mini
+11.01-chapter.md,Cultural Anthropology,0.85,False,7,2.1231014728546143,openai:gpt-4o-mini
+11.01-chapter.md,History & Civilization Studies,0.75,False,7,2.1231014728546143,openai:gpt-4o-mini
+11.01-chapter.md,Human Behavioral Biology,0.65,False,7,2.1231014728546143,openai:gpt-4o-mini
+11.01-chapter.md,Evolutionary Sociology,0.6,False,7,2.1231014728546143,openai:gpt-4o-mini
+99-summary_gpt-4o-mini.md,Evolutionary Biology,0.95,True,7,2.2994401454925537,openai:gpt-4o-mini
+99-summary_gpt-4o-mini.md,Human Behavioral Biology,0.85,False,7,2.2994401454925537,openai:gpt-4o-mini
+99-summary_gpt-4o-mini.md,Cultural Anthropology,0.75,False,7,2.2994401454925537,openai:gpt-4o-mini
+99-summary_gpt-4o-mini.md,Political Anthropology,0.7,False,7,2.2994401454925537,openai:gpt-4o-mini
+99-summary_gpt-4o-mini.md,Sociology,0.65,False,7,2.2994401454925537,openai:gpt-4o-mini
+11.00-chapter.md,Cultural Anthropology,0.95,True,7,2.7975809574127197,openai:gpt-4o-mini
+11.00-chapter.md,Political Anthropology,0.85,False,7,2.7975809574127197,openai:gpt-4o-mini
+11.00-chapter.md,Evolutionary Sociology,0.75,False,7,2.7975809574127197,openai:gpt-4o-mini
+11.00-chapter.md,Critique of Eurocentrism,0.7,False,7,2.7975809574127197,openai:gpt-4o-mini
+11.00-chapter.md,Indigenous Governance Studies,0.65,False,7,2.7975809574127197,openai:gpt-4o-mini
+10-chapter.md,Evolutionary Sociology,0.95,True,7,4.066139459609985,openai:gpt-4o-mini
+10-chapter.md,Human Behavioral Biology,0.85,False,7,4.066139459609985,openai:gpt-4o-mini
+10-chapter.md,Political Anthropology,0.8,False,7,4.066139459609985,openai:gpt-4o-mini
+10-chapter.md,Ethics & Moral Philosophy,0.75,False,7,4.066139459609985,openai:gpt-4o-mini
+10-chapter.md,Cultural Anthropology,0.7,False,7,4.066139459609985,openai:gpt-4o-mini
+Civilisations.txt,History & Civilization Studies,0.85,True,4890,3.245281219482422,openai:gpt-4o-mini
+Civilisations.txt,Cultural Anthropology,0.75,False,4890,3.245281219482422,openai:gpt-4o-mini
+Civilisations.txt,Human Behavioral Biology,0.65,False,4890,3.245281219482422,openai:gpt-4o-mini
+Civilisations.txt,Evolutionary Biology,0.6,False,4890,3.245281219482422,openai:gpt-4o-mini
+Civilisations.txt,Cultural Studies,0.55,False,4890,3.245281219482422,openai:gpt-4o-mini
+abb-2-4-four-paths-29034.md,Secular Dharma/Buddhism,0.95,True,93,3.5589215755462646,openai:gpt-4o-mini
+abb-2-4-four-paths-29034.md,Human Behavioral Biology,0.85,False,93,3.5589215755462646,openai:gpt-4o-mini
+abb-2-4-four-paths-29034.md,Existentialism,0.75,False,93,3.5589215755462646,openai:gpt-4o-mini
+abb-2-4-four-paths-29034.md,Philosophy of Mind,0.65,False,93,3.5589215755462646,openai:gpt-4o-mini
+abb-2-4-four-paths-29034.md,Ethics & Moral Philosophy,0.6,False,93,3.5589215755462646,openai:gpt-4o-mini
+abb-handout-2-1-22840.md,Secular Dharma/Buddhism,0.95,True,4,3.859057903289795,openai:gpt-4o-mini
+abb-handout-2-1-22840.md,Cultural Anthropology,0.85,False,4,3.859057903289795,openai:gpt-4o-mini
+abb-handout-2-1-22840.md,Ethics & Moral Philosophy,0.7,False,4,3.859057903289795,openai:gpt-4o-mini
+abb-handout-2-1-22840.md,Philosophical Anthropology,0.65,False,4,3.859057903289795,openai:gpt-4o-mini
+abb-handout-2-1-22840.md,Narrative Therapy,0.6,False,4,3.859057903289795,openai:gpt-4o-mini
+abb-module-2-21005.md,Secular Dharma/Buddhism,0.95,True,56,3.6576504707336426,openai:gpt-4o-mini
+abb-module-2-21005.md,Human Behavioral Biology,0.8,False,56,3.6576504707336426,openai:gpt-4o-mini
+abb-module-2-21005.md,Psychology,0.75,False,56,3.6576504707336426,openai:gpt-4o-mini
+abb-module-2-21005.md,Philosophy of Mind,0.7,False,56,3.6576504707336426,openai:gpt-4o-mini
+abb-module-2-21005.md,Ethics & Moral Philosophy,0.65,False,56,3.6576504707336426,openai:gpt-4o-mini
+10.02-chapter.md,Evolutionary Sociology,0.95,True,7,6.091175317764282,openai:gpt-4o-mini
+10.02-chapter.md,Political Anthropology,0.85,False,7,6.091175317764282,openai:gpt-4o-mini
+10.02-chapter.md,Cultural Anthropology,0.8,False,7,6.091175317764282,openai:gpt-4o-mini
+10.02-chapter.md,History & Civilization Studies,0.75,False,7,6.091175317764282,openai:gpt-4o-mini
+10.02-chapter.md,Ethics & Moral Philosophy,0.7,False,7,6.091175317764282,openai:gpt-4o-mini
+12.00-chapter.md,Human Behavioral Biology,0.85,False,7,2.834089756011963,openai:gpt-4o-mini
+12.00-chapter.md,Cultural Anthropology,0.8,True,7,2.834089756011963,openai:gpt-4o-mini
+12.00-chapter.md,Evolutionary Sociology,0.75,False,7,2.834089756011963,openai:gpt-4o-mini
+12.00-chapter.md,Political Anthropology,0.7,False,7,2.834089756011963,openai:gpt-4o-mini
+12.00-chapter.md,Ethics & Moral Philosophy,0.65,False,7,2.834089756011963,openai:gpt-4o-mini
+99.00-summary_gpt-4o-mini.md,Cultural Anthropology,0.95,True,8,2.3302361965179443,openai:gpt-4o-mini
+99.00-summary_gpt-4o-mini.md,Evolutionary Sociology,0.85,False,8,2.3302361965179443,openai:gpt-4o-mini
+99.00-summary_gpt-4o-mini.md,Human Behavioral Biology,0.75,False,8,2.3302361965179443,openai:gpt-4o-mini
+99.00-summary_gpt-4o-mini.md,Political Anthropology,0.7,False,8,2.3302361965179443,openai:gpt-4o-mini
+99.00-summary_gpt-4o-mini.md,History & Civilization Studies,0.65,False,8,2.3302361965179443,openai:gpt-4o-mini
+abb-workbook-2021-26388.md,Secular Dharma/Buddhism,0.95,True,254,2.6209044456481934,openai:gpt-4o-mini
+abb-workbook-2021-26388.md,Human Behavioral Biology,0.8,False,254,2.6209044456481934,openai:gpt-4o-mini
+abb-workbook-2021-26388.md,Philosophy of Mind,0.7,False,254,2.6209044456481934,openai:gpt-4o-mini
+abb-workbook-2021-26388.md,Ethics & Moral Philosophy,0.65,False,254,2.6209044456481934,openai:gpt-4o-mini
+abb-workbook-2021-26388.md,Mindfulness Practices in Modern Society,0.6,False,254,2.6209044456481934,openai:gpt-4o-mini
+Josephine-Quinn_How-the-World-Made-the-West_a-4000-Year-History.md,Cultural Anthropology,0.85,True,2314,2.3646891117095947,openai:gpt-4o-mini
+Josephine-Quinn_How-the-World-Made-the-West_a-4000-Year-History.md,Political Anthropology,0.75,False,2314,2.3646891117095947,openai:gpt-4o-mini
+Josephine-Quinn_How-the-World-Made-the-West_a-4000-Year-History.md,History & Civilization Studies,0.7,False,2314,2.3646891117095947,openai:gpt-4o-mini
+Josephine-Quinn_How-the-World-Made-the-West_a-4000-Year-History.md,Evolutionary Sociology,0.65,False,2314,2.3646891117095947,openai:gpt-4o-mini
+Josephine-Quinn_How-the-World-Made-the-West_a-4000-Year-History.md,Ethics & Moral Philosophy,0.6,False,2314,2.3646891117095947,openai:gpt-4o-mini
+all-poems-7230.md,Literature & Narrative Studies,0.95,True,49,2.3657386302948,openai:gpt-4o-mini
+all-poems-7230.md,Cultural Studies,0.85,False,49,2.3657386302948,openai:gpt-4o-mini
+all-poems-7230.md,Human Behavioral Biology,0.7,False,49,2.3657386302948,openai:gpt-4o-mini
+all-poems-7230.md,Philosophy of Mind,0.65,False,49,2.3657386302948,openai:gpt-4o-mini
+all-poems-7230.md,Meditation & Mindfulness,0.6,False,49,2.3657386302948,openai:gpt-4o-mini
+david-graeber-anarchism-academia-and-the-avant-garde.md,Philosophy of Mind,0.85,True,94,2.354440689086914,openai:gpt-4o-mini
+david-graeber-anarchism-academia-and-the-avant-garde.md,Cultural Studies,0.75,False,94,2.354440689086914,openai:gpt-4o-mini
+david-graeber-anarchism-academia-and-the-avant-garde.md,Political Anthropology,0.7,False,94,2.354440689086914,openai:gpt-4o-mini
+david-graeber-anarchism-academia-and-the-avant-garde.md,Sociology,0.65,False,94,2.354440689086914,openai:gpt-4o-mini
+david-graeber-anarchism-academia-and-the-avant-garde.md,Ethics & Moral Philosophy,0.6,False,94,2.354440689086914,openai:gpt-4o-mini
+Fall-of-Civilisations_The-Mongols_Terror-of-the-Steppe.md,History & Civilization Studies,0.95,True,760,4.087736368179321,openai:gpt-4o-mini
+Fall-of-Civilisations_The-Mongols_Terror-of-the-Steppe.md,Cultural Anthropology,0.85,False,760,4.087736368179321,openai:gpt-4o-mini
+Fall-of-Civilisations_The-Mongols_Terror-of-the-Steppe.md,Evolutionary Sociology,0.7,False,760,4.087736368179321,openai:gpt-4o-mini
+Fall-of-Civilisations_The-Mongols_Terror-of-the-Steppe.md,Human Behavioral Biology,0.65,False,760,4.087736368179321,openai:gpt-4o-mini
+Fall-of-Civilisations_The-Mongols_Terror-of-the-Steppe.md,Ethics & Moral Philosophy,0.6,False,760,4.087736368179321,openai:gpt-4o-mini
+abb-2-2-buddhanature-18365.md,Secular Dharma/Buddhism,0.95,True,58,7.8687965869903564,openai:gpt-4o-mini
+abb-2-2-buddhanature-18365.md,Ethics & Moral Philosophy,0.85,False,58,7.8687965869903564,openai:gpt-4o-mini
+abb-2-2-buddhanature-18365.md,Human Behavioral Biology,0.7,False,58,7.8687965869903564,openai:gpt-4o-mini
+abb-2-2-buddhanature-18365.md,Cultural Anthropology,0.65,False,58,7.8687965869903564,openai:gpt-4o-mini
+abb-2-2-buddhanature-18365.md,Philosophy of Mind,0.6,False,58,7.8687965869903564,openai:gpt-4o-mini
+dharma-through-painting-15026.md,Art & Aesthetics,0.85,True,35,2.155327796936035,openai:gpt-4o-mini
+dharma-through-painting-15026.md,Cultural Studies,0.75,False,35,2.155327796936035,openai:gpt-4o-mini
+dharma-through-painting-15026.md,Mindfulness Practices in Modern Society,0.65,False,35,2.155327796936035,openai:gpt-4o-mini
+dharma-through-painting-15026.md,Psychology,0.6,False,35,2.155327796936035,openai:gpt-4o-mini
+dharma-through-painting-15026.md,Existentialism,0.55,False,35,2.155327796936035,openai:gpt-4o-mini
+david-graeber-and-david-wengrow-hiding-in-plain-sight.md,Cultural Anthropology,0.85,True,69,2.5441207885742188,openai:gpt-4o-mini
+david-graeber-and-david-wengrow-hiding-in-plain-sight.md,Political Anthropology,0.8,False,69,2.5441207885742188,openai:gpt-4o-mini
+david-graeber-and-david-wengrow-hiding-in-plain-sight.md,History & Civilization Studies,0.75,False,69,2.5441207885742188,openai:gpt-4o-mini
+david-graeber-and-david-wengrow-hiding-in-plain-sight.md,Evolutionary Sociology,0.7,False,69,2.5441207885742188,openai:gpt-4o-mini
+david-graeber-and-david-wengrow-hiding-in-plain-sight.md,Ethics & Moral Philosophy,0.65,False,69,2.5441207885742188,openai:gpt-4o-mini
+why-civilizations-fail.md,Cultural Anthropology,0.95,True,26,2.530977725982666,openai:gpt-4o-mini
+why-civilizations-fail.md,History & Civilization Studies,0.85,False,26,2.530977725982666,openai:gpt-4o-mini
+why-civilizations-fail.md,Sociology,0.75,False,26,2.530977725982666,openai:gpt-4o-mini
+why-civilizations-fail.md,Political Anthropology,0.7,False,26,2.530977725982666,openai:gpt-4o-mini
+why-civilizations-fail.md,Human Behavioral Biology,0.65,False,26,2.530977725982666,openai:gpt-4o-mini
+planetary-phase-shift.md,Evolutionary Biology,0.85,True,14,3.301605224609375,openai:gpt-4o-mini
+planetary-phase-shift.md,Cultural Anthropology,0.75,False,14,3.301605224609375,openai:gpt-4o-mini
+planetary-phase-shift.md,Human Behavioral Biology,0.7,False,14,3.301605224609375,openai:gpt-4o-mini
+planetary-phase-shift.md,Ecology & Environmental Science,0.65,False,14,3.301605224609375,openai:gpt-4o-mini
+planetary-phase-shift.md,Technology & AI Ethics,0.6,False,14,3.301605224609375,openai:gpt-4o-mini
+dharmic-existentialist-ethics-in-a-time-of-pandemic-von-ramsey-margolis-15732.md,Existentialism,0.85,True,38,2.7573063373565674,openai:gpt-4o-mini
+dharmic-existentialist-ethics-in-a-time-of-pandemic-von-ramsey-margolis-15732.md,Ethics & Moral Philosophy,0.8,False,38,2.7573063373565674,openai:gpt-4o-mini
+dharmic-existentialist-ethics-in-a-time-of-pandemic-von-ramsey-margolis-15732.md,Cultural Anthropology,0.7,False,38,2.7573063373565674,openai:gpt-4o-mini
+dharmic-existentialist-ethics-in-a-time-of-pandemic-von-ramsey-margolis-15732.md,Human Behavioral Biology,0.65,False,38,2.7573063373565674,openai:gpt-4o-mini
+dharmic-existentialist-ethics-in-a-time-of-pandemic-von-ramsey-margolis-15732.md,Religious Studies,0.6,False,38,2.7573063373565674,openai:gpt-4o-mini
+david-graeber-and-david-wengrow-unfreezing-the-ice-age.md,Evolutionary Sociology,0.85,True,96,2.5518317222595215,openai:gpt-4o-mini
+david-graeber-and-david-wengrow-unfreezing-the-ice-age.md,Cultural Anthropology,0.8,False,96,2.5518317222595215,openai:gpt-4o-mini
+david-graeber-and-david-wengrow-unfreezing-the-ice-age.md,Political Anthropology,0.75,False,96,2.5518317222595215,openai:gpt-4o-mini
+david-graeber-and-david-wengrow-unfreezing-the-ice-age.md,Human Behavioral Biology,0.7,False,96,2.5518317222595215,openai:gpt-4o-mini
+david-graeber-and-david-wengrow-unfreezing-the-ice-age.md,History & Civilization Studies,0.65,False,96,2.5518317222595215,openai:gpt-4o-mini
+Kevin-Roberts_Dawns-Early-Light.md,Cultural Anthropology,0.85,True,1668,2.535959482192993,openai:gpt-4o-mini
+Kevin-Roberts_Dawns-Early-Light.md,Sociology,0.75,False,1668,2.535959482192993,openai:gpt-4o-mini
+Kevin-Roberts_Dawns-Early-Light.md,Political Anthropology,0.65,False,1668,2.535959482192993,openai:gpt-4o-mini
+Kevin-Roberts_Dawns-Early-Light.md,Human Behavioral Biology,0.55,False,1668,2.535959482192993,openai:gpt-4o-mini
+Kevin-Roberts_Dawns-Early-Light.md,Ethics & Moral Philosophy,0.45,False,1668,2.535959482192993,openai:gpt-4o-mini
+this_view_of_life.md,Human Behavioral Biology,0.95,True,1342,2.9358067512512207,openai:gpt-4o-mini
+this_view_of_life.md,Evolutionary Biology,0.85,False,1342,2.9358067512512207,openai:gpt-4o-mini
+this_view_of_life.md,Cultural Anthropology,0.75,False,1342,2.9358067512512207,openai:gpt-4o-mini
+this_view_of_life.md,Philosophy of Mind,0.65,False,1342,2.9358067512512207,openai:gpt-4o-mini
+this_view_of_life.md,Ethics & Moral Philosophy,0.6,False,1342,2.9358067512512207,openai:gpt-4o-mini
+david-graeber-anthropology-and-the-rise-of-the-professional-managerial-class.md,Cultural Critique in Philosophy,0.85,True,131,2.8239831924438477,openai:gpt-4o-mini
+david-graeber-anthropology-and-the-rise-of-the-professional-managerial-class.md,Sociology,0.75,False,131,2.8239831924438477,openai:gpt-4o-mini
+david-graeber-anthropology-and-the-rise-of-the-professional-managerial-class.md,Political Anthropology,0.7,False,131,2.8239831924438477,openai:gpt-4o-mini
+david-graeber-anthropology-and-the-rise-of-the-professional-managerial-class.md,Evolutionary Sociology,0.65,False,131,2.8239831924438477,openai:gpt-4o-mini
+david-graeber-anthropology-and-the-rise-of-the-professional-managerial-class.md,Cultural Studies,0.6,False,131,2.8239831924438477,openai:gpt-4o-mini
+gaia-house-july-18-17260.md,Secular Dharma/Buddhism,0.95,True,34,3.013038158416748,openai:gpt-4o-mini
+gaia-house-july-18-17260.md,Philosophy of Mind,0.85,False,34,3.013038158416748,openai:gpt-4o-mini
+gaia-house-july-18-17260.md,Ethics & Moral Philosophy,0.75,False,34,3.013038158416748,openai:gpt-4o-mini
+gaia-house-july-18-17260.md,Cultural Anthropology,0.65,False,34,3.013038158416748,openai:gpt-4o-mini
+gaia-house-july-18-17260.md,Mindfulness Practices in Modern Society,0.6,False,34,3.013038158416748,openai:gpt-4o-mini
+tvol_morality.md,Ethics & Moral Philosophy,0.95,True,187,2.756406307220459,openai:gpt-4o-mini
+tvol_morality.md,Human Behavioral Biology,0.85,False,187,2.756406307220459,openai:gpt-4o-mini
+tvol_morality.md,Cultural Anthropology,0.75,False,187,2.756406307220459,openai:gpt-4o-mini
+tvol_morality.md,Evolutionary Biology,0.7,False,187,2.756406307220459,openai:gpt-4o-mini
+tvol_morality.md,Philosophy of Mind,0.65,False,187,2.756406307220459,openai:gpt-4o-mini
+Dharmic_existentialist_ethics_in_a_time_of_pandemic-Ramsey_Margolis.md,Existentialism,0.85,True,39,3.3070015907287598,openai:gpt-4o-mini
+Dharmic_existentialist_ethics_in_a_time_of_pandemic-Ramsey_Margolis.md,Ethics & Moral Philosophy,0.8,False,39,3.3070015907287598,openai:gpt-4o-mini
+Dharmic_existentialist_ethics_in_a_time_of_pandemic-Ramsey_Margolis.md,Secular Dharma/Buddhism,0.75,False,39,3.3070015907287598,openai:gpt-4o-mini
+Dharmic_existentialist_ethics_in_a_time_of_pandemic-Ramsey_Margolis.md,Human Behavioral Biology,0.65,False,39,3.3070015907287598,openai:gpt-4o-mini
+Dharmic_existentialist_ethics_in_a_time_of_pandemic-Ramsey_Margolis.md,Cultural Critique in Philosophy,0.6,False,39,3.3070015907287598,openai:gpt-4o-mini
+david-graeber-at-long-last.md,Cultural Anthropology,0.85,True,155,4.031630992889404,openai:gpt-4o-mini
+david-graeber-at-long-last.md,Human Behavioral Biology,0.75,False,155,4.031630992889404,openai:gpt-4o-mini
+david-graeber-at-long-last.md,Evolutionary Sociology,0.7,False,155,4.031630992889404,openai:gpt-4o-mini
+david-graeber-at-long-last.md,Philosophical Anthropology,0.65,False,155,4.031630992889404,openai:gpt-4o-mini
+david-graeber-at-long-last.md,Social Theory,0.6,False,155,4.031630992889404,openai:gpt-4o-mini
+homework-6-jw-8732.md,Secular Dharma/Buddhism,0.95,True,21,3.7554407119750977,openai:gpt-4o-mini
+homework-6-jw-8732.md,Human Behavioral Biology,0.85,False,21,3.7554407119750977,openai:gpt-4o-mini
+homework-6-jw-8732.md,Psychology,0.75,False,21,3.7554407119750977,openai:gpt-4o-mini
+homework-6-jw-8732.md,Philosophy of Mind,0.7,False,21,3.7554407119750977,openai:gpt-4o-mini
+homework-6-jw-8732.md,Ethics & Moral Philosophy,0.65,False,21,3.7554407119750977,openai:gpt-4o-mini
+homework-3-24092.md,Secular Dharma/Buddhism,0.95,True,21,5.981611013412476,openai:gpt-4o-mini
+homework-3-24092.md,Ethics & Moral Philosophy,0.85,False,21,5.981611013412476,openai:gpt-4o-mini
+homework-3-24092.md,Psychology,0.75,False,21,5.981611013412476,openai:gpt-4o-mini
+homework-3-24092.md,Existentialism,0.65,False,21,5.981611013412476,openai:gpt-4o-mini
+homework-3-24092.md,Philosophy of Mind,0.6,False,21,5.981611013412476,openai:gpt-4o-mini
