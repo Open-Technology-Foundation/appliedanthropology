@@ -1,20 +1,22 @@
 #!/bin/bash
 set -Eeuo pipefail
-((EUID)) && { sudo "$0" "$@"; exit; }
-declare -- PRG0 PRGDIR PRG
-PRG0=$(readlink -fn -- "$0")
-PRGDIR=$(dirname -- "$PRG0")
-PRG=$(basename -s .sh -- "$0")
+
+((EUID)) && { sudo -E "$0" "$@"; exit; }
+
+declare -- SCRIPT_PATH SCRIPT_DIR SCRIPT_NAME
+SCRIPT_PATH=$(realpath -- "$0")
+SCRIPT_DIR=$(dirname -- "$SCRIPT_PATH")
+SCRIPT_NAME=$(basename -s .sh -- "$0")
 
 # Logging functions
 #shellcheck disable=SC2015
 [[ -t 2 ]] && declare -r RED=$'\033[0;31m' YELLOW=$'\033[0;33m' GREEN=$'\033[0;32m' NOCOLOR=$'\033[0m' || declare -r RED='' YELLOW='' GREEN='' NOCOLOR=''
 declare -i VERBOSE=1 DEBUG=0
-vecho() { ((VERBOSE)) || return 0; local msg; for msg in "$@"; do >&2 printf '%s: %s\n' "$PRG" "$msg"; done; }
-vwarn() { ((VERBOSE)) || return 0; local msg; for msg in "$@"; do >&2 printf '%s: %swarn%s: %s\n' "$PRG" "$YELLOW" "$NOCOLOR" "$msg"; done; }
-error() { local msg; for msg in "$@"; do >&2 printf '%s: %serror%s: %s\n' "$PRG" "$RED" "$NOCOLOR" "$msg"; done; }
-success() { local msg; for msg in "$@"; do >&2 printf '%s: %ssuccess%s: %s\n' "$PRG" "$GREEN" "$NOCOLOR" "$msg"; done; }
-debug() { ((DEBUG)) || return 0; local msg; for msg in "$@"; do >&2 printf '%s: %sdebug%s: %s\n' "$PRG" "$YELLOW" "$NOCOLOR" "$msg"; done; }
+vecho() { ((VERBOSE)) || return 0; local msg; for msg in "$@"; do >&2 printf '%s: %s\n' "$SCRIPT_NAME" "$msg"; done; }
+vwarn() { ((VERBOSE)) || return 0; local msg; for msg in "$@"; do >&2 printf '%s: %swarn%s: %s\n' "$SCRIPT_NAME" "$YELLOW" "$NOCOLOR" "$msg"; done; }
+error() { local msg; for msg in "$@"; do >&2 printf '%s: %serror%s: %s\n' "$SCRIPT_NAME" "$RED" "$NOCOLOR" "$msg"; done; }
+success() { local msg; for msg in "$@"; do >&2 printf '%s: %ssuccess%s: %s\n' "$SCRIPT_NAME" "$GREEN" "$NOCOLOR" "$msg"; done; }
+debug() { ((DEBUG)) || return 0; local msg; for msg in "$@"; do >&2 printf '%s: %sdebug%s: %s\n' "$SCRIPT_NAME" "$YELLOW" "$NOCOLOR" "$msg"; done; }
 die() { (($# < 2)) || error "${@:2}"; (($# < 1)) || exit "$1"; exit 1; }
 decp() { ((DEBUG)) || return 0; >&2 declare -p "$@"; }
 trim() { local v="$*"; v="${v#"${v%%[![:blank:]]*}"}"; echo -n "${v%"${v##*[![:blank:]]}"}"; }
@@ -97,7 +99,7 @@ declare -i ASSUME_YES=0
 
 show_help() {
   cat <<EOT
-usage: $PRG [OPTIONS]
+usage: $SCRIPT_NAME [OPTIONS]
 
 Stage Options:
   -0|--do-create-text-cache      Create text cache from source files
@@ -130,11 +132,11 @@ Configuration:
   See $KB.build.conf.example for format
 
 Examples:
-  $PRG                          # Run all stages (same as -a)
-  $PRG -0                       # Only create text cache
-  $PRG -1 -2                    # Only generate and append citations
-  $PRG -a -y                    # Run all stages non-interactively
-  $PRG -4 -5 -y                 # Embed and test query, no prompts
+  $SCRIPT_NAME                          # Run all stages (same as -a)
+  $SCRIPT_NAME -0                       # Only create text cache
+  $SCRIPT_NAME -1 -2                    # Only generate and append citations
+  $SCRIPT_NAME -a -y                    # Run all stages non-interactively
+  $SCRIPT_NAME -4 -5 -y                 # Embed and test query, no prompts
 EOT
   exit
 }
@@ -234,7 +236,7 @@ validate_tools
 
 if ((do_create_text_cache)); then
   cd "$KBdir"
-  time "$PRGDIR"/create_text_cache.sh
+  time "$SCRIPT_DIR"/create_text_cache.sh
   chownsysadmin "$KBdir"
 fi
 
@@ -277,10 +279,10 @@ if ((do_import_text_database)); then
         remove_database=1
       else
         vecho "$dbname may need to be deleted before proceeding."
-        read -rp "$PRG: Remove $dbname? y/n " yn
+        read -rp "$SCRIPT_NAME: Remove $dbname? y/n " yn
         if [[ ${yn,,} != 'y' ]]; then
           remove_database=0
-          read -rp "$PRG: Continue processing with existing database '$dbname'? y/n " yn
+          read -rp "$SCRIPT_NAME: Continue processing with existing database '$dbname'? y/n " yn
           [[ ${yn,,} == 'y' ]] || exit 1
         else
           remove_database=1

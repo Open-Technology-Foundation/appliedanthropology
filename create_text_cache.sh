@@ -1,5 +1,5 @@
 #!/bin/bash
-#shellcheck disable=SC1091
+#shellcheck disable=SC1091,SC2155
 set -euo pipefail
 ((EUID)) && { sudo "$0" "$@"; exit; }
 #shellcheck disable=SC2155
@@ -10,26 +10,31 @@ readonly -- PRGDIR="${PRG0%/*}"
 # from where target .txt and .md files 
 # are contained and found
 readonly -- workshops="$PRGDIR"/workshops
-cd "$workshops" # sanity check and rehoming dir
+cd "$workshops" # sanity check and rehoming dir # HOMING DIR
 readonly -- real_workshops=$(readlink -en -- "$PWD")
 
 readonly -- staging_text="$PRGDIR"/staging.text
-readonly -- real_staging_text=$(readlink -en -- "$staging_text")
+#readonly -- real_staging_text=$(readlink -en -- "$staging_text")
 # create and clear out the staging_text dir
+rm -rf "${staging_text:?}"
 mkdir -p "$staging_text"
-rm -rf "${staging_text:?}"/*
 
 declare -a files
 declare -- file 
 
 # TRANSCRIPTS
 # create and clearout the transcripts dir
+readonly -- transcripts_dir=/ai/media/youtube/channels
 declare -- transdir="$workshops"/yt_transcripts
+rm -rf "${transdir:?}"
 mkdir -p "$transdir"
-rm -f "$transdir"/*
 
+# -------------------------------------------------------------------------
 # find and process all the transcript files (*.transcript.txt)
-readarray -t files < <(find /ai/media/youtube/channels -type f -name '*.transcript.txt' | sort -u)
+cd "$workshops" 
+readarray -t files < <(
+  find "$transcripts_dir" -type f -name '*.transcript.txt' | sort -u
+  )
 echo "${#files[@]} transcript files"
 for file in "${files[@]}"; do
   newfile=$(basename -- "$file")
@@ -46,14 +51,18 @@ for file in "${files[@]}"; do
   video_name_slug=''
 	cp -p -- "$file" "$transdir"/"$newfile"
 done
-
 # clean up
 find-dupes "$staging_text" -dP
 
+# -------------------------------------------------------------------------
+cd "$workshops" 
 declare -i ccc=0
-
 echo "Finding md and txt files in $PWD/"
-readarray -t files < <(find -L . -type f \( -name '*.txt' -o -name '*.md' \) -exec readlink -f -- {} \; | sort -u)
+readarray -t files < <(
+  find -L . -type f \( -name '*.txt' -o -name '*.md' \) \
+      -exec readlink -f -- {} \; \
+    | sort -u
+  )
 echo "${#files[@]} embed files"
 for file in "${files[@]}"; do
   subdir="$(dirname -- "$file")"
@@ -74,8 +83,14 @@ find "$staging_text" -type f -size -10c -delete
 find-dupes "$staging_text" -dP
 echo "$(find -L "$staging_text"/ -type f |wc -l) total files in $staging_text"
 
-# add repositories from other locations ===============================================
+# add repositories from other locations ==============================================
 ln -fs "$VECTORDBS"/prosocial.world/embed_data.text/ prosocial.world
 ln -fs "$VECTORDBS"/wayang.net/embed_data/mdfiles/ wayang.net
+
+# create staging.text zip file for yatti.id ==========================================
+cd "$PRGDIR"
+echo "Create staging.text.zip file for yatti.id"
+rm -f staging.text.zip
+zip -r -9 staging.text.zip "$staging_text"/
 
 #fin
