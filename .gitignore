@@ -1,3 +1,5 @@
+#*.faiss
+#*.db
 *~
 .*~
 *$py.class
@@ -11,7 +13,6 @@ CLAUDE.md
 .coverage
 coverage_html/
 curtest.sh
-*.db
 DefiningDharma/htmlfiles/
 DefiningDharma/mdfiles/
 DefiningDharma/video-scripts/
@@ -28,7 +29,6 @@ embed_data.text
 env/
 ENV/
 .env.local
-*.faiss
 .git
 .git*
 .git/*
