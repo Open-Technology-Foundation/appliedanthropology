@@ -1,208 +1,209 @@
 # Applied Anthropology Knowledgebase
 
-**DrAA: AI-powered secular dharma & evolutionary anthropology expert with 777K+ scholarly segments.**
+What if you could query 500+ scholarly works on human nature, cultural evolution, and ethics in seconds? **DrAA** (Doctor of Applied Anthropology) is an AI expert built on 777,000+ document segments from leading thinkers including David Graeber, Robert Sapolsky, Christopher Boehm, Stephen Batchelor, and Richard Wrangham. It provides evidence-based insights into secular dharma, evolutionary anthropology, and the science of human behavior.
 
 ---
 
-## Overview
+## Access DrAA
 
-The **Applied Anthropology Knowledgebase** serves as DrAA (Doctor of Applied Anthropology), a world-leading AI expert specializing in secular dharma studies, evolutionary anthropology, and human behavioral biology. Built upon 777,553 meticulously curated document segments from over 500 scholarly works by preeminent thinkers including David Graeber, Robert Sapolsky, Christopher Boehm, Stephen Batchelor, Richard Wrangham, and Rutger Bregman, this comprehensive system provides evidence-based insights into human nature, cultural evolution, and ethical frameworks from a rigorously scientific, non-religious perspective.
+### Web Interface
 
-The knowledgebase specializes in treating dharma not as a singular universal truth but as diverse, adaptive ethical pathways that emerge across cultures through evolutionary processes. Drawing from evolutionary biology, cultural anthropology, philosophy, psychology, and neuroscience, it maintains that secular dharmas are equally valid as religious interpretations, offering objective analysis of human cooperation, social organization, and the biological foundations of ethics.
+Query DrAA directly at [wah.id](https://wah.id) with no installation required.
 
-### Key Characteristics
+### Command-Line via yatti-api
 
-- **Scale**: 777,553 document segments from 500+ scholarly works (fully embedded)
-- **Database Size**: 2.2GB SQLite database + 7.9GB FAISS vector index  
-- **Citations**: 15,143 AI-generated contextual citations
-- **Text Cache**: 94 processed directories from diverse academic sources
-- **Specialization**: Secular dharma, evolutionary anthropology, human behavioral biology
-- **AI Role**: World expert in Applied Anthropology with dharma specialization
-- **Last Updated**: July 18-19, 2025 (recent full system rebuild)
+For programmatic access, install [yatti-api](https://github.com/Open-Technology-Foundation/yatti-api):
 
----
+```bash
+# Clone and install
+git clone https://github.com/Open-Technology-Foundation/yatti-api.git
+cd yatti-api && ./install.sh
 
-## Problem Statement & Mission
+# Configure your API key (contact admin@yatti.id to request access)
+yatti-api configure
 
-This project addresses the critical need for:
-
-- **Evidence-based exploration** of human ethical systems and cultural evolution
-- **Secular academic perspective** on dharma concepts traditionally associated with religious contexts
-- **Interdisciplinary synthesis** of anthropology, evolutionary biology, philosophy, and psychology
-- **Objective analysis** of human nature, cooperation, and cultural development
-
-### Philosophical Framework
-
-The knowledgebase serves the growing global demographic of academics, researchers, secular Buddhist practitioners, policy professionals, mental health practitioners, and the broader "spiritual but not religious" community seeking scientific perspectives on meaning-making and ethical living. This approach bridges cutting-edge AI technology with rigorous academic research, providing intellectually sophisticated yet accessible analysis for understanding human behavior, cultural development, and evidence-based approaches to ethical living in contemporary global contexts.
-
----
-
-## Target Audience
-
-### Primary Demographics
-
-- **Academic Researchers & Scholars**: Graduate students, faculty, postdocs in anthropology, evolutionary biology, philosophy (ages 22-65)
-- **Philosophical Practitioners**: Secular Buddhists, humanists, contemplative practice communities (ages 25-65)
-- **Applied Professionals**: Policy researchers, educators, mental health professionals (ages 25-55)
-- **Technology Workers**: AI researchers, data scientists interested in human behavior (ages 25-45)
-- **Writers & Public Intellectuals**: Science writers, public intellectuals covering human evolution and ethics (ages 28-65)
-
-### Geographic Distribution
-
-- **Primary Markets**: North America, Europe, Australia/New Zealand (academic institutions, secular communities)
-- **Secondary Markets**: Asia (English-speaking academics), Global South (international scholars)
-- **Online Communities**: Global digital communities focused on secular philosophy and applied anthropology
-
-### Psychographic Profile
-
-Advanced degree holders valuing scientific rationalism, cultural pluralism, and interdisciplinary synthesis. Early technology adopters seeking comprehensive, well-sourced information for academic research, professional development, and personal growth through secular approaches to ethical living.
-
----
-
-## Core Architecture
-
-### Technology Stack
-
-- **Knowledgebase System**: CustomKB framework with Python backend
-- **Vector Search Engine**: FAISS (7.9GB index) with OpenAI text-embedding-3-large (1024 dimensions)
-- **AI Query Processing**: GPT-4o with specialized anthropology expertise (temperature: 0.2335)
-- **Data Storage**: SQLite database (2.2GB) with 777,553 document segments
-- **Search Enhancement**: Cross-encoder reranking model for improved relevance
-- **Hybrid Search**: Semantic vector search with optional BM25 keyword search
-
-### Data Sources & Content
-
-- **Primary Data**: Symlinked to `/ai/datasets/sd/sd_gpt/` containing scholarly materials
-- **Key Authors**: David Graeber, Robert Sapolsky, Christopher Boehm, Stephen Batchelor, Richard Wrangham, Rutger Bregman, and 100+ others
-- **Content Areas**: Evolutionary biology, anthropology, philosophy, psychology, cultural studies, secular dharma
-- **Text Cache**: 94 processed directories with structured academic materials
-
-### Core Components
-
-```
-appliedanthropology/
-├── appliedanthropology.cfg               # Main configuration file
-├── appliedanthropology.db                # SQLite database (777K+ segments)
-├── appliedanthropology.faiss             # Vector search index (7.9GB)
-├── appliedanthropology_primary_prompt.md # AI assistant personality
-├── appliedanthropology.build.conf        # Build configuration settings
-├── build.sh                              # Symlink to build/build.sh
-├── build/                                # Build scripts and utilities
-│   ├── build.sh                          # Main build orchestrator
-│   ├── version.sh                        # Version tracking script
-│   ├── create_staging.text.sh            # Text preprocessing script
-│   ├── add_version_tracking.sql          # Database schema for versioning
-│   └── staging.text.zip                  # Cached text data
-├── docs/                                 # Documentation files
-├── logs/                                 # Application logs
-├── staging.text/                         # Processed text cache (94 directories)
-└── workshops/                            # Symlink to source data
+# Query DrAA
+yatti-api query appliedanthropology "What distinguishes secular dharma from religious dharma?"
 ```
 
+See the [yatti-api repository](https://github.com/Open-Technology-Foundation/yatti-api) for prerequisites and detailed documentation.
+
 ---
 
-## Key Functionality
+## Example: DrAA in Action
 
-### 1. Semantic Search Capabilities
+**Query**: "What distinguishes secular dharma from religious dharma?"
 
-- **Vector-based search** across 777,553 document segments
-- **Context-aware retrieval** with 5-segment scope for comprehensive understanding
-- **Reranking optimization** using cross-encoder models for improved relevance
-- **Multi-language support** with Indonesian, French, German, Swedish stopwords
-- **Query enhancement** with spelling correction and semantic expansion
+**Response**:
 
-### 2. AI Expert System (DrAA)
+> Key distinctions:
+>
+> - **Non-metaphysical frame**: Secular dharma brackets claims like rebirth, karmic law as cosmic justice, other realms, and final nirvana; it grounds practice in this life, here-and-now experience, and evidence (Batchelor; Bodhi College materials).
+>
+> - **Tasks over truths**: Recasts the Four Noble Truths as four practical tasks--embrace dukkha, let go of reactivity, behold its ceasing, cultivate an integrated ethical life--rather than assent to doctrinal truth-claims.
+>
+> - **Human-centered and contextual**: Oriented to human flourishing in specific societies, adapting teachings to contemporary issues (AI, climate, social justice) using psychology, neuroscience, and evolutionary anthropology.
+>
+> - **Inclusivity and pluralism**: Open to people of any or no religion; acknowledges many dharmas, not one "The Dharma," and invites personal interpretation and local adaptation.
+>
+> - **Practice-first pragmatism**: Emphasizes mindfulness, ethical action, and civic responsibility as verifiable skills and social practices, not ritual or hierarchy as gatekeepers.
+>
+> - **Non-authoritarian ethos**: Minimizes reliance on sacred canons, priestly authority, or ritual orthodoxy; legitimizes claims via critical inquiry, shared practice, and publicly checkable outcomes.
+>
+> - **Dialogue with science**: Integrates empirical research on mind and behavior; treats dharma as an evolving cultural technology rather than a revealed cosmology.
+>
+> In short: religious dharma orients around metaphysical truths and soteriological ends; secular dharma orients around practical tasks for ethical flourishing in this world, updated by critical inquiry and science.
 
-**You are DrAA (Doctor of Applied Anthropology)**, a world-leading expert specializing in secular dharma studies, evolutionary anthropology, and human behavioral biology.
+---
 
-#### Core Expertise & Specializations:
-- **Secular Dharma Studies**: Evidence-based exploration of ethical pathways, cultural evolution, and moral frameworks
-- **Applied Anthropology**: Human behavioral evolution, cultural sociology, biological anthropology with practical applications
+## What is DrAA?
+
+DrAA (Doctor of Applied Anthropology) is a specialized AI expert system trained on a curated corpus of scholarly works spanning evolutionary biology, cultural anthropology, philosophy, psychology, and secular dharma studies.
+
+### Core Expertise
+
+- **Secular Dharma Studies**: Evidence-based exploration of ethical pathways, cultural evolution, and moral frameworks without metaphysical commitments
+- **Applied Anthropology**: Human behavioral evolution, cultural sociology, and biological anthropology with practical applications
 - **Evolutionary Biology**: Human nature, behavioral genetics, cooperation dynamics, and group social organization
 - **Cross-Disciplinary Synthesis**: Philosophy, psychology, neuroscience, cultural studies, and consciousness research
 - **Comparative Ethics**: Religious vs. secular approaches to human organization, cooperation, and ethical living
 
-#### Methodological Approach:
-- Maintain rigorous scientific objectivity while remaining intellectually accessible
-- Draw comprehensively from both provided contextual segments AND internal knowledgebase
-- Emphasize evidence-based analysis rooted in empirical research and cross-cultural data
-- Avoid privileging religious or metaphysical interpretations over secular, naturalistic approaches
-- Provide nuanced analysis that bridges academic rigor with practical, actionable insights
-- Reference specific authors, studies, or theoretical frameworks when relevant
-- Use clear GitHub markdown formatting for optimal readability and structure
+### Scholarly Foundation
 
-#### Response Framework:
-Provide objective, reflective, and scientifically grounded analysis on questions of humanity, evolution, cooperation, social organization, and the human condition. Your responses should demonstrate the sophisticated integration of biological, cultural, and philosophical perspectives that characterizes applied anthropological inquiry, always maintaining respect for the complexity and diversity of human experience while grounding insights in empirical evidence and cross-cultural research.
+The knowledgebase draws from 500+ works by leading scholars:
 
-### 3. Dharma-Centric Definitions
+| Author | Focus Areas |
+|--------|-------------|
+| David Graeber | *Dawn of Everything*, *Debt*, political anthropology |
+| Robert Sapolsky | Behavioral biology, stress, neuroscience |
+| Christopher Boehm | *Hierarchy in the Forest*, egalitarianism |
+| Stephen Batchelor | Secular Buddhism, *After Buddhism* |
+| Richard Wrangham | Human evolution, violence, self-domestication |
+| Rutger Bregman | *Humankind*, human cooperation |
+| James C. Scott | Political anthropology, state formation |
+| Matthew Walker | Sleep science, neuroscience |
+| Lisa Feldman Barrett | Emotion, consciousness, neuroscience |
 
-The system operates with specific definitions:
-
-- **dharma**: A way, path, culture, or outlook adopted by individuals or groups that defines ethical living within their specific environmental and cultural context. NOT a universal "The Dharma" but diverse, adaptive ethical systems.
-- **dharmas**: Multiple, pluralistic forms that evolve and adapt to specific contexts and environments. Secular dharmas are equally valid and scientifically grounded as religious interpretations.
-- **dharmic**: (noun) A person who adheres to a dharma; (adjective) Exhibiting qualities characteristic of an ethical path or way of being.
-- **applied anthropology**: Biology-grounded understanding of human culture, behavior, and social organization with direct practical applications to contemporary challenges.
-
-### 4. Build and Maintenance Pipeline
-
-**6-Stage Build Process (`build.sh`):**
-
-1. **Text Caching** (`-0`): Process source materials into structured cache
-2. **Citation Generation** (`-1`): AI-enhanced metadata using GPT-4.1-mini
-3. **Citation Integration** (`-2`): Append generated citations to database
-4. **Database Import** (`-3`): Import processed texts to SQLite
-5. **Vector Embedding** (`-4`): Generate embeddings and build FAISS index
-6. **Testing** (`-5`): Automated query validation
-
-Build configuration is managed through `appliedanthropology.build.conf` which controls:
-- Citation model settings (GPT-4.1-mini, temperature 0.25)
-- Parallel processing (43 threads)
-- Context definitions
-- Test query specifications
+Plus 100+ additional scholars across anthropology, philosophy, psychology, and related fields.
 
 ---
 
-## Knowledge Repository Content
+## Who This Is For
 
-### Key Subject Areas
+### Academic Researchers
+Graduate students, faculty, and postdocs in anthropology, evolutionary biology, philosophy, religious studies, and psychology seeking scholarly synthesis and literature discovery.
 
-- **Secular Dharma**: Ethical pathways, cultural evolution, moral philosophy
-- **Evolutionary Biology**: Human behavioral evolution, primatology, genetics
-- **Anthropological Theory**: Political anthropology, cultural sociology, applied anthropology
-- **Philosophy**: Ethics, existentialism, stoicism, Buddhist philosophy (secular interpretations)
-- **Psychology**: Human behavioral biology, neuroscience, consciousness studies
-- **Cultural Studies**: Civilization development, social organization, group dynamics
+### Secular Practitioners
+Secular Buddhists, humanists, and contemplative practice communities looking for evidence-based approaches to mindfulness and ethical living.
 
-### Major Authors and Works Included
+### Applied Professionals
+Policy researchers, educators, and mental health professionals integrating anthropological insights into their work.
 
-- **David Graeber** (*Dawn of Everything*, *Debt*, *Bullshit Jobs*)
-- **Christopher Boehm** (*Hierarchy in the Forest*)
-- **Robert Sapolsky** (*Behave*, behavioral biology lectures)
-- **Stephen Batchelor** (secular Buddhism, *After Buddhism*)
-- **Richard Wrangham** (human evolution, violence studies)
-- **Rutger Bregman** (*Humankind*)
-- And 100+ other scholars in anthropology, philosophy, and related fields
+### Technology Workers
+AI researchers and data scientists exploring human behavioral patterns, cooperation dynamics, and cultural evolution.
+
+### Writers and Public Intellectuals
+Science writers and communicators covering human evolution, ethics, and the intersection of ancient wisdom with modern science.
 
 ---
 
-## Usage Guide
+## Key Concepts
 
-### Common Commands
+The knowledgebase operates with specific definitions that distinguish it from traditional approaches:
 
-#### Query Operations
+**dharma**: A way, path, culture, or outlook adopted by individuals or groups that defines ethical living within their specific environmental and cultural context. Not a universal "The Dharma" but diverse, adaptive ethical systems.
+
+**dharmas**: Multiple, pluralistic forms that evolve and adapt to specific contexts and environments. Secular dharmas are equally valid and scientifically grounded as religious interpretations.
+
+**dharmic**: (noun) A person who adheres to a dharma; (adjective) Exhibiting qualities characteristic of an ethical path or way of being.
+
+**applied anthropology**: Biology-grounded understanding of human culture, behavior, and social organization with direct practical applications to contemporary challenges.
+
+---
+
+## Example Queries
+
+### Academic Research
 ```bash
-# Interactive query mode
-customkb query appliedanthropology.cfg
-
-# Direct queries
-customkb query appliedanthropology.cfg "What is dharma in secular context?"
-customkb query appliedanthropology.cfg "How do evolutionary perspectives inform ethics?"
-
-# Context-only (no AI response)
-customkb query appliedanthropology.cfg "dharma" --context-only
+yatti-api query appliedanthropology "What do evolutionary anthropologists say about the origins of human cooperation?"
+yatti-api query appliedanthropology "Compare Graeber and Boehm on hierarchy and egalitarianism"
+yatti-api query appliedanthropology "How do cultural and biological evolution interact in ethical systems?"
 ```
 
-#### Build and Maintenance
+### Comparative Analysis
+```bash
+yatti-api query appliedanthropology "What are the evolutionary origins of human ethical behavior?"
+yatti-api query appliedanthropology "Compare Buddhist and secular humanist ethical frameworks"
+yatti-api query appliedanthropology "How do dharmas emerge and adapt to environmental pressures?"
+```
+
+### Applied Understanding
+```bash
+yatti-api query appliedanthropology "What can anthropology teach us about sustainable social organization?"
+yatti-api query appliedanthropology "How can secular dharma principles inform contemporary social policy?"
+```
+
+### Context-Only Retrieval
+```bash
+# Return source segments without AI synthesis
+yatti-api query appliedanthropology "dharma" --context-only
+```
+
+---
+
+## Technical Architecture
+
+### Scale and Storage
+- **Document Segments**: 777,553 segments from 500+ scholarly works
+- **Database**: 2.2GB SQLite with full-text indexing
+- **Vector Index**: 7.9GB FAISS index with 1024-dimensional embeddings
+- **AI Citations**: 15,143 contextual citations generated by AI
+- **Text Cache**: 94 processed directories from diverse academic sources
+
+### Technology Stack
+- **Knowledgebase Framework**: CustomKB with Python backend
+- **Embeddings**: OpenAI text-embedding-3-large (1024 dimensions)
+- **Query Model**: GPT-5 with specialized anthropology expertise
+- **Vector Search**: FAISS semantic search with cross-encoder reranking
+- **Search Enhancement**: Spelling correction and semantic expansion
+
+### Performance
+- **Query Processing**: Context-only queries complete in ~11-13 seconds
+- **Temperature**: 0.2335 for consistent, objective responses
+- **Context Window**: 30 relevant segments with 5-segment scope
+- **Query Cache**: 30-day TTL for repeated queries
+- **API Concurrency**: 12-24 concurrent requests
+
+---
+
+## Local Development
+
+For contributors and developers who want to work with the knowledgebase directly.
+
+### Directory Structure
+
+```
+appliedanthropology/
+├── appliedanthropology.cfg               # Main configuration
+├── appliedanthropology.db                # SQLite database (777K+ segments)
+├── appliedanthropology.faiss             # Vector search index (7.9GB)
+├── appliedanthropology_primary_prompt.md # AI assistant personality
+├── appliedanthropology.build.conf        # Build configuration
+├── build.sh                              # Symlink to build/build.sh
+├── build/                                # Build scripts and utilities
+│   ├── build.sh                          # Main build orchestrator
+│   ├── version.sh                        # Version tracking
+│   ├── create_staging.text.sh            # Text preprocessing
+│   └── staging.text.zip                  # Cached text data
+├── docs/                                 # Documentation
+├── logs/                                 # Application logs
+└── staging.text/                         # Processed text cache
+```
+
+### Build Pipeline
+
+The knowledgebase uses a 6-stage build process:
+
 ```bash
 # Full rebuild (all stages)
 ./build.sh -a -y
@@ -214,17 +215,28 @@ customkb query appliedanthropology.cfg "dharma" --context-only
 ./build.sh -3    # Import text to database
 ./build.sh -4    # Create vector embeddings
 ./build.sh -5    # Run test query
-
-# Version management
-./build/version.sh show      # Display current version
-./build/version.sh bump      # Increment version (patch by default)
-./build/version.sh history   # Show version history
 ```
 
-#### Database Management
+### Direct Query Commands
+
 ```bash
-# Check database stats
+# Interactive query mode
+customkb query appliedanthropology.cfg
+
+# Direct query
+customkb query appliedanthropology.cfg "What is dharma in secular context?"
+
+# Context-only (no AI response)
+customkb query appliedanthropology.cfg "dharma" --context-only
+```
+
+### Database Management
+
+```bash
+# Check segment count
 sqlite3 appliedanthropology.db "SELECT COUNT(*) FROM docs;"
+
+# Check citation count
 sqlite3 appliedanthropology.db "SELECT COUNT(*) FROM citations;"
 
 # Verify indexes
@@ -232,176 +244,69 @@ customkb verify-indexes appliedanthropology.cfg
 
 # Optimize performance
 customkb optimize appliedanthropology.cfg
+
+# Version management
+./build/version.sh show      # Display current version
+./build/version.sh bump      # Increment version
+./build/version.sh history   # Show version history
 ```
 
-### Example Queries & Use Cases
-
-#### Academic Research
-- "Explain dharma's anthropological significance across cultures"
-- "What do evolutionary anthropologists say about human cooperation?"
-- "How do cultural and biological evolution interact in ethical systems?"
-- "Compare secular and religious approaches to moral philosophy"
-
-#### Comparative Analysis
-- "Analyze differences between Graeber's and Boehm's views on hierarchy"
-- "What are the evolutionary origins of human ethical behavior?"
-- "How do dharmas emerge and adapt to environmental pressures?"
-- "Compare Buddhist and secular humanist ethical frameworks"
-
-#### Applied Understanding
-- "What can anthropology teach us about sustainable social organization?"
-- "How do human behavioral patterns influence modern governance?"
-- "What role does culture play in shaping individual ethical choices?"
-- "How can secular dharma principles inform contemporary social policy?"
-
----
-
-## Technical Architecture
-
-### Vector Search System
-- **Model**: OpenAI text-embedding-3-large (1024 dimensions)
-- **Index**: FAISS with CPU processing (7.9GB index size)
-- **Reranking**: cross-encoder/ms-marco-MiniLM-L-6-v2 (CPU-based)
-- **Hybrid Search**: FAISS semantic search (BM25 disabled)
-- **GPU Status**: Available but index too large (7.9GB > 3.6GB GPU limit)
-
-### AI Query Processing
-- **Model**: GPT-4o with anthropology specialization
-- **Temperature**: 0.2335 for consistent, objective responses
-- **Context**: 30 relevant segments with 5-segment scope
-- **Query Cache**: 30-day TTL for performance optimization
-- **API Concurrency**: 12-24 concurrent requests
-- **Role**: Maintains objectivity while drawing from scientific perspectives
-
-### Performance Characteristics
-- **Search Speed**: CPU-based FAISS with reranking optimization
-- **Query Processing**: Context-only queries complete in ~11-13 seconds
-- **Memory Usage**: 250MB cache limit with 100K item memory cache
-- **Batch Processing**: Optimized for large-scale document processing (24 concurrent threads)
-- **API Rate Limiting**: 12-24 concurrent requests with intelligent backoff
-
----
-
-## System Requirements & Dependencies
-
-### Hardware Requirements
-- **CPU**: Multi-core processor for FAISS operations
-- **Memory**: Minimum 16GB RAM (32GB recommended for full GPU support)
-- **Storage**: 12GB+ available space for database and indexes
-- **GPU**: Optional CUDA-compatible GPU (requires >8GB VRAM for full index)
-
-### Software Dependencies
-- **CustomKB framework**: `/usr/local/bin/customkb`
-- **Python environment**: Virtual environment with ML libraries
-- **SQLite**: Database engine for document storage
-- **FAISS**: Vector similarity search library
-- **OpenAI API**: Text embedding and query processing
-- **Cross-encoder models**: For search result reranking
-
-### Configuration Files
-- **Main config**: `appliedanthropology.cfg` - System parameters and API settings
-- **Build config**: `appliedanthropology.build.conf` - Processing pipeline settings
-- **AI prompt**: `appliedanthropology_primary_prompt.md` - Assistant personality
-- **Environment**: Shell environment variables for API keys and paths
-
----
-
-## Development Guidelines
-
 ### Adding New Content
-1. Add source materials to symlinked embed_data directory
+
+1. Add source materials to the symlinked embed_data directory
 2. Run `./build.sh -0` to update text cache
 3. Complete rebuild with `./build.sh -1 -2 -3 -4` or full `./build.sh -a`
 
-### Configuration Updates
-- Edit `appliedanthropology.cfg` for search parameters
-- Modify `appliedanthropology_primary_prompt.md` for AI behavior
-- Update `appliedanthropology.build.conf` for build settings
+### Configuration Files
 
-### Build Directory Organization
-The `build/` directory contains all build-related scripts and utilities:
-- `build.sh` - Main build orchestrator with 6-stage pipeline
-- `version.sh` - Version tracking and history management
-- `create_staging.text.sh` - Text preprocessing from source materials
-- `add_version_tracking.sql` - Database schema for version history
-- `staging.text.zip` - Cached processed text data
+- **appliedanthropology.cfg**: System parameters, API settings, search configuration
+- **appliedanthropology.build.conf**: Build pipeline settings, citation model parameters
+- **appliedanthropology_primary_prompt.md**: AI assistant personality and response guidelines
 
-The main `build.sh` in the root directory is a symlink to `build/build.sh` for convenience.
+### System Requirements
 
-### Quality Assurance
-- Test queries are automatically run during build process
-- Default test: "Explain the meaning of the word 'dharma' as expressed within contemporary Balinese Hinduism"
-- Monitor logs in `logs/appliedanthropology.log`
-- Database indexes verified and optimized
-- Query performance monitored with 30-day cache TTL
+- **CPU**: Multi-core processor for FAISS operations
+- **Memory**: Minimum 16GB RAM (32GB recommended)
+- **Storage**: 12GB+ available space
+- **Software**: CustomKB framework, Python 3.x, SQLite, FAISS, OpenAI API access
 
 ---
 
-## Integration & Extensibility
+## System Status
+
+| Component | Status |
+|-----------|--------|
+| Database | 777,553 segments loaded and indexed |
+| Citations | 15,143 AI-generated citations integrated |
+| Vector Search | FAISS index optimized for CPU processing |
+| AI Expert | DrAA role active with dharma specialization |
+| Reranking | Cross-encoder optimization enabled |
+| Query Enhancement | Spelling correction and semantic expansion |
+| Performance | CPU-optimized with 250MB cache limit |
+| Web Access | Available at wah.id |
+
+**Last Updated**: July 2025
+
+---
+
+## Related Resources
 
 ### Related Knowledgebases
-- Links to `prosocial.world` and `wayang.net` knowledgebases
-- Shared caching infrastructure across vectordbs ecosystem
+- **prosocial.world**: Prosocial behavior and social evolution
+- **wayang.net**: Indonesian wayang culture and traditional arts
+- **seculardharma**: Secular Buddhist philosophy and mindfulness
+
+### Integration
+- Shared caching infrastructure across the vectordbs ecosystem
 - Cross-referencing capabilities with other anthropological resources
-
-### API Integration
-- **OpenAI Models**: GPT-4o for queries, text-embedding-3-large for vectors
-- **Query caching**: 30-day TTL for performance optimization
-- **Rate limiting**: Configurable API call management
-- **Batch processing**: Optimized for high-throughput operations
-
-### AI Assistant Behavior
-- Maintains objective, reflective approach
-- Emphasizes scientific and evidence-based perspectives
-- Avoids privileging religious over secular interpretations
-- Responds in GitHub markdown format
-- Draws from both provided context and internal knowledge
+- Query caching with 30-day TTL for performance optimization
 
 ---
 
-## Current System Status (July 2025)
+## Contributing
 
-✅ **Fully Operational**: All components initialized and functional  
-✅ **Database**: 777,553 document segments loaded and indexed  
-✅ **Citations**: 15,143 AI-generated contextual citations integrated  
-✅ **Vector Search**: FAISS index optimized for CPU-based semantic queries  
-✅ **AI Expert**: DrAA role active with dharma specialization  
-✅ **Reranking**: Cross-encoder optimization for improved relevance  
-✅ **Query Enhancement**: Spelling correction and semantic expansion enabled  
-✅ **Performance**: CPU-optimized processing with 250MB cache limit  
-✅ **WAHID Integration**: Enabled and available for system queries  
+Areas for contribution:
 
-### Storage and Indexing
-- **Database Tables**: `docs` (777,553 records) and `citations` (15,143 records)
-- **Vector Index**: 7.9GB FAISS index with 1024-dimensional embeddings
-- **Cache Management**: Query results cached for 30 days, embedding cache shared across knowledgebases
-
----
-
-## Contemporary Applications
-
-### Primary Use Cases
-1. **Academic Research**: Scholarly content generation for secular ethics and philosophy
-2. **Educational Content**: Course materials and workshop resources on human behavioral evolution
-3. **Professional Development**: Evidence-based approaches to policy and program development
-4. **Personal Growth**: Secular approaches to ethical living and personal development
-5. **Applied Research**: Real-world applications of anthropological insights to contemporary challenges
-
-### Research Applications
-- Literature reviews for thesis/dissertation research
-- Cross-disciplinary exploration of human behavior and culture
-- Theoretical framework development for applied research
-- Comparative cultural and philosophical studies
-- Understanding cultural factors in professional practice
-- Integration of contemplative practice with rational inquiry
-
----
-
-## Contributing & Support
-
-This knowledgebase represents a sophisticated intersection of AI technology, anthropological research, and secular dharma studies, providing evidence-based insights into human nature, cultural evolution, and ethical living from an applied anthropological perspective. The system has been recently updated (July 2025) with comprehensive coverage and optimized performance characteristics.
-
-### Areas for Contribution
 - Additional source material for inclusion in the dataset
 - Enhanced search algorithms and relevance tuning
 - Cross-cultural wisdom tradition integrations
@@ -410,4 +315,4 @@ This knowledgebase represents a sophisticated intersection of AI technology, ant
 
 ---
 
-**The Applied Anthropology Knowledgebase serves as a bridge between ancient wisdom traditions and contemporary scientific understanding, providing rigorous academic frameworks grounded in peer-reviewed research while addressing contemporary challenges in ethical living, meaning-making, and human flourishing for the growing global community seeking evidence-based approaches to secular spirituality and cultural understanding.**
+The Applied Anthropology Knowledgebase bridges ancient wisdom traditions with contemporary scientific understanding, providing rigorous academic frameworks grounded in peer-reviewed research for the growing global community seeking evidence-based approaches to ethics, meaning-making, and human flourishing.
