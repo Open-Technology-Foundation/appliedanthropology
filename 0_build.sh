@@ -279,7 +279,7 @@ if ((do_import_text_database)); then
         remove_database=1
       else
         vecho "$dbname may need to be deleted before proceeding."
-        read -rp "$SCRIPT_NAME: Remove $dbname? y/n " yn
+        read -rp "$SCRIPT_NAME: Remove table $dbname.docs? y/n " yn
         if [[ ${yn,,} != 'y' ]]; then
           remove_database=0
           read -rp "$SCRIPT_NAME: Continue processing with existing database '$dbname'? y/n " yn
@@ -294,7 +294,9 @@ if ((do_import_text_database)); then
     sqlite3 "$dbname" "DROP TABLE IF EXISTS docs;"
     rm -f "$faissname" "$bm25name"
   }
+  
   time customkb database "$cfgname" "$staging_text"
+  
   chownsysadmin "$KBdir"
 fi
 
