@@ -1,0 +1,3466 @@
+[
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Bodhi/bodhi_college_courses/bodhi/docs/sd-homework-april-right-speech-14323.md/sd-homework-april-right-speech-14323.md",
+    "total_chunks": 21,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.9
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Applied Anthropology",
+        "confidence": 0.8
+      },
+      {
+        "name": "Psychology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Cultural Studies",
+        "confidence": 0.7
+      }
+    ],
+    "primary_category": "Ethics & Moral Philosophy",
+    "processing_time": 2.544578790664673,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Speech Ethics",
+      "Communication Studies"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Einzelganger.txt/Einzelganger.txt",
+    "total_chunks": 5217,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Stoicism",
+        "confidence": 0.95
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Psychology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Meditation & Mindfulness",
+        "confidence": 0.65
+      }
+    ],
+    "primary_category": "Stoicism",
+    "processing_time": 2.653425693511963,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Philosophy of Emotion",
+      "Traffic Psychology"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Einzelganger/Einzelganger_When-Walking-Away-Is-the-ONLY-Answer_A-Hermits-Philosophy.txt/Einzelganger_When-Walking-Away-Is-the-ONLY-Answer_A-Hermits-Philosophy.txt",
+    "total_chunks": 39,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Philosophy of Mind",
+        "confidence": 0.85
+      },
+      {
+        "name": "Existentialism",
+        "confidence": 0.8
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.65
+      },
+      {
+        "name": "Meditation & Mindfulness",
+        "confidence": 0.6
+      }
+    ],
+    "primary_category": "Philosophy of Mind",
+    "processing_time": 2.6493334770202637,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Solitude Studies",
+      "Consumer Behavior in Society"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Bodhi/bodhi_college_courses/bodhi/docs/m-bel-9849.md/m-bel-9849.md",
+    "total_chunks": 177,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Secular Dharma/Buddhism",
+        "confidence": 0.95
+      },
+      {
+        "name": "Meditation & Mindfulness",
+        "confidence": 0.9
+      },
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.85
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Applied Anthropology",
+        "confidence": 0.65
+      }
+    ],
+    "primary_category": "Secular Dharma/Buddhism",
+    "processing_time": 2.851041793823242,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Mindfulness-Based Ethical Living",
+      "Human Flourishing Practices"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Bodhi/bodhi_college_courses/bodhi/docs/narrative-23377.md/narrative-23377.md",
+    "total_chunks": 120,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Psychology",
+        "confidence": 0.95
+      },
+      {
+        "name": "Applied Anthropology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Trauma & Healing",
+        "confidence": 0.75
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Cultural Studies",
+        "confidence": 0.65
+      }
+    ],
+    "primary_category": "Psychology",
+    "processing_time": 2.772346019744873,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Narrative Therapy",
+      "Clinical Narrative Studies"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Bodhi/bodhi_college_courses/bodhi/docs/sd-homework-sb2-10251.md/sd-homework-sb2-10251.md",
+    "total_chunks": 14,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Meditation & Mindfulness",
+        "confidence": 0.95
+      },
+      {
+        "name": "Secular Dharma/Buddhism",
+        "confidence": 0.9
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Psychology",
+        "confidence": 0.8
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.7
+      }
+    ],
+    "primary_category": "Meditation & Mindfulness",
+    "processing_time": 2.904965877532959,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": []
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/AI/Sabine-Hossenfelder_AI-is-becoming-dangerous_are-we-ready.md/Sabine-Hossenfelder_AI-is-becoming-dangerous_are-we-ready.md",
+    "total_chunks": 15,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Technology & AI Ethics",
+        "confidence": 0.9
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Evolutionary Biology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Applied Anthropology",
+        "confidence": 0.65
+      },
+      {
+        "name": "Cultural Studies",
+        "confidence": 0.6
+      }
+    ],
+    "primary_category": "Technology & AI Ethics",
+    "processing_time": 3.0435962677001953,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "AI Impact on Society",
+      "Ethics of AI Development"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Enlightenment_Now/Enlightenment_Now.md/Enlightenment_Now.md",
+    "total_chunks": 2925,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.8
+      },
+      {
+        "name": "Philosophy of Mind",
+        "confidence": 0.75
+      },
+      {
+        "name": "Education",
+        "confidence": 0.7
+      },
+      {
+        "name": "Sociology",
+        "confidence": 0.65
+      }
+    ],
+    "primary_category": "Human Behavioral Biology",
+    "processing_time": 3.0651333332061768,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Education and Knowledge Systems",
+      "Societal Progress and Development"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/AI/Are-You-Ready-To-Be-Automated.md/Are-You-Ready-To-Be-Automated.md",
+    "total_chunks": 41,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Technology & AI Ethics",
+        "confidence": 0.8
+      },
+      {
+        "name": "Applied Anthropology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Economics & Political Economy",
+        "confidence": 0.65
+      },
+      {
+        "name": "Neuroscience & Brain Science",
+        "confidence": 0.6
+      }
+    ],
+    "primary_category": "Human Behavioral Biology",
+    "processing_time": 3.262010097503662,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Automation and Workforce Dynamics",
+      "Impact of Technology on Human Intelligence"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Free_Culture/lawrence-lessig_free-culture_how-big-media-uses-technology-and-the-law-to-lock-down-culture-and-control-creativity.txt/lawrence-lessig_free-culture_how-big-media-uses-technology-and-the-law-to-lock-down-culture-and-control-creativity.txt",
+    "total_chunks": 1731,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Cultural Studies",
+        "confidence": 0.85
+      },
+      {
+        "name": "Economics & Political Economy",
+        "confidence": 0.75
+      },
+      {
+        "name": "Technology & AI Ethics",
+        "confidence": 0.7
+      },
+      {
+        "name": "Applied Anthropology",
+        "confidence": 0.65
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.6
+      }
+    ],
+    "primary_category": "Cultural Studies",
+    "processing_time": 3.4922585487365723,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Digital Culture Studies",
+      "Copyright and Technology Ethics"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Gary-Dean/Gary-Dean_Aggressive-Coalitions-in-Primates.md/Gary-Dean_Aggressive-Coalitions-in-Primates.md",
+    "total_chunks": 9,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Primatology",
+        "confidence": 0.95
+      },
+      {
+        "name": "Evolutionary Biology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.65
+      },
+      {
+        "name": "Sociology",
+        "confidence": 0.6
+      }
+    ],
+    "primary_category": "Primatology",
+    "processing_time": 2.0895094871520996,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": []
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/AI/the-genies-are-out-of-the-bottle-and-there-s-no-putting-them-back_sonnet-3.7.md/the-genies-are-out-of-the-bottle-and-there-s-no-putting-them-back_sonnet-3.7.md",
+    "total_chunks": 45,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.95
+      },
+      {
+        "name": "Technology & AI Ethics",
+        "confidence": 0.85
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.65
+      },
+      {
+        "name": "Philosophy of Mind",
+        "confidence": 0.6
+      }
+    ],
+    "primary_category": "Ethics & Moral Philosophy",
+    "processing_time": 2.636056900024414,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "AI Ethics and Governance",
+      "Cultural Ethical Frameworks"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Bodhi/bodhi_college_courses/bodhi/docs/tips-from-the-homework-23165.md/tips-from-the-homework-23165.md",
+    "total_chunks": 51,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.8
+      },
+      {
+        "name": "Philosophy of Mind",
+        "confidence": 0.75
+      },
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.7
+      },
+      {
+        "name": "Trauma & Healing",
+        "confidence": 0.65
+      }
+    ],
+    "primary_category": "Human Behavioral Biology",
+    "processing_time": 2.541123628616333,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Philosophical Anthropology",
+      "Existential Ethics"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Bodhi/bodhi_college_courses/bodhi/docs/sd-workbook-24622.md/sd-workbook-24622.md",
+    "total_chunks": 201,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Secular Dharma/Buddhism",
+        "confidence": 0.95
+      },
+      {
+        "name": "Meditation & Mindfulness",
+        "confidence": 0.85
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.65
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.6
+      }
+    ],
+    "primary_category": "Secular Dharma/Buddhism",
+    "processing_time": 2.7656900882720947,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": []
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Graeber/Dawn_of_Everything/Dawn-of-Everything.md/Dawn-of-Everything.md",
+    "total_chunks": 3571,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.95
+      },
+      {
+        "name": "Evolutionary Biology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.8
+      },
+      {
+        "name": "Sociology",
+        "confidence": 0.7
+      },
+      {
+        "name": "History & Civilization Studies",
+        "confidence": 0.65
+      }
+    ],
+    "primary_category": "Cultural Anthropology",
+    "processing_time": 2.5632126331329346,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": []
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/AI/the-genies-are-out-of-the-bottle-and-there-s-no-putting-them-back_o3-mini.md/the-genies-are-out-of-the-bottle-and-there-s-no-putting-them-back_o3-mini.md",
+    "total_chunks": 31,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.85
+      },
+      {
+        "name": "Technology & AI Ethics",
+        "confidence": 0.8
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.65
+      },
+      {
+        "name": "Sociology",
+        "confidence": 0.6
+      }
+    ],
+    "primary_category": "Ethics & Moral Philosophy",
+    "processing_time": 2.591975450515747,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "AI and Cultural Dynamics",
+      "Ethical Frameworks in Technology"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Bodhi/sd_courses_notes/Dharma.md/Dharma.md",
+    "total_chunks": 33,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Secular Dharma/Buddhism",
+        "confidence": 0.95
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.65
+      },
+      {
+        "name": "Psychology",
+        "confidence": 0.6
+      },
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.55
+      }
+    ],
+    "primary_category": "Secular Dharma/Buddhism",
+    "processing_time": 2.538989305496216,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Contemporary Buddhist Practices",
+      "Health and Wellbeing in Buddhism"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/AI/China-AI.md/China-AI.md",
+    "total_chunks": 166,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Political Anthropology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Economics & Political Economy",
+        "confidence": 0.8
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Technology & AI Ethics",
+        "confidence": 0.7
+      },
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.65
+      }
+    ],
+    "primary_category": "Political Anthropology",
+    "processing_time": 3.395226240158081,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Global Technology Governance",
+      "AI and Social Stability"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Bodhi/how-long-to-develop-secular-dharma.txt/how-long-to-develop-secular-dharma.txt",
+    "total_chunks": 9,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Secular Dharma/Buddhism",
+        "confidence": 0.95
+      },
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.85
+      },
+      {
+        "name": "Mindfulness-Based Ethical Living",
+        "confidence": 0.8
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.65
+      }
+    ],
+    "primary_category": "Secular Dharma/Buddhism",
+    "processing_time": 3.1404354572296143,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Secular Ethical Frameworks",
+      "Transformative Practices in Secular Contexts"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Graeber/Dawn_of_Everything/Dawn-of-Everything/Dawn_of_Everything-David_Graeber.md/Dawn_of_Everything-David_Graeber.md",
+    "total_chunks": 3457,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.95
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Evolutionary Biology",
+        "confidence": 0.75
+      },
+      {
+        "name": "History & Civilization Studies",
+        "confidence": 0.7
+      },
+      {
+        "name": "Sociology",
+        "confidence": 0.65
+      }
+    ],
+    "primary_category": "Cultural Anthropology",
+    "processing_time": 2.959848642349243,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Neolithic Economy Studies",
+      "Participatory Democracy in Ancient Societies"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/AI/human-vs-ai-consciousness.md/human-vs-ai-consciousness.md",
+    "total_chunks": 170,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Philosophy of Mind",
+        "confidence": 0.95
+      },
+      {
+        "name": "Consciousness Studies",
+        "confidence": 0.85
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.65
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.6
+      }
+    ],
+    "primary_category": "Philosophy of Mind",
+    "processing_time": 2.6329832077026367,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "AI and Consciousness Ethics",
+      "Digital Consciousness Studies"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Graeber/Dawn_of_Everything/Dawn-of-Everything/summaries_gpt-4o-mini/01.00-chapter.md/01.00-chapter.md",
+    "total_chunks": 8,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Evolutionary Biology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Sociology",
+        "confidence": 0.65
+      },
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.6
+      }
+    ],
+    "primary_category": "Cultural Anthropology",
+    "processing_time": 2.6639668941497803,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Narrative History Studies",
+      "Inequality and Social Change Studies"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/AI/How-Money-Works_Are-You-Ready-To-Be-Automated.md/How-Money-Works_Are-You-Ready-To-Be-Automated.md",
+    "total_chunks": 38,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Automation and Workforce Dynamics",
+        "confidence": 0.95
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.8
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Technology & AI Ethics",
+        "confidence": 0.65
+      },
+      {
+        "name": "Economics & Political Economy",
+        "confidence": 0.6
+      }
+    ],
+    "primary_category": "Automation and Workforce Dynamics",
+    "processing_time": 2.7197511196136475,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Impact of Automation on Human Intelligence",
+      "Future of Work and Technology"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Graeber/Dawn_of_Everything/Dawn-of-Everything/summaries_gpt-4o-mini/00.00-preface.md/00.00-preface.md",
+    "total_chunks": 4,
+    "sampled_chunks": 4,
+    "categories": [
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Archaeology",
+        "confidence": 0.8
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Evolutionary Biology",
+        "confidence": 0.65
+      },
+      {
+        "name": "Political Anthropology",
+        "confidence": 0.6
+      }
+    ],
+    "primary_category": "Cultural Anthropology",
+    "processing_time": 2.988245725631714,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Collaborative Academic Discourse",
+      "Activism and Social Movements"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Bodhi/sd_courses_notes/Homework3.md/Homework3.md",
+    "total_chunks": 21,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Secular Dharma/Buddhism",
+        "confidence": 0.95
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.8
+      },
+      {
+        "name": "Psychology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.7
+      },
+      {
+        "name": "Existentialism",
+        "confidence": 0.65
+      }
+    ],
+    "primary_category": "Secular Dharma/Buddhism",
+    "processing_time": 2.8357627391815186,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Mindfulness-Based Ethical Living",
+      "Dukkha and Human Experience"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Bessel-van-Der-Kolk/The-Body-Keeps-the-Score_Bessel-van-Der-Kolk.md/The-Body-Keeps-the-Score_Bessel-van-Der-Kolk.md",
+    "total_chunks": 2602,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Trauma & Healing",
+        "confidence": 0.95
+      },
+      {
+        "name": "Psychology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Applied Anthropology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Meditation & Mindfulness",
+        "confidence": 0.7
+      },
+      {
+        "name": "Cultural Studies",
+        "confidence": 0.65
+      }
+    ],
+    "primary_category": "Trauma & Healing",
+    "processing_time": 2.3040521144866943,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": []
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Bodhi/sd_courses_notes/GaiaHouseJuly18.md/GaiaHouseJuly18.md",
+    "total_chunks": 34,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Secular Dharma/Buddhism",
+        "confidence": 0.95
+      },
+      {
+        "name": "Philosophy of Mind",
+        "confidence": 0.85
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.65
+      },
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.6
+      }
+    ],
+    "primary_category": "Secular Dharma/Buddhism",
+    "processing_time": 3.2958195209503174,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Metaphysical Propositions in Buddhism",
+      "Therapeutic Applications of Mindfulness"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Graeber/Dawn_of_Everything/Dawn-of-Everything/summaries_gpt-4o-mini/02.00-chapter.md/02.00-chapter.md",
+    "total_chunks": 8,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.95
+      },
+      {
+        "name": "Political Anthropology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.65
+      },
+      {
+        "name": "History & Civilization Studies",
+        "confidence": 0.6
+      }
+    ],
+    "primary_category": "Cultural Anthropology",
+    "processing_time": 2.5080175399780273,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Indigenous Intellectual Exchange",
+      "Critique of Eurocentrism"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Bodhi/sd_courses_notes/SD_homework_ight_speech.md/SD_homework_ight_speech.md",
+    "total_chunks": 22,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.95
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Secular Dharma/Buddhism",
+        "confidence": 0.8
+      },
+      {
+        "name": "Communication Studies",
+        "confidence": 0.7
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.65
+      }
+    ],
+    "primary_category": "Ethics & Moral Philosophy",
+    "processing_time": 2.6846323013305664,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Speech Ethics",
+      "Mindful Communication Practices"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/AI/darioamodei.com/machines-of-loving-grace.md/machines-of-loving-grace.md",
+    "total_chunks": 309,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Neuroscience & Brain Science",
+        "confidence": 0.8
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Philosophy of Mind",
+        "confidence": 0.65
+      },
+      {
+        "name": "Existentialism",
+        "confidence": 0.6
+      }
+    ],
+    "primary_category": "Human Behavioral Biology",
+    "processing_time": 3.0036051273345947,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Cognitive Enhancement Ethics",
+      "Science Fiction and Philosophy"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Graeber/Dawn_of_Everything/Dawn-of-Everything/summaries_gpt-4o-mini/03.00-chapter.md/03.00-chapter.md",
+    "total_chunks": 7,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Evolutionary Biology",
+        "confidence": 0.8
+      },
+      {
+        "name": "Applied Anthropology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Philosophical Anthropology",
+        "confidence": 0.65
+      }
+    ],
+    "primary_category": "Human Behavioral Biology",
+    "processing_time": 2.6157171726226807,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Prehistoric Social Dynamics",
+      "Complexity in Human Evolution"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Graeber/Dawn_of_Everything/Dawn-of-Everything/summaries_gpt-4o-mini/03.01-chapter.md/03.01-chapter.md",
+    "total_chunks": 6,
+    "sampled_chunks": 6,
+    "categories": [
+      {
+        "name": "Anthropology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Sociology",
+        "confidence": 0.8
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Political Anthropology",
+        "confidence": 0.65
+      }
+    ],
+    "primary_category": "Anthropology",
+    "processing_time": 2.331051826477051,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Social Organization Dynamics",
+      "Rituals and Political Awareness"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Blueprint/nicholas-a-christakis_blueprint_the-evolutionary-origins-of-a-good-society.md/nicholas-a-christakis_blueprint_the-evolutionary-origins-of-a-good-society.md",
+    "total_chunks": 2556,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Evolutionary Biology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Sociology",
+        "confidence": 0.65
+      },
+      {
+        "name": "Psychology",
+        "confidence": 0.6
+      }
+    ],
+    "primary_category": "Human Behavioral Biology",
+    "processing_time": 2.4043145179748535,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Evolutionary Sociology",
+      "Cultural Evolution Studies"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Bodhi/secular_buddhism/Secular-Buddhism-Book/Secular_Buddhism.md/Secular_Buddhism.md",
+    "total_chunks": 1298,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Secular Dharma/Buddhism",
+        "confidence": 0.95
+      },
+      {
+        "name": "Philosophy of Mind",
+        "confidence": 0.8
+      },
+      {
+        "name": "Existentialism",
+        "confidence": 0.75
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.65
+      },
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.6
+      }
+    ],
+    "primary_category": "Secular Dharma/Buddhism",
+    "processing_time": 2.760160207748413,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Buddhist Monasticism in Modern Society",
+      "Integration of Artistic Practices in Literature"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Body_Keeps_Score.md/Body_Keeps_Score.md",
+    "total_chunks": 2529,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Trauma & Healing",
+        "confidence": 0.95
+      },
+      {
+        "name": "Psychology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.65
+      },
+      {
+        "name": "Social Justice & Activism",
+        "confidence": 0.55
+      }
+    ],
+    "primary_category": "Trauma & Healing",
+    "processing_time": 2.2559001445770264,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Narrative Therapy Practices",
+      "Public Health and Trauma Response"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Bodhi/A Worldly Eightfold Path.txt/A Worldly Eightfold Path.txt",
+    "total_chunks": 167,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Secular Dharma/Buddhism",
+        "confidence": 0.95
+      },
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.85
+      },
+      {
+        "name": "Philosophical Anthropology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Mindfulness-Based Ethical Living",
+        "confidence": 0.7
+      },
+      {
+        "name": "Political Anthropology",
+        "confidence": 0.65
+      }
+    ],
+    "primary_category": "Secular Dharma/Buddhism",
+    "processing_time": 2.263838768005371,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Contemplative Ethics",
+      "Secular Ethical Practices"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Christopher_Boehm/Christopher-Boehm_Hierarchy-in-the-Forest_The-Evolution-of-Egalitarian-Behavior_HarvardUP-1999.md/Christopher-Boehm_Hierarchy-in-the-Forest_The-Evolution-of-Egalitarian-Behavior_HarvardUP-1999.md",
+    "total_chunks": 2547,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Evolutionary Biology",
+        "confidence": 0.8
+      },
+      {
+        "name": "Primatology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Psychology",
+        "confidence": 0.65
+      }
+    ],
+    "primary_category": "Human Behavioral Biology",
+    "processing_time": 2.2521841526031494,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": []
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Graeber/Dawn_of_Everything/Dawn-of-Everything/summaries_gpt-4o-mini/04.00-chapter.md/04.00-chapter.md",
+    "total_chunks": 9,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.95
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Evolutionary Biology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Sociology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Archaeology",
+        "confidence": 0.65
+      }
+    ],
+    "primary_category": "Cultural Anthropology",
+    "processing_time": 2.9364354610443115,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Dynamic Social Structures in Prehistoric Societies",
+      "Egalitarianism in Hunter-Gatherer Cultures"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Graeber/Dawn_of_Everything/Dawn-of-Everything/summaries_gpt-4o-mini/04.01-chapter.md/04.01-chapter.md",
+    "total_chunks": 6,
+    "sampled_chunks": 6,
+    "categories": [
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.8
+      },
+      {
+        "name": "Archaeology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Evolutionary Biology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Political Anthropology",
+        "confidence": 0.65
+      }
+    ],
+    "primary_category": "Cultural Anthropology",
+    "processing_time": 2.54457688331604,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Complexity in Early Societal Structures",
+      "Resource Management in Prehistoric Societies"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Bodhi/After-Buddhism-Book/After-Buddhism-EPUB/After-Buddhism.md/After-Buddhism.md",
+    "total_chunks": 2017,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Secular Dharma/Buddhism",
+        "confidence": 0.95
+      },
+      {
+        "name": "Philosophical Anthropology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.65
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.55
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.5
+      }
+    ],
+    "primary_category": "Secular Dharma/Buddhism",
+    "processing_time": 2.8151512145996094,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": []
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Christopher_Boehm/summaries_gpt-4o-mini/00-preface.md/00-preface.md",
+    "total_chunks": 6,
+    "sampled_chunks": 6,
+    "categories": [
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Evolutionary Biology",
+        "confidence": 0.8
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Political Anthropology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Sociology",
+        "confidence": 0.65
+      }
+    ],
+    "primary_category": "Human Behavioral Biology",
+    "processing_time": 2.6714532375335693,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Egalitarianism Studies",
+      "Evolutionary Social Dynamics"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Bodhi/After_Buddhism-a_workbook.md/After_Buddhism-a_workbook.md",
+    "total_chunks": 542,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Secular Dharma/Buddhism",
+        "confidence": 0.95
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.8
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Philosophy of Mind",
+        "confidence": 0.65
+      },
+      {
+        "name": "Meditation & Mindfulness",
+        "confidence": 0.6
+      }
+    ],
+    "primary_category": "Secular Dharma/Buddhism",
+    "processing_time": 2.2795584201812744,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": []
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Graeber/Dawn_of_Everything/Dawn-of-Everything/summaries_gpt-4o-mini/05.00-chapter.md/05.00-chapter.md",
+    "total_chunks": 8,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.95
+      },
+      {
+        "name": "Evolutionary Sociology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Political Anthropology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.65
+      }
+    ],
+    "primary_category": "Cultural Anthropology",
+    "processing_time": 2.3779735565185547,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Pre-Agricultural Societal Dynamics",
+      "Cultural Identity and Schismogenesis"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Christopher_Boehm/summaries_gpt-4o-mini/01-chapter.md/01-chapter.md",
+    "total_chunks": 5,
+    "sampled_chunks": 5,
+    "categories": [
+      {
+        "name": "Evolutionary Biology",
+        "confidence": 0.95
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Sociology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.65
+      }
+    ],
+    "primary_category": "Evolutionary Biology",
+    "processing_time": 2.288539409637451,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Political Egalitarianism Studies",
+      "Social Hierarchy Dynamics"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Bodhi/After_Buddhism_and_Beyond.md/After_Buddhism_and_Beyond.md",
+    "total_chunks": 812,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Secular Dharma/Buddhism",
+        "confidence": 0.95
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Philosophy of Mind",
+        "confidence": 0.75
+      },
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.7
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.65
+      }
+    ],
+    "primary_category": "Secular Dharma/Buddhism",
+    "processing_time": 2.532240390777588,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Existential Skill Development",
+      "Mindful Integration Practices"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Christopher_Boehm/summaries_gpt-4o-mini/02-chapter.md/02-chapter.md",
+    "total_chunks": 6,
+    "sampled_chunks": 6,
+    "categories": [
+      {
+        "name": "Evolutionary Biology",
+        "confidence": 0.95
+      },
+      {
+        "name": "Primatology",
+        "confidence": 0.9
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Psychology",
+        "confidence": 0.65
+      }
+    ],
+    "primary_category": "Evolutionary Biology",
+    "processing_time": 2.4842751026153564,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Hierarchy and Egalitarianism Studies",
+      "Chimpanzee Social Dynamics"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Graeber/Dawn_of_Everything/Dawn-of-Everything/summaries_gpt-4o-mini/05.01-chapter.md/05.01-chapter.md",
+    "total_chunks": 7,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.95
+      },
+      {
+        "name": "Political Anthropology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.7
+      },
+      {
+        "name": "Evolutionary Sociology",
+        "confidence": 0.65
+      }
+    ],
+    "primary_category": "Cultural Anthropology",
+    "processing_time": 2.7479774951934814,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Cultural Dynamics in Indigenous Societies",
+      "Egalitarian Political Structures in Prehistoric Societies"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Bodhi/Art_of_Solitude/Art_of_Solitude.md/Art_of_Solitude.md",
+    "total_chunks": 603,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Philosophy of Mind",
+        "confidence": 0.85
+      },
+      {
+        "name": "Meditation & Mindfulness",
+        "confidence": 0.8
+      },
+      {
+        "name": "Existentialism",
+        "confidence": 0.75
+      },
+      {
+        "name": "Cultural Studies",
+        "confidence": 0.7
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.65
+      }
+    ],
+    "primary_category": "Philosophy of Mind",
+    "processing_time": 2.347567319869995,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Solitude Studies",
+      "Contemplative Practices in Literature"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Graeber/Dawn_of_Everything/Dawn-of-Everything/summaries_gpt-4o-mini/06.00-chapter.md/06.00-chapter.md",
+    "total_chunks": 9,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Archaeology",
+        "confidence": 0.8
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Evolutionary Sociology",
+        "confidence": 0.65
+      },
+      {
+        "name": "Ecology & Environmental Science",
+        "confidence": 0.6
+      }
+    ],
+    "primary_category": "Cultural Anthropology",
+    "processing_time": 2.5522074699401855,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Neolithic Social Dynamics",
+      "Agricultural Ritual Studies"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Bodhi/Interview_with_Stephen_Batchelor_on_Mindfulness_Based_Ethical_Living_MBEL.txt/Interview_with_Stephen_Batchelor_on_Mindfulness_Based_Ethical_Living_MBEL.txt",
+    "total_chunks": 86,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Mindfulness-Based Ethical Living",
+        "confidence": 0.95
+      },
+      {
+        "name": "Secular Dharma/Buddhism",
+        "confidence": 0.85
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.7
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.65
+      }
+    ],
+    "primary_category": "Mindfulness-Based Ethical Living",
+    "processing_time": 2.371922492980957,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Mindfulness Practices in Modern Society",
+      "Ethical Flourishing Models"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Christopher_Boehm/summaries_gpt-4o-mini/04-chapter.md/04-chapter.md",
+    "total_chunks": 7,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Evolutionary Sociology",
+        "confidence": 0.95
+      },
+      {
+        "name": "Cultural Evolution Studies",
+        "confidence": 0.85
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Applied Anthropology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Social Organization Dynamics",
+        "confidence": 0.65
+      }
+    ],
+    "primary_category": "Evolutionary Sociology",
+    "processing_time": 2.095712423324585,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": []
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Christopher_Boehm/summaries_gpt-4o-mini/03-chapter.md/03-chapter.md",
+    "total_chunks": 7,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Evolutionary Biology",
+        "confidence": 0.95
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.8
+      },
+      {
+        "name": "Sociology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.7
+      }
+    ],
+    "primary_category": "Evolutionary Biology",
+    "processing_time": 3.3837852478027344,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Egalitarian Social Structures",
+      "Social Control Mechanisms in Hunter-Gatherer Societies"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Bodhi/MBEL.md/MBEL.md",
+    "total_chunks": 180,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Mindfulness-Based Ethical Living",
+        "confidence": 0.95
+      },
+      {
+        "name": "Secular Dharma/Buddhism",
+        "confidence": 0.85
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.65
+      },
+      {
+        "name": "Community & Social Capital",
+        "confidence": 0.6
+      }
+    ],
+    "primary_category": "Mindfulness-Based Ethical Living",
+    "processing_time": 2.4639346599578857,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Mindfulness in Contemporary Society",
+      "Creative Flow and Non-Reactivity"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Graeber/Dawn_of_Everything/Dawn-of-Everything/summaries_gpt-4o-mini/06.01-chapter.md/06.01-chapter.md",
+    "total_chunks": 5,
+    "sampled_chunks": 5,
+    "categories": [
+      {
+        "name": "Evolutionary Biology",
+        "confidence": 0.95
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Sociology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.65
+      }
+    ],
+    "primary_category": "Evolutionary Biology",
+    "processing_time": 2.660525321960449,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Critique of Agricultural Narratives",
+      "Social Stratification in Prehistoric Societies"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Bodhi/On-Being-Alone.txt/On-Being-Alone.txt",
+    "total_chunks": 117,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Philosophy of Mind",
+        "confidence": 0.85
+      },
+      {
+        "name": "Meditation & Mindfulness",
+        "confidence": 0.8
+      },
+      {
+        "name": "Existentialism",
+        "confidence": 0.75
+      },
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.7
+      },
+      {
+        "name": "Cultural Studies",
+        "confidence": 0.65
+      }
+    ],
+    "primary_category": "Philosophy of Mind",
+    "processing_time": 2.407522439956665,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Solitude Studies",
+      "Ethical Intelligence Development"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Graeber/Dawn_of_Everything/Dawn-of-Everything/summaries_gpt-4o-mini/07.00-chapter.md/07.00-chapter.md",
+    "total_chunks": 10,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Ecology & Environmental Science",
+        "confidence": 0.95
+      },
+      {
+        "name": "Evolutionary Biology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Applied Anthropology",
+        "confidence": 0.8
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Archaeology",
+        "confidence": 0.7
+      }
+    ],
+    "primary_category": "Ecology & Environmental Science",
+    "processing_time": 2.771676540374756,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Historical Agricultural Dynamics",
+      "Ecological Flexibility in Early Societies"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Graeber/Dawn_of_Everything/Dawn-of-Everything/summaries_gpt-4o-mini/08.00-chapter.md/08.00-chapter.md",
+    "total_chunks": 7,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Archaeology",
+        "confidence": 0.95
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Evolutionary Sociology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Political Anthropology",
+        "confidence": 0.65
+      }
+    ],
+    "primary_category": "Archaeology",
+    "processing_time": 2.363778591156006,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Urban Evolution Studies",
+      "Decentralized Governance in Ancient Societies"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Christopher_Boehm/summaries_gpt-4o-mini/06-chapter.md/06-chapter.md",
+    "total_chunks": 5,
+    "sampled_chunks": 5,
+    "categories": [
+      {
+        "name": "Evolutionary Biology",
+        "confidence": 0.95
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Political Anthropology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Sociology",
+        "confidence": 0.65
+      }
+    ],
+    "primary_category": "Evolutionary Biology",
+    "processing_time": 2.7751283645629883,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Primate Social Dynamics",
+      "Egalitarianism Studies in Human Evolution"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Christopher_Boehm/summaries_gpt-4o-mini/05-chapter.md/05-chapter.md",
+    "total_chunks": 6,
+    "sampled_chunks": 6,
+    "categories": [
+      {
+        "name": "Evolutionary Sociology",
+        "confidence": 0.95
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.8
+      },
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.7
+      },
+      {
+        "name": "Political Anthropology",
+        "confidence": 0.65
+      }
+    ],
+    "primary_category": "Evolutionary Sociology",
+    "processing_time": 3.623316764831543,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Egalitarian Dynamics in Tribal Societies",
+      "Intergroup Conflict and Social Structures"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Graeber/Dawn_of_Everything/Dawn-of-Everything/summaries_gpt-4o-mini/08.01-chapter.md/08.01-chapter.md",
+    "total_chunks": 6,
+    "sampled_chunks": 6,
+    "categories": [
+      {
+        "name": "Archaeology",
+        "confidence": 0.95
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Political Anthropology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Evolutionary Sociology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.65
+      }
+    ],
+    "primary_category": "Archaeology",
+    "processing_time": 2.076105833053589,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Urban Governance in Ancient Civilizations",
+      "Egalitarian Social Structures in Early Societies"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Bodhi/SIM_retreat.txt/SIM_retreat.txt",
+    "total_chunks": 2375,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Secular Dharma/Buddhism",
+        "confidence": 0.85
+      },
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.8
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.65
+      },
+      {
+        "name": "Applied Anthropology",
+        "confidence": 0.6
+      },
+      {
+        "name": "Mindfulness Practices in Modern Society",
+        "confidence": 0.55
+      }
+    ],
+    "primary_category": "Secular Dharma/Buddhism",
+    "processing_time": 2.3245205879211426,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Ethical Decision-Making Frameworks",
+      "Mindful Communication in Ethical Dilemmas"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Graeber/Dawn_of_Everything/Dawn-of-Everything/summaries_gpt-4o-mini/10.00-chapter.md/10.00-chapter.md",
+    "total_chunks": 7,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Political Anthropology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Sociology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Evolutionary Sociology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.65
+      },
+      {
+        "name": "History & Civilization Studies",
+        "confidence": 0.6
+      }
+    ],
+    "primary_category": "Political Anthropology",
+    "processing_time": 2.094773769378662,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Decentralized Political Structures",
+      "Historical Political Dynamics"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Graeber/Dawn_of_Everything/Dawn-of-Everything/summaries_gpt-4o-mini/09.00-chapter.md/09.00-chapter.md",
+    "total_chunks": 6,
+    "sampled_chunks": 6,
+    "categories": [
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.95
+      },
+      {
+        "name": "Political Anthropology",
+        "confidence": 0.85
+      },
+      {
+        "name": "History & Civilization Studies",
+        "confidence": 0.8
+      },
+      {
+        "name": "Evolutionary Sociology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Egalitarianism Studies",
+        "confidence": 0.65
+      }
+    ],
+    "primary_category": "Cultural Anthropology",
+    "processing_time": 2.844151735305786,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Indigenous Governance Studies",
+      "Urban Democracy in Ancient Societies"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Bodhi/bodhi_college_courses/bodhi/docs/abb-2-1-parable-of-snake-21747.md/abb-2-1-parable-of-snake-21747.md",
+    "total_chunks": 22,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Secular Dharma/Buddhism",
+        "confidence": 0.9
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.8
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Philosophy of Mind",
+        "confidence": 0.65
+      }
+    ],
+    "primary_category": "Secular Dharma/Buddhism",
+    "processing_time": 2.3793911933898926,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Ethical Decision-Making in Uncertain Contexts",
+      "Cultural Narratives of Human Flourishing"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Christopher_Boehm/summaries_gpt-4o-mini/07-chapter.md/07-chapter.md",
+    "total_chunks": 6,
+    "sampled_chunks": 6,
+    "categories": [
+      {
+        "name": "Evolutionary Biology",
+        "confidence": 0.95
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Primatology",
+        "confidence": 0.8
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Sociology",
+        "confidence": 0.65
+      }
+    ],
+    "primary_category": "Evolutionary Biology",
+    "processing_time": 3.3874619007110596,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": []
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Christopher_Boehm/summaries_gpt-4o-mini/08-chapter.md/08-chapter.md",
+    "total_chunks": 6,
+    "sampled_chunks": 6,
+    "categories": [
+      {
+        "name": "Evolutionary Biology",
+        "confidence": 0.95
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Primatology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Sociology",
+        "confidence": 0.65
+      }
+    ],
+    "primary_category": "Evolutionary Biology",
+    "processing_time": 2.5760345458984375,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Egalitarian Social Dynamics",
+      "Cognitive Communication in Social Structures"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Bodhi/bodhi_college_courses/bodhi/docs/a-worldly-eightfold-path-30211.md/a-worldly-eightfold-path-30211.md",
+    "total_chunks": 144,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Secular Dharma/Buddhism",
+        "confidence": 0.95
+      },
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.85
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.65
+      },
+      {
+        "name": "Political Anthropology",
+        "confidence": 0.6
+      }
+    ],
+    "primary_category": "Secular Dharma/Buddhism",
+    "processing_time": 3.1417245864868164,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Contemplative Ethics in Modern Society",
+      "Political Engagement in Secular Contexts"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Christopher_Boehm/summaries_gpt-4o-mini/09-chapter.md/09-chapter.md",
+    "total_chunks": 6,
+    "sampled_chunks": 6,
+    "categories": [
+      {
+        "name": "Evolutionary Biology",
+        "confidence": 0.95
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Psychology",
+        "confidence": 0.65
+      },
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.6
+      }
+    ],
+    "primary_category": "Evolutionary Biology",
+    "processing_time": 2.41383695602417,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Altruism and Social Dynamics",
+      "Cultural Evolution in Prehistoric Societies"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Graeber/Dawn_of_Everything/Dawn-of-Everything/summaries_gpt-4o-mini/11.01-chapter.md/11.01-chapter.md",
+    "total_chunks": 7,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Political Anthropology",
+        "confidence": 0.95
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.85
+      },
+      {
+        "name": "History & Civilization Studies",
+        "confidence": 0.75
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.65
+      },
+      {
+        "name": "Evolutionary Sociology",
+        "confidence": 0.6
+      }
+    ],
+    "primary_category": "Political Anthropology",
+    "processing_time": 2.1231014728546143,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Indigenous Political Philosophy",
+      "Oral Tradition Studies"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Christopher_Boehm/summaries_gpt-4o-mini/99-summary_gpt-4o-mini.md/99-summary_gpt-4o-mini.md",
+    "total_chunks": 7,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Evolutionary Biology",
+        "confidence": 0.95
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Political Anthropology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Sociology",
+        "confidence": 0.65
+      }
+    ],
+    "primary_category": "Evolutionary Biology",
+    "processing_time": 2.2994401454925537,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Evolutionary Political Behavior",
+      "Altruism and Hierarchy Studies"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Graeber/Dawn_of_Everything/Dawn-of-Everything/summaries_gpt-4o-mini/11.00-chapter.md/11.00-chapter.md",
+    "total_chunks": 7,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.95
+      },
+      {
+        "name": "Political Anthropology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Evolutionary Sociology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Critique of Eurocentrism",
+        "confidence": 0.7
+      },
+      {
+        "name": "Indigenous Governance Studies",
+        "confidence": 0.65
+      }
+    ],
+    "primary_category": "Cultural Anthropology",
+    "processing_time": 2.7975809574127197,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Indigenous Historical Narratives",
+      "Complexity in Social Structures"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Christopher_Boehm/summaries_gpt-4o-mini/10-chapter.md/10-chapter.md",
+    "total_chunks": 7,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Evolutionary Sociology",
+        "confidence": 0.95
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Political Anthropology",
+        "confidence": 0.8
+      },
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.75
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.7
+      }
+    ],
+    "primary_category": "Evolutionary Sociology",
+    "processing_time": 4.066139459609985,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Complexity in Human Nature",
+      "Altruism and Egoism Dynamics"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Civilisations/Civilisations.txt/Civilisations.txt",
+    "total_chunks": 4890,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "History & Civilization Studies",
+        "confidence": 0.85
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.65
+      },
+      {
+        "name": "Evolutionary Biology",
+        "confidence": 0.6
+      },
+      {
+        "name": "Cultural Studies",
+        "confidence": 0.55
+      }
+    ],
+    "primary_category": "History & Civilization Studies",
+    "processing_time": 3.245281219482422,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Ancient Ritual Practices",
+      "Cultural Dynamics in Historical Contexts"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Bodhi/bodhi_college_courses/bodhi/docs/abb-2-4-four-paths-29034.md/abb-2-4-four-paths-29034.md",
+    "total_chunks": 93,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Secular Dharma/Buddhism",
+        "confidence": 0.95
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Existentialism",
+        "confidence": 0.75
+      },
+      {
+        "name": "Philosophy of Mind",
+        "confidence": 0.65
+      },
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.6
+      }
+    ],
+    "primary_category": "Secular Dharma/Buddhism",
+    "processing_time": 3.5589215755462646,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Existential Skill Development",
+      "Path Formation in Human Flourishing"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Bodhi/bodhi_college_courses/bodhi/docs/abb-handout-2-1-22840.md/abb-handout-2-1-22840.md",
+    "total_chunks": 4,
+    "sampled_chunks": 4,
+    "categories": [
+      {
+        "name": "Secular Dharma/Buddhism",
+        "confidence": 0.95
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.7
+      },
+      {
+        "name": "Philosophical Anthropology",
+        "confidence": 0.65
+      },
+      {
+        "name": "Narrative Therapy",
+        "confidence": 0.6
+      }
+    ],
+    "primary_category": "Secular Dharma/Buddhism",
+    "processing_time": 3.859057903289795,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": []
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Bodhi/bodhi_college_courses/bodhi/docs/abb-module-2-21005.md/abb-module-2-21005.md",
+    "total_chunks": 56,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Secular Dharma/Buddhism",
+        "confidence": 0.95
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.8
+      },
+      {
+        "name": "Psychology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Philosophy of Mind",
+        "confidence": 0.7
+      },
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.65
+      }
+    ],
+    "primary_category": "Secular Dharma/Buddhism",
+    "processing_time": 3.6576504707336426,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": []
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Graeber/Dawn_of_Everything/Dawn-of-Everything/summaries_gpt-4o-mini/10.02-chapter.md/10.02-chapter.md",
+    "total_chunks": 7,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Evolutionary Sociology",
+        "confidence": 0.95
+      },
+      {
+        "name": "Political Anthropology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.8
+      },
+      {
+        "name": "History & Civilization Studies",
+        "confidence": 0.75
+      },
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.7
+      }
+    ],
+    "primary_category": "Evolutionary Sociology",
+    "processing_time": 6.091175317764282,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Historical Governance Dynamics",
+      "Social Evolution Critique"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Graeber/Dawn_of_Everything/Dawn-of-Everything/summaries_gpt-4o-mini/12.00-chapter.md/12.00-chapter.md",
+    "total_chunks": 7,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.8
+      },
+      {
+        "name": "Evolutionary Sociology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Political Anthropology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.65
+      }
+    ],
+    "primary_category": "Cultural Anthropology",
+    "processing_time": 2.834089756011963,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Historical Narrative Critique",
+      "Social Organization Dynamics"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Graeber/Dawn_of_Everything/Dawn-of-Everything/summaries_gpt-4o-mini/99.00-summary_gpt-4o-mini.md/99.00-summary_gpt-4o-mini.md",
+    "total_chunks": 8,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.95
+      },
+      {
+        "name": "Evolutionary Sociology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Political Anthropology",
+        "confidence": 0.7
+      },
+      {
+        "name": "History & Civilization Studies",
+        "confidence": 0.65
+      }
+    ],
+    "primary_category": "Cultural Anthropology",
+    "processing_time": 2.3302361965179443,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Nuanced Historical Narratives",
+      "Alternative Governance Models"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Bodhi/bodhi_college_courses/bodhi/docs/abb-workbook-2021-26388.md/abb-workbook-2021-26388.md",
+    "total_chunks": 254,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Secular Dharma/Buddhism",
+        "confidence": 0.95
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.8
+      },
+      {
+        "name": "Philosophy of Mind",
+        "confidence": 0.7
+      },
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.65
+      },
+      {
+        "name": "Mindfulness Practices in Modern Society",
+        "confidence": 0.6
+      }
+    ],
+    "primary_category": "Secular Dharma/Buddhism",
+    "processing_time": 2.6209044456481934,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Buddhist Metaphysical Practices",
+      "Contemplative Ethics in Daily Life"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Civilisations/Josephine-Quinn_How-the-World-Made-the-West_a-4000-Year-History.md/Josephine-Quinn_How-the-World-Made-the-West_a-4000-Year-History.md",
+    "total_chunks": 2314,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Political Anthropology",
+        "confidence": 0.75
+      },
+      {
+        "name": "History & Civilization Studies",
+        "confidence": 0.7
+      },
+      {
+        "name": "Evolutionary Sociology",
+        "confidence": 0.65
+      },
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.6
+      }
+    ],
+    "primary_category": "Cultural Anthropology",
+    "processing_time": 2.3646891117095947,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Civilizational Studies",
+      "Cultural Dynamics of Citizenship"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Bodhi/bodhi_college_courses/bodhi/docs/all-poems-7230.md/all-poems-7230.md",
+    "total_chunks": 49,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Literature & Narrative Studies",
+        "confidence": 0.95
+      },
+      {
+        "name": "Cultural Studies",
+        "confidence": 0.85
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Philosophy of Mind",
+        "confidence": 0.65
+      },
+      {
+        "name": "Meditation & Mindfulness",
+        "confidence": 0.6
+      }
+    ],
+    "primary_category": "Literature & Narrative Studies",
+    "processing_time": 2.3657386302948,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Poetic Expression and Human Experience",
+      "Cultural Reflections in Poetry"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Graeber/david-graeber-anarchism-academia-and-the-avant-garde.md/david-graeber-anarchism-academia-and-the-avant-garde.md",
+    "total_chunks": 94,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Philosophy of Mind",
+        "confidence": 0.85
+      },
+      {
+        "name": "Cultural Studies",
+        "confidence": 0.75
+      },
+      {
+        "name": "Political Anthropology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Sociology",
+        "confidence": 0.65
+      },
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.6
+      }
+    ],
+    "primary_category": "Philosophy of Mind",
+    "processing_time": 2.354440689086914,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Academic Discourse in Anarchism",
+      "Cultural Critique in Philosophy"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Civilisations/Fall-of-Civilisations_The-Mongols_Terror-of-the-Steppe.md/Fall-of-Civilisations_The-Mongols_Terror-of-the-Steppe.md",
+    "total_chunks": 760,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "History & Civilization Studies",
+        "confidence": 0.95
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Evolutionary Sociology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.65
+      },
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.6
+      }
+    ],
+    "primary_category": "History & Civilization Studies",
+    "processing_time": 4.087736368179321,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Mongol Empire Studies",
+      "Cross-Cultural Historical Narratives"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Bodhi/bodhi_college_courses/bodhi/docs/abb-2-2-buddhanature-18365.md/abb-2-2-buddhanature-18365.md",
+    "total_chunks": 58,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Secular Dharma/Buddhism",
+        "confidence": 0.95
+      },
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.85
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.65
+      },
+      {
+        "name": "Philosophy of Mind",
+        "confidence": 0.6
+      }
+    ],
+    "primary_category": "Secular Dharma/Buddhism",
+    "processing_time": 7.8687965869903564,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Buddhist Ethical Frameworks",
+      "Human Flourishing in Buddhism"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Bodhi/bodhi_college_courses/bodhi/docs/dharma-through-painting-15026.md/dharma-through-painting-15026.md",
+    "total_chunks": 35,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Art & Aesthetics",
+        "confidence": 0.85
+      },
+      {
+        "name": "Cultural Studies",
+        "confidence": 0.75
+      },
+      {
+        "name": "Mindfulness Practices in Modern Society",
+        "confidence": 0.65
+      },
+      {
+        "name": "Psychology",
+        "confidence": 0.6
+      },
+      {
+        "name": "Existentialism",
+        "confidence": 0.55
+      }
+    ],
+    "primary_category": "Art & Aesthetics",
+    "processing_time": 2.155327796936035,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Artistic Self-Representation",
+      "Meditative Art Practices"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Graeber/david-graeber-and-david-wengrow-hiding-in-plain-sight.md/david-graeber-and-david-wengrow-hiding-in-plain-sight.md",
+    "total_chunks": 69,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Political Anthropology",
+        "confidence": 0.8
+      },
+      {
+        "name": "History & Civilization Studies",
+        "confidence": 0.75
+      },
+      {
+        "name": "Evolutionary Sociology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.65
+      }
+    ],
+    "primary_category": "Cultural Anthropology",
+    "processing_time": 2.5441207885742188,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Democratic Governance in Indigenous Societies",
+      "Historical Perspectives on Democracy"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Civilisations/why-civilizations-fail.md/why-civilizations-fail.md",
+    "total_chunks": 26,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.95
+      },
+      {
+        "name": "History & Civilization Studies",
+        "confidence": 0.85
+      },
+      {
+        "name": "Sociology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Political Anthropology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.65
+      }
+    ],
+    "primary_category": "Cultural Anthropology",
+    "processing_time": 2.530977725982666,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Asabiyyah Studies",
+      "Cyclical History Analysis"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Civilisations/planetary-phase-shift.md/planetary-phase-shift.md",
+    "total_chunks": 14,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Evolutionary Biology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Ecology & Environmental Science",
+        "confidence": 0.65
+      },
+      {
+        "name": "Technology & AI Ethics",
+        "confidence": 0.6
+      }
+    ],
+    "primary_category": "Evolutionary Biology",
+    "processing_time": 3.301605224609375,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Transdisciplinary Foresight Studies",
+      "Civilizational Transformation Dynamics"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Bodhi/bodhi_college_courses/bodhi/docs/dharmic-existentialist-ethics-in-a-time-of-pandemic-von-ramsey-margolis-15732.md/dharmic-existentialist-ethics-in-a-time-of-pandemic-von-ramsey-margolis-15732.md",
+    "total_chunks": 38,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Existentialism",
+        "confidence": 0.85
+      },
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.8
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.65
+      },
+      {
+        "name": "Religious Studies",
+        "confidence": 0.6
+      }
+    ],
+    "primary_category": "Existentialism",
+    "processing_time": 2.7573063373565674,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Pandemic Ethics",
+      "Literary Existentialism"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Graeber/david-graeber-and-david-wengrow-unfreezing-the-ice-age.md/david-graeber-and-david-wengrow-unfreezing-the-ice-age.md",
+    "total_chunks": 96,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Evolutionary Sociology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.8
+      },
+      {
+        "name": "Political Anthropology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.7
+      },
+      {
+        "name": "History & Civilization Studies",
+        "confidence": 0.65
+      }
+    ],
+    "primary_category": "Evolutionary Sociology",
+    "processing_time": 2.5518317222595215,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Political Self-Consciousness Studies",
+      "Seasonal Festival Dynamics in Social Evolution"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/2025/Kevin-Roberts_Dawns-Early-Light.md/Kevin-Roberts_Dawns-Early-Light.md",
+    "total_chunks": 1668,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Sociology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Political Anthropology",
+        "confidence": 0.65
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.55
+      },
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.45
+      }
+    ],
+    "primary_category": "Cultural Anthropology",
+    "processing_time": 2.535959482192993,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Contemporary American Societal Dynamics",
+      "Cultural Reflections in Modern Media"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/DS_Wilson/this_view_of_life.md/this_view_of_life.md",
+    "total_chunks": 1342,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.95
+      },
+      {
+        "name": "Evolutionary Biology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Philosophy of Mind",
+        "confidence": 0.65
+      },
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.6
+      }
+    ],
+    "primary_category": "Human Behavioral Biology",
+    "processing_time": 2.9358067512512207,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Cultural Dynamics of Evolutionary Thought",
+      "Narrative Structures in Evolutionary Discourse"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Graeber/david-graeber-anthropology-and-the-rise-of-the-professional-managerial-class.md/david-graeber-anthropology-and-the-rise-of-the-professional-managerial-class.md",
+    "total_chunks": 131,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Cultural Critique in Philosophy",
+        "confidence": 0.85
+      },
+      {
+        "name": "Sociology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Political Anthropology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Evolutionary Sociology",
+        "confidence": 0.65
+      },
+      {
+        "name": "Cultural Studies",
+        "confidence": 0.6
+      }
+    ],
+    "primary_category": "Cultural Critique in Philosophy",
+    "processing_time": 2.8239831924438477,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Neoliberalism and Academic Discourse",
+      "Professional-Managerial Class Dynamics"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Bodhi/bodhi_college_courses/bodhi/docs/gaia-house-july-18-17260.md/gaia-house-july-18-17260.md",
+    "total_chunks": 34,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Secular Dharma/Buddhism",
+        "confidence": 0.95
+      },
+      {
+        "name": "Philosophy of Mind",
+        "confidence": 0.85
+      },
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.75
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.65
+      },
+      {
+        "name": "Mindfulness Practices in Modern Society",
+        "confidence": 0.6
+      }
+    ],
+    "primary_category": "Secular Dharma/Buddhism",
+    "processing_time": 3.013038158416748,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Metaphysical Propositions in Secular Contexts",
+      "Therapeutic Applications of Mindfulness"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/DS_Wilson/tvol_morality.md/tvol_morality.md",
+    "total_chunks": 187,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.95
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Evolutionary Biology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Philosophy of Mind",
+        "confidence": 0.65
+      }
+    ],
+    "primary_category": "Ethics & Moral Philosophy",
+    "processing_time": 2.756406307220459,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Cosmological Evolution Studies",
+      "Biocultural Evolution Frameworks"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Dharmic_Existentialist_Ethics/Dharmic_existentialist_ethics_in_a_time_of_pandemic-Ramsey_Margolis.md/Dharmic_existentialist_ethics_in_a_time_of_pandemic-Ramsey_Margolis.md",
+    "total_chunks": 39,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Existentialism",
+        "confidence": 0.85
+      },
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.8
+      },
+      {
+        "name": "Secular Dharma/Buddhism",
+        "confidence": 0.75
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.65
+      },
+      {
+        "name": "Cultural Critique in Philosophy",
+        "confidence": 0.6
+      }
+    ],
+    "primary_category": "Existentialism",
+    "processing_time": 3.3070015907287598,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Pandemic Ethics",
+      "Literary Reflections on Human Experience"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Graeber/david-graeber-at-long-last.md/david-graeber-at-long-last.md",
+    "total_chunks": 155,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Cultural Anthropology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Evolutionary Sociology",
+        "confidence": 0.7
+      },
+      {
+        "name": "Philosophical Anthropology",
+        "confidence": 0.65
+      },
+      {
+        "name": "Social Theory",
+        "confidence": 0.6
+      }
+    ],
+    "primary_category": "Cultural Anthropology",
+    "processing_time": 4.031630992889404,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Contemporary Social Theory",
+      "Anthropological Critique of Positivism"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Bodhi/bodhi_college_courses/bodhi/docs/homework-6-jw-8732.md/homework-6-jw-8732.md",
+    "total_chunks": 21,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Secular Dharma/Buddhism",
+        "confidence": 0.95
+      },
+      {
+        "name": "Human Behavioral Biology",
+        "confidence": 0.85
+      },
+      {
+        "name": "Psychology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Philosophy of Mind",
+        "confidence": 0.7
+      },
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.65
+      }
+    ],
+    "primary_category": "Secular Dharma/Buddhism",
+    "processing_time": 3.7554407119750977,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Dependent Arising Studies",
+      "Cognitive Proliferation Dynamics"
+    ]
+  },
+  {
+    "article_path": "/var/lib/vectordbs/appliedanthropology/staging.text/Bodhi/bodhi_college_courses/bodhi/docs/homework-3-24092.md/homework-3-24092.md",
+    "total_chunks": 21,
+    "sampled_chunks": 7,
+    "categories": [
+      {
+        "name": "Secular Dharma/Buddhism",
+        "confidence": 0.95
+      },
+      {
+        "name": "Ethics & Moral Philosophy",
+        "confidence": 0.85
+      },
+      {
+        "name": "Psychology",
+        "confidence": 0.75
+      },
+      {
+        "name": "Existentialism",
+        "confidence": 0.65
+      },
+      {
+        "name": "Philosophy of Mind",
+        "confidence": 0.6
+      }
+    ],
+    "primary_category": "Secular Dharma/Buddhism",
+    "processing_time": 5.981611013412476,
+    "error": null,
+    "model_used": "openai:gpt-4o-mini",
+    "suggested_new_categories": [
+      "Dukkha Studies",
+      "Buddhist Psychological Practices"
+    ]
+  }
+]

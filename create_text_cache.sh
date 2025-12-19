@@ -3,7 +3,7 @@
 set -euo pipefail
 ((EUID)) && { sudo "$0" "$@"; exit; }
 #shellcheck disable=SC2155
-readonly -- PRG0="$(readlink -en -- "$0")"
+readonly -- PRG0="$(realpath -e -- "$0")"
 readonly -- PRGDIR="${PRG0%/*}"
 
 # workshops is the base directory 
@@ -11,7 +11,7 @@ readonly -- PRGDIR="${PRG0%/*}"
 # are contained and found
 readonly -- workshops="$PRGDIR"/workshops
 cd "$workshops" # sanity check and rehoming dir # HOMING DIR
-readonly -- real_workshops=$(readlink -en -- "$PWD")
+readonly -- real_workshops=$(realpath -e -- "$PWD")
 
 readonly -- staging_text="$PRGDIR"/staging.text
 #readonly -- real_staging_text=$(readlink -en -- "$staging_text")
@@ -86,7 +86,7 @@ echo "$(find -L "$staging_text"/ -type f |wc -l) total files in $staging_text"
 # add repositories from other locations ==============================================
 ln -fs "$VECTORDBS"/prosocial.world/embed_data.text/ prosocial.world
 ln -fs "$VECTORDBS"/wayang.net/embed_data/mdfiles/ wayang.net
-ln -fs "$VECTORDBS"/appliedanthropology/docs/research/ research
+ln -fs "$VECTORDBS"/appliedanthropology/docs/ docs_research
 
 # create staging.text zip file for yatti.id ==========================================
 cd "$PRGDIR"

@@ -39,7 +39,7 @@ declare -- cfgname="$KB".cfg
 
 # Configuration Variables - Default values
 declare -- KB_CONTEXT='Biology, Evolution, Anthropology, Culture, Dharma, Human Behavioural Evolution'
-declare -- GEN_MODEL='gpt-4.1-mini'
+declare -- GEN_MODEL='claude-haiku-4-5'
 declare -- GEN_TEMPERATURE='0.2'
 declare -i GEN_MAX_TOKENS=200
 declare -i GEN_PARALLEL=42
@@ -88,10 +88,10 @@ declare -i  do_create_text_cache=0 \
 declare -i REPROCESS_BLANK=0 FORCE=0
 
 # Default values for command line options
-declare -- MODEL=""
+declare -- MODEL=''
 declare -i MAX_TOKENS=0
-declare -- TEMPERATURE=""
-declare -- BROAD_CONTEXT=""
+declare -- TEMPERATURE=''
+declare -- BROAD_CONTEXT=''
 declare -i DRY_RUN=0
 declare -i VERBOSE=1
 declare -i DEBUG=0
