@@ -1,5 +1,3 @@
-*.bm25
-*.npz
 *.faiss
 *.db
 *~
@@ -12,7 +10,6 @@ backups/
 build/
 CHANGES.md
 CLAUDE.md
-.claude/
 .coverage
 coverage_html/
 curtest.sh
@@ -49,12 +46,14 @@ htmlcov/
 IMPROVEMENTS.md
 index.php
 .ipynb_checkpoints/
+*.json
 *.log
 logs/
 *.mp3
 *.old
 .old
 old/
+PURPOSE-FUNCTIONALITY-USAGE.md
 __pycache__
 __pycache__/
 *.py[cod]
@@ -62,6 +61,7 @@ __pycache__/
 *.raw
 refactor*
 .script
+seculardharma.cfg
 *.srt
 staging.text/
 staging.text.zip

@@ -3,10 +3,9 @@ set -Eeuo pipefail
 
 ((EUID)) && { sudo -E "$0" "$@"; exit; }
 
-declare -- SCRIPT_PATH SCRIPT_DIR SCRIPT_NAME
-SCRIPT_PATH=$(realpath -- "$0")
-SCRIPT_DIR=$(dirname -- "$SCRIPT_PATH")
-SCRIPT_NAME=$(basename -s .sh -- "$0")
+declare -r SCRIPT_PATH=$(realpath -e -- "$0")
+declare -r SCRIPT_DIR=$(dirname -- "$SCRIPT_PATH")
+declare -r SCRIPT_NAME=$(basename -s .sh -- "$0")
 
 # Logging functions
 #shellcheck disable=SC2015
@@ -24,12 +23,14 @@ chownsysadmin() { cd "$1"; sudo chown sysadmin:www-data "$1"/* -R || true; }
 
 declare -- KB=appliedanthropology
 declare -- KBdir="$VECTORDBS"/"$KB"
+
 cd "$KBdir"
 KBdir=$PWD
+
 declare -- staging_text="$KBdir"/staging.text/ #embed_data.text
-declare -- real_staging_text=$(readlink -en -- "$staging_text")/
+declare -- real_staging_text=$(realpath -e -- "$staging_text")/
 declare -- workshops="$KBdir"/workshops/
-declare -- real_workshops=$(readlink -en -- "$workshops")/ #embed_data
+declare -- real_workshops=$(realpath -e -- "$workshops")/ #embed_data
 
 declare -- dbname="$KB".db
 declare -- bm25name="$KB".bm25
@@ -132,11 +133,11 @@ Configuration:
   See $KB.build.conf.example for format
 
 Examples:
-  $SCRIPT_NAME                          # Run all stages (same as -a)
-  $SCRIPT_NAME -0                       # Only create text cache
-  $SCRIPT_NAME -1 -2                    # Only generate and append citations
-  $SCRIPT_NAME -a -y                    # Run all stages non-interactively
-  $SCRIPT_NAME -4 -5 -y                 # Embed and test query, no prompts
+  $SCRIPT_NAME                   # Run all stages (same as -a)
+  $SCRIPT_NAME -0                # Only create text cache
+  $SCRIPT_NAME -1 -2             # Only generate and append citations
+  $SCRIPT_NAME -a -y             # Run all stages non-interactively
+  $SCRIPT_NAME -4 -5 -y          # Embed and test query, no prompts
 EOT
   exit
 }
@@ -190,8 +191,8 @@ while (($#)); do
     -[012345ayfrMmtcNnqvDh]*) #shellcheck disable=SC2046 #split up single options
       set -- '' $(printf -- "-%c " $(grep -o . <<<"${1:1}")) "${@:2}"
       ;;
-    -*) die 22 "Invalid option '$1'" ;;
-    *) die 2 "Invalid argument '$1'"
+    -*) die 22 "Invalid option ${1@Q}'" ;;
+    *) die 2 "Invalid argument ${1@Q}"
       ;;
   esac
   shift
@@ -217,14 +218,14 @@ validate_tools() {
   local tool
   for tool in "${required_tools[@]}"; do
     if ! command -v "$tool" &>/dev/null; then
-      die 1 "Required tool '$tool' not found in PATH"
+      die 1 "Required tool ${tool@Q} not found in PATH"
     fi
   done
   
   # Check staging_text directory exists if needed
   if ((do_gen_citations || do_append_citations || do_import_text_database)); then
     if [[ ! -d "$staging_text" ]]; then
-      error "Directory '$staging_text' not found"
+      error "Directory ${staging_text@Q} not found"
       error "Run with -0 flag first to create text cache"
       exit 1
     fi
@@ -275,14 +276,14 @@ if ((do_import_text_database)); then
   if (( ! remove_database)); then
     if [[ -f "$dbname" ]]; then
       if ((ASSUME_YES)); then
-        vecho "$dbname exists. Removing it due to --yes flag."
+        vecho "${dbname@Q} exists. Removing it due to --yes flag."
         remove_database=1
       else
-        vecho "$dbname may need to be deleted before proceeding."
+        vecho "Delete table $dbname.docs before proceeding?"
         read -rp "$SCRIPT_NAME: Remove table $dbname.docs? y/n " yn
         if [[ ${yn,,} != 'y' ]]; then
           remove_database=0
-          read -rp "$SCRIPT_NAME: Continue processing with existing database '$dbname'? y/n " yn
+          read -rp "$SCRIPT_NAME: Continue processing with existing database ${dbname@Q}? y/n " yn
           [[ ${yn,,} == 'y' ]] || exit 1
         else
           remove_database=1
@@ -306,23 +307,23 @@ declare -i remove_faiss=0
 if ((do_embed)); then
   cd "$KBdir"
 
-    if [[ -f "$faissname" ]]; then
-      if ((ASSUME_YES)); then
-        vecho "$faissname exists. Removing it due to --yes flag."
-        remove_faiss=1
+  if [[ -f "$faissname" ]]; then
+    if ((ASSUME_YES)); then
+      vecho "${faissname@Q} exists. Removing it due to --yes flag."
+      remove_faiss=1
+    else
+      vecho "Delete ${faissname@Q} before proceeding?"
+      read -rp "Remove ${faissname@Q}? y/n " yn
+      if [[ ${yn,,} != 'y' ]]; then
+        remove_faiss=0
+        read -rp "Continue processing with existing vector database ${faissname@Q}? y/n " yn
+        [[ ${yn,,} == 'y' ]] || exit 1
       else
-        vecho "$faissname may need to be deleted before proceeding."
-        read -rp "Remove $faissname? y/n " yn
-        if [[ ${yn,,} != 'y' ]]; then
-          remove_faiss=0
-          read -rp "Continue processing with existing vector database '$faissname'? y/n " yn
-          [[ ${yn,,} == 'y' ]] || exit 1
-        else
-          remove_faiss=1
-        fi
+        remove_faiss=1
       fi
     fi
-    (( ! remove_faiss)) || rm -f "$faissname"
+  fi
+  (( ! remove_faiss)) || rm -f "$faissname"
 
   time customkb embed "$cfgname"
   chownsysadmin "$KBdir"
