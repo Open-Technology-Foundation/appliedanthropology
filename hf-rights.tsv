@@ -1,0 +1,143 @@
+# hf-rights.tsv — rights tier per source group (SKELETON: machine-guessed, REVIEW REQUIRED)
+#
+# Format: <path-prefix>\t<tier>   (longest prefix wins; trailing comments ignored)
+# Tiers:
+#   original      — Gary Dean's own work or AI-generated content; full text publishable (CC BY 4.0)
+#   public-domain — verified public-domain work AND translation; full text publishable
+#   copyrighted   — third-party in-copyright (or unverified); catalogue metadata only, text NEVER exported
+#
+# Defaults are conservative: everything unrecognised is marked copyrighted.
+# Sub-paths may override their parent group (longest match wins), e.g. zenquotes/discourse.md below.
+#
+zenquotes/discourse.md	original	# AI-generated discourses (gpt-4o-mini)
+2025	copyrighted	# 1 docs
+A-97-Year-Old-Philosopher-Faces-His-Own-Death.md	copyrighted	# 1 docs
+against-the-stream	copyrighted	# 7 docs
+AI	copyrighted	# 13 docs
+anarchy	copyrighted	# 121 docs
+anthropology	copyrighted	# 16 docs
+Bali	copyrighted	# 4 docs
+Balthasar-Gracian_The-Art-of-Worldly-Wisdom.md	copyrighted	# 1 docs
+Bessel-van-Der-Kolk	copyrighted	# 1 docs
+Blueprint	copyrighted	# 1 docs
+Bodhi	copyrighted	# 42 docs
+Body_Keeps_Score.md	copyrighted	# 1 docs
+CFT-Mini-Guide.md	copyrighted	# 1 docs
+characteristics-of-a-dharma_o3.md	original	# 1 docs
+Christopher_Boehm	copyrighted	# 13 docs
+Civilisations	copyrighted	# 11 docs
+Cornelia-C-Walther_Why-ProSocial-AI-Is-ProPlanetary-AI_A-Promise-For-Planetary-Harmony.md	copyrighted	# 1 docs
+Cory-Doctorow_How-to-Destroy-Surveillance-Capitalism_2021.md	copyrighted	# 1 docs
+DD	original	# 110 docs
+definition	copyrighted	# 6 docs
+dharma-research	copyrighted	# 7 docs
+Dharmic_Existentialist_Ethics	copyrighted	# 1 docs
+Dr-Aidan_Good-People-Make-Bad-Leaders_Machiavellis-The-Prince.md	copyrighted	# 1 docs
+DS_Wilson	copyrighted	# 4 docs
+Einzelganger	copyrighted	# 2 docs
+Einzelganger.txt	copyrighted	# 1 docs
+emails	copyrighted	# 67 docs
+emergence-of-dharmas-as-opposition.md	copyrighted	# 1 docs
+emergence-of-subcultures.md	copyrighted	# 1 docs
+enlightenment	copyrighted	# 4 docs
+Enlightenment_Now	copyrighted	# 1 docs
+Evan-Thompson_Waking-Dreaming-Being-Self-and-Consciousness.md	copyrighted	# 1 docs
+evolutionary_perspectives	copyrighted	# 5 docs
+facts-about-out-existence.md	copyrighted	# 1 docs
+faqs	original	# 11 docs
+Free_Culture	copyrighted	# 1 docs
+Gary-Dean	original	# 1 docs
+gd_keep_notes	original	# 801 docs
+Georgia-Ede_Change-Your-Diet-Change-Your-Mind_2024.md	copyrighted	# 1 docs
+Graeber	copyrighted	# 42 docs
+Greenwald-Glen_No-Place-to-Hide.md	copyrighted	# 1 docs
+guilds	copyrighted	# 1 docs
+homelessness	copyrighted	# 1 docs
+Humankind	copyrighted	# 1 docs
+Hurd-Ryan+Bulkeley-Kelly_Lucid-Dreaming-New-Perspectives-on-Consciousness-in-Sleep_2014.md	copyrighted	# 1 docs
+ikigai	copyrighted	# 2 docs
+i-never-thought-60-would-feel-like-this.md	copyrighted	# 1 docs
+james_c_scott	copyrighted	# 2 docs
+James-J-Fox	copyrighted	# 1 docs
+Jared-Henderson	copyrighted	# 1 docs
+J-Draper_We-Didnt-Start-The-Class-War_The-Tudor-Homelessness-Crisis.md	copyrighted	# 1 docs
+Jean-Jacques-Rousseau	public-domain	# 1 docs	# PD original — verify translation vintage
+Jeff_Hawkins	copyrighted	# 1 docs
+Josh-Chin+Liza-Lin_Surveillance-State.md	copyrighted	# 1 docs
+Judaism-Unpacked_Why-So-Many-Jews-Fall-In-Love-With-Buddhism.md	copyrighted	# 1 docs
+Ken-Wilber	copyrighted	# 1 docs
+Kurzweil	copyrighted	# 1 docs
+Lisa-Feldman-Barrett	copyrighted	# 1 docs
+Marcus-Mietzner	copyrighted	# 1 docs
+Mark-Pagel_Human-Tribalism_A-Curse-of-Our-Evolutionary-Past_Gifford-Lectures-2019.txt	copyrighted	# 1 docs
+Matthew-Walker	copyrighted	# 1 docs
+Max-Fisher_The-Chaos-Machine_The-Inside-Story-of-How-Social-Media_2022.md	copyrighted	# 1 docs
+Monasticism.md	copyrighted	# 1 docs
+Montaigne	public-domain	# 1 docs	# PD original — verify translation vintage
+Moores_Law_for_Everything.md	copyrighted	# 1 docs
+multispecies-ethnography	copyrighted	# 1 docs
+Mutual_Aid	public-domain	# 1 docs
+mysticism	copyrighted	# 5 docs
+myths	copyrighted	# 3132 docs
+Nomad-Elite_Why-Leaving-Australia-is-the-New-Australian-Dream.md	copyrighted	# 1 docs
+Open-Source_Everything	copyrighted	# 1 docs
+Patrick-Winn	copyrighted	# 1 docs
+Paul-Nurse	copyrighted	# 1 docs
+Pierre-Clastres	copyrighted	# 1 docs
+plato_the-apology.md	public-domain	# 1 docs	# PD original — verify translation vintage
+prosocial.world	copyrighted	# 206 docs
+ReTribalize_Spiritual-Community-vs-Homesteaders-vs-Networkstate.md	copyrighted	# 1 docs
+ReTribalize_Why-Spiritual-Communities-Cant-Build-Anything-Real.md	copyrighted	# 1 docs
+Robert-D-Putnam	copyrighted	# 1 docs
+Rupert-Bozeat	copyrighted	# 1 docs
+samin	copyrighted	# 11 docs
+Sapolsky	copyrighted	# 6 docs
+Schopenhauer	public-domain	# 4 docs	# PD original — verify translation vintage
+Secret_Of_Our_Success	copyrighted	# 1 docs
+secular_dharma_primary_prompt.md	original	# 1 docs
+singularity	copyrighted	# 1 docs
+situational_awareness	copyrighted	# 10 docs
+Spinoza	public-domain	# 2 docs	# PD original — verify translation vintage
+Stefano_Bettera	copyrighted	# 4 docs
+stoicism	copyrighted	# 1 docs
+Stoicism_Buddhism_Epicureanism_Quotes	copyrighted	# 1218 docs
+subcultures	copyrighted	# 1 docs
+sumarah	copyrighted	# 6 docs
+Taboo-Education_Why-Are-Americans-So-Bloody-Stupid.md	copyrighted	# 1 docs
+the-concept-of-dharma-in-the-ramayana.md	copyrighted	# 1 docs
+the-controversial-science-of-iq-culture.txt	copyrighted	# 1 docs
+The-Dhammapada.md	copyrighted	# 1 docs
+the-end-of-the-open-society.md	copyrighted	# 1 docs
+the_network_state.md	copyrighted	# 1 docs
+the_prince	public-domain	# 3 docs	# PD original — verify translation vintage
+The-Republic_Plato.md	public-domain	# 1 docs	# PD original — verify translation vintage
+The_World_As_Will_And_Idea.md	public-domain	# 1 docs	# PD original — verify translation vintage
+Tom-Scryleus_The-Scary-Truth-About-Work.md	copyrighted	# 1 docs
+Tony_Seba	copyrighted	# 2 docs
+transcripts	copyrighted	# 12 docs
+tribalism	copyrighted	# 2 docs
+Tyranny_of_Merit	copyrighted	# 1 docs
+Ubuntu	copyrighted	# 4 docs
+_uncategorized_	copyrighted	# 12 docs
+_unprocessed_	copyrighted	# 9 docs
+Urantia	public-domain	# 1 docs
+View_from_Space.md	copyrighted	# 1 docs
+Walls	copyrighted	# 1 docs
+war-violence-sport	copyrighted	# 7 docs
+websearch_data	copyrighted	# 1 docs
+what-is-dharma.md	copyrighted	# 1 docs
+What-The-Mandalorian-Gets-Right-About-Real-World-Religions.md	copyrighted	# 1 docs
+Who-is-really-enlightened.md	copyrighted	# 1 docs
+Why-Fictional-Religions-Feel-So-Fake.md	copyrighted	# 1 docs
+Why-Humans-Are-Better-Than-We-Think.md	copyrighted	# 1 docs
+wittgenstein_on-art-ethics-and-how-language-fails.md	copyrighted	# 1 docs
+wokeism	copyrighted	# 1 docs
+Wrangham	copyrighted	# 2 docs
+yamnaya.md	copyrighted	# 1 docs
+Yanis-Varoufakis_Technofeudalism-What-Killed-Capitalism_2023.md	copyrighted	# 1 docs
+yt_transcripts	copyrighted	# 1581 docs
+Yuval-Harari	copyrighted	# 2 docs
+zen	copyrighted	# 3 docs
+Zen_Mind	copyrighted	# 1 docs
+zenquotes	copyrighted	# 5948 docs
+zoonpolitikon	copyrighted	# 1 docs

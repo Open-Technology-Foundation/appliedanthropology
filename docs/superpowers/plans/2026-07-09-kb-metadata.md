@@ -15,8 +15,9 @@
 - BCS compliance (see `/usr/local/share/yatti/BCS/data/`): strict mode first, `while (($#)); do case $1 in … esac; shift; done` CLI loop, type-specific `declare`, descriptive heredoc delimiters, scripts end with `#fin`, 2-space indent.
 - `set -e` arithmetic house style: `((i+=1))` never `((i++))`; `((!flag)) || cmd` never `((flag)) && cmd`; `[[ -z $x ]] || cmd` never `[[ -n $x ]] && cmd` as a statement.
 - Git commits authored `Biksu-Okusi <biksu@okusi.id>`; NEVER mention "claude"/"cl" in messages; never commit `CLAUDE.md` or `.claude/`.
-- ▲ The user has historically kept `workshops/*.sh` scripts **uncommitted**. Before the first commit step, ask the user whether these two files should be committed; if declined, skip ALL commit steps and leave the files untracked.
-- `shellcheck` must pass on both files at the end of every task; `bcscheck` (slow, ~10–17 min) runs once in the final task.
+- ▲ **No commits** (user directive 2026-07-09): both files stay untracked. There are no commit steps in this plan; do not add any.
+- `workshops/.env` (git-ignored) holds `ANTHROPIC_API_KEY=...`; the script sources it when the variable is not already set. Never print, log, or commit its contents.
+- `shellcheck`: Tasks 1–5 may carry ONLY transient SC2034 warnings on globals that later tasks' functions consume (they disappear as tasks land); any other warning class is a defect. From Task 6 on, shellcheck must be completely clean on both files. `bcscheck` (slow, ~10–17 min) runs once in the final task.
 - Never commit credentials. Tests use the fake key `test-key-not-real`.
 - Model IDs (exact): haiku=`claude-haiku-4-5`, sonnet=`claude-sonnet-5`, opus=`claude-opus-4-8`. Default tier: sonnet.
 - Default paths: topics `$SCRIPT_DIR/topics.list`, database `$SCRIPT_DIR/corpus-metadata.db`.
@@ -72,7 +73,7 @@ assert_rc()    { if (( $2 == $3 )); then ok "$1"; else bad "$1 (expected rc $2, 
 TMP=$(mktemp -d) || exit 1
 trap 'rm -rf "$TMP"' EXIT
 declare -rx STUB_DIR=$TMP/stub
-declare -rx ANTHROPIC_API_KEY=test-key-not-real
+export ANTHROPIC_API_KEY=test-key-not-real
 mkdir -p "$STUB_DIR" "$TMP/bin" "$TMP/corpus" "$TMP/coll/a" "$TMP/coll/b"
 
 # Stub curl: record request body, bump call counter, emit canned response
@@ -127,6 +128,7 @@ echo '# X' >"$TMP/coll/b/x.md"
 
 # Source the script for unit tests (guard prevents main from running).
 # The sourced strict mode turns -e on; turn it back off for the harness.
+#shellcheck disable=SC1090
 KBMD_TEST_SOURCE=1 source "$SCRIPT"
 set +e
 
@@ -156,6 +158,16 @@ assert_rc 'no input documents rc 2' 2 "$rc"
 select_model ''
 assert_eq 'default tier is sonnet' 'sonnet' "$MODEL_TIER"
 assert_eq 'default model id' 'claude-sonnet-5' "$MODEL_ID"
+
+# .env fallback (sourced context: SCRIPT_DIR is the tests dir). The transient
+# .env is removed immediately; the fake key is restored for later sections.
+unset ANTHROPIC_API_KEY
+echo 'ANTHROPIC_API_KEY=from-dotenv' >"$TESTS_DIR/.env"
+resolve_auth
+assert_eq 'dotenv key becomes auth header' 'x-api-key: from-dotenv' "${AUTH_HEADER[1]}"
+rm -f "$TESTS_DIR/.env"
+export ANTHROPIC_API_KEY=test-key-not-real
+AUTH_HEADER=()
 
 # ==== [append new test sections above this summary] =======================
 printf '\nPASS: %d  FAIL: %d\n' "$PASS" "$FAIL"
@@ -299,8 +311,8 @@ Options:
 Large documents are sampled head/middle/tail down to SAMPLE_BUDGET characters
 (default 16000, ~4K tokens). SAMPLE_BUDGET=0 always sends the whole file.
 
-Credentials: uses \$ANTHROPIC_API_KEY if set, otherwise an active
-ant auth login profile (via: ant auth print-credentials).
+Credentials: uses \$ANTHROPIC_API_KEY if set, else $SCRIPT_DIR/.env
+(if present), else an active ant auth login profile.
 USAGE
 }
 
@@ -312,9 +324,14 @@ timer_stop() {
   printf -v _rv '%d.%02d' $(( us / 1000000 )) $(( us % 1000000 / 10000 ))
 }
 
-# Resolve API credentials, preferring an explicit key over an OAuth profile.
+# Resolve API credentials: an explicit env key wins; else a .env beside the
+# script may provide ANTHROPIC_API_KEY; else fall back to an OAuth profile.
 resolve_auth() {
   local -- token
+  if [[ -z ${ANTHROPIC_API_KEY:-} && -f $SCRIPT_DIR/.env ]]; then
+    #shellcheck disable=SC1091
+    source "$SCRIPT_DIR/.env"
+  fi
   if [[ -n ${ANTHROPIC_API_KEY:-} ]]; then
     AUTH_HEADER=(-H "x-api-key: $ANTHROPIC_API_KEY")
   elif command -v ant &>/dev/null \
@@ -533,21 +550,13 @@ Note: `main` references `load_topics`, `db_init`, and `process_doc`, which Tasks
 - [ ] **Step 4: Run the suite to verify Task-1 assertions pass**
 
 Run: `cd /var/lib/vectordbs/appliedanthropology/workshops && ./tests/test-kb-metadata.sh`
-Expected: `PASS: 10  FAIL: 0`, exit 0.
+Expected: `PASS: 11  FAIL: 0`, exit 0.
 
 - [ ] **Step 5: shellcheck both files**
 
 Run: `shellcheck workshops/kb-metadata.sh workshops/tests/test-kb-metadata.sh`
-Expected: no output (clean). If SC2317 (unreachable) fires on sourced-only functions in the harness context, it is a false positive — but expect clean as written.
+Expected: only SC2034 warnings on globals declared now but consumed by later tasks (transient; gone by Task 6). Any other warning class is a defect.
 
-- [ ] **Step 6: Commit (only if the user approved committing these files — see Global Constraints)**
-
-```bash
-cd /var/lib/vectordbs/appliedanthropology
-git add workshops/kb-metadata.sh workshops/tests/test-kb-metadata.sh
-git -c user.name='Biksu-Okusi' -c user.email='biksu@okusi.id' \
-  commit -m 'feat(workshops): add kb-metadata.sh skeleton with offline test harness'
-```
 
 ---
 
@@ -637,18 +646,12 @@ extract_src_url() {
 - [ ] **Step 4: Run suite — all pass**
 
 Run: `./tests/test-kb-metadata.sh`
-Expected: `PASS: 20  FAIL: 0`, exit 0.
+Expected: `PASS: 21  FAIL: 0`, exit 0.
 
-- [ ] **Step 5: shellcheck, then commit**
+- [ ] **Step 5: shellcheck**
 
-Run: `shellcheck workshops/kb-metadata.sh workshops/tests/test-kb-metadata.sh` (clean), then:
-
-```bash
-cd /var/lib/vectordbs/appliedanthropology
-git add workshops/kb-metadata.sh workshops/tests/test-kb-metadata.sh
-git -c user.name='Biksu-Okusi' -c user.email='biksu@okusi.id' \
-  commit -m 'feat(workshops): kb-metadata filename and src_url pre-pass'
-```
+Run: `shellcheck workshops/kb-metadata.sh workshops/tests/test-kb-metadata.sh`
+Expected: only transient SC2034 on globals not yet consumed by this point in the build (gone by Task 6); any other warning class is a defect. From Task 6 on: completely clean.
 
 ---
 
@@ -745,18 +748,12 @@ validate_year() {
 - [ ] **Step 4: Run suite — all pass**
 
 Run: `./tests/test-kb-metadata.sh`
-Expected: `PASS: 29  FAIL: 0`, exit 0.
+Expected: `PASS: 30  FAIL: 0`, exit 0.
 
-- [ ] **Step 5: shellcheck, then commit**
+- [ ] **Step 5: shellcheck**
 
-shellcheck both files (clean), then:
-
-```bash
-cd /var/lib/vectordbs/appliedanthropology
-git add workshops/kb-metadata.sh workshops/tests/test-kb-metadata.sh
-git -c user.name='Biksu-Okusi' -c user.email='biksu@okusi.id' \
-  commit -m 'feat(workshops): kb-metadata topics loading and field validation'
-```
+Run: `shellcheck workshops/kb-metadata.sh workshops/tests/test-kb-metadata.sh`
+Expected: only transient SC2034 on globals not yet consumed by this point in the build (gone by Task 6); any other warning class is a defect. From Task 6 on: completely clean.
 
 ---
 
@@ -886,18 +883,12 @@ db_upsert() {
 - [ ] **Step 4: Run suite — all pass**
 
 Run: `./tests/test-kb-metadata.sh`
-Expected: `PASS: 37  FAIL: 0`, exit 0.
+Expected: `PASS: 38  FAIL: 0`, exit 0.
 
-- [ ] **Step 5: shellcheck, then commit**
+- [ ] **Step 5: shellcheck**
 
-shellcheck both files (clean), then:
-
-```bash
-cd /var/lib/vectordbs/appliedanthropology
-git add workshops/kb-metadata.sh workshops/tests/test-kb-metadata.sh
-git -c user.name='Biksu-Okusi' -c user.email='biksu@okusi.id' \
-  commit -m 'feat(workshops): kb-metadata sqlite layer with upsert'
-```
+Run: `shellcheck workshops/kb-metadata.sh workshops/tests/test-kb-metadata.sh`
+Expected: only transient SC2034 on globals not yet consumed by this point in the build (gone by Task 6); any other warning class is a defect. From Task 6 on: completely clean.
 
 ---
 
@@ -989,7 +980,8 @@ Insert after `db_upsert()`:
 # hints, and the (possibly sampled) document body. Caller must have run
 # parse_filename for the same document first.
 build_prompt() {
-  local -- doc_file=$1 base=${doc_file##*/}
+  local -- doc_file=$1
+  local -- base=${doc_file##*/}
   cat <<'PROMPT'
 You are extracting catalogue metadata for a document in a knowledgebase
 corpus. Call the record_metadata tool with the extracted fields.
@@ -1093,18 +1085,12 @@ query_model() {
 - [ ] **Step 4: Run suite — all pass**
 
 Run: `./tests/test-kb-metadata.sh`
-Expected: `PASS: 57  FAIL: 0`, exit 0.
+Expected: `PASS: 58  FAIL: 0`, exit 0.
 
-- [ ] **Step 5: shellcheck, then commit**
+- [ ] **Step 5: shellcheck**
 
-shellcheck both files (clean), then:
-
-```bash
-cd /var/lib/vectordbs/appliedanthropology
-git add workshops/kb-metadata.sh workshops/tests/test-kb-metadata.sh
-git -c user.name='Biksu-Okusi' -c user.email='biksu@okusi.id' \
-  commit -m 'feat(workshops): kb-metadata forced-tool query and prompt assembly'
-```
+Run: `shellcheck workshops/kb-metadata.sh workshops/tests/test-kb-metadata.sh`
+Expected: only transient SC2034 on globals not yet consumed by this point in the build (gone by Task 6); any other warning class is a defect. From Task 6 on: completely clean.
 
 ---
 
@@ -1232,7 +1218,8 @@ Insert after `query_model()`, before `main()`:
 # A document failure warns and counts, but never aborts the run: successes
 # are already stored, and a re-run retries only the missing rows.
 process_doc() {
-  local -- doc_file=$1 base=${doc_file##*/}
+  local -- doc_file=$1
+  local -- base=${doc_file##*/}
   local -- prompt elapsed cats src_url note=''
   local -i doc_bytes
 
@@ -1289,18 +1276,12 @@ process_doc() {
 - [ ] **Step 4: Run suite — all pass**
 
 Run: `./tests/test-kb-metadata.sh`
-Expected: `PASS: 77  FAIL: 0`, exit 0. (If the count differs slightly, every line must still read `✓` and `FAIL: 0`.)
+Expected: `PASS: 78  FAIL: 0`, exit 0. (If the count differs slightly, every line must still read `✓` and `FAIL: 0`.)
 
-- [ ] **Step 5: shellcheck, then commit**
+- [ ] **Step 5: shellcheck**
 
-shellcheck both files (clean), then:
-
-```bash
-cd /var/lib/vectordbs/appliedanthropology
-git add workshops/kb-metadata.sh workshops/tests/test-kb-metadata.sh
-git -c user.name='Biksu-Okusi' -c user.email='biksu@okusi.id' \
-  commit -m 'feat(workshops): kb-metadata per-document pipeline and integration tests'
-```
+Run: `shellcheck workshops/kb-metadata.sh workshops/tests/test-kb-metadata.sh`
+Expected: only transient SC2034 on globals not yet consumed by this point in the build (gone by Task 6); any other warning class is a defect. From Task 6 on: completely clean.
 
 ---
 
@@ -1348,7 +1329,7 @@ sqlite3 corpus-metadata.db 'SELECT * FROM metadata;'
 
 - [ ] **Step 5: Report**
 
-State explicitly to the user: offline suite pass count, shellcheck/bcscheck status, which live paths were and were not exercised, and (if the user approved commits) `git log --oneline -n 3` with the pushed/committed SHA.
+State explicitly to the user: offline suite pass count, shellcheck/bcscheck status, and which live paths were and were not exercised. Both files remain uncommitted by design.
 
 ---
 
@@ -1357,6 +1338,6 @@ State explicitly to the user: offline suite pass count, shellcheck/bcscheck stat
 - `src_url` never enters the model round-trip (spec: bash-only field).
 - `main()` was written complete in Task 1; Tasks 2–6 only add the functions it calls. Any change to `main` in later tasks is a plan deviation — flag it.
 - The harness sources the script once; unit tests mutate globals (`TOPICS_FILE`, `DB_FILE`, `MODEL_ID`, `AUTH_HEADER`) directly. That's intentional — `readonly` for those happens only inside `main`, which sourcing never runs.
-- Assertion counts (10/20/29/37/57/77) are the expected running totals; if an implementer adds an assert, the totals shift — `FAIL: 0` is the invariant.
+- Assertion counts (11/21/30/38/58/78) are the expected running totals; if an implementer adds an assert, the totals shift — `FAIL: 0` is the invariant.
 
 #fin

@@ -253,7 +253,7 @@ customkb optimize appliedanthropology.cfg
 
 ### Adding New Content
 
-1. Add source materials to the symlinked embed_data directory
+1. Add source materials from the workshops/ to staging.text/
 2. Run `./build.sh -0` to update text cache
 3. Complete rebuild with `./build.sh -1 -2 -3 -4` or full `./build.sh -a`
 
