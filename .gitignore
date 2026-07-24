@@ -104,3 +104,6 @@ workshops/
 
 # generated Hugging Face dataset export (mk-hf-catalogue.sh output)
 hf-dataset/
+
+# evobio fold-in eval artifacts (logs/captures) — not corpus content
+evobio-eval/
