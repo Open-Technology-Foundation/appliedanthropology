@@ -8,6 +8,11 @@
 # Rights tier per record comes from hf-rights.tsv (longest path-prefix wins,
 # unknown => copyrighted => text never exported).
 #
+# text_included is decided by an explicit allowlist of exportable tiers, not by
+# "anything that is not copyrighted". Tiers are open-ended — new licences get new
+# names — and a negative test silently grants export to every name nobody has
+# considered yet, which is the wrong way round for a rights decision.
+#
 # Output: hf-dataset/catalogue.jsonl (one JSON object per line, sorted by sourcedoc)
 set -euo pipefail
 shopt -s inherit_errexit
@@ -26,6 +31,11 @@ declare -r META_DB="$SCRIPT_DIR/workshops/corpus-metadata.db"
 declare -r CATS_CSV="$SCRIPT_DIR/cats/categorization.csv"
 declare -r RIGHTS_TSV="$SCRIPT_DIR/hf-rights.tsv"
 declare -r STAGING_PREFIX="$SCRIPT_DIR/staging.text/"
+
+# Tiers whose full text may be exported. Everything else is metadata-only.
+# NC/ND/SA are deliberately absent: they are redistributable only under terms the
+# dataset release does not currently carry.
+declare -r EXPORTABLE_TIERS='["original","public-domain","cc0","cc-by"]'
 
 declare -- OUT_DIR="$SCRIPT_DIR/hf-dataset"
 declare -g TMP_DIR=''
@@ -126,6 +136,7 @@ main() {
 
   # Join records
   jq -c --arg prefix "$STAGING_PREFIX" \
+      --argjson exportable "$EXPORTABLE_TIERS" \
       --slurpfile meta "$TMP_DIR/meta.json" \
       --slurpfile cats "$TMP_DIR/cats.json" \
       --slurpfile rights "$TMP_DIR/rights.json" '
@@ -158,7 +169,7 @@ main() {
         category_confidence: (($cc.confidence | nn) | if . then tonumber else null end),
         segments: .segments,
         rights_tier: $tier,
-        text_included: ($tier != "copyrighted")
+        text_included: (($exportable | index($tier)) != null)
       }' "$TMP_DIR/docs.json" > "$TMP_DIR/catalogue.jsonl" || die 1 'catalogue join failed'
 
   mkdir -p -- "$OUT_DIR" || die 1 "Failed to create output dir: ${OUT_DIR@Q}"

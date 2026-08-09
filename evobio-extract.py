@@ -11,7 +11,16 @@ Adapted from the 2026-07-23 spike extract.py with the three EVAL.md fixes:
   3. De-dup a block whose (heading, first-paragraph) repeats the previous block
      (fixes the observed "## Introduction" doubling).
 
-Layout: reads workshops/evobio/raw/*.xml, writes workshops/evobio/PMC<id>-<slug>.md.
+Layout: reads workshops/evobio/raw/*.xml, writes
+workshops/evobio/<rights-tier>/PMC<id>-<slug>.md.
+
+The per-article licence is read from the JATS <permissions> block and drives both
+the emitted header and the output subdirectory. The subdirectory matters: the
+rights register (hf-rights.tsv) resolves one tier per path prefix, so filing by
+tier lets it address 500+ articles with a handful of rules. PMC Open Access is a
+mixed bag — CC BY through CC BY-NC-ND, plus articles whose only grant was the
+COVID-era permission that lapsed with the WHO declaration — so a single blanket
+label for the whole set is always wrong for some of it.
 """
 import re
 import xml.etree.ElementTree as ET
@@ -21,6 +30,15 @@ HERE = Path(__file__).resolve().parent
 RAW = HERE / 'workshops' / 'evobio' / 'raw'
 OUT = HERE / 'workshops' / 'evobio'
 MIN_WORDS = 400
+
+ALI_LICENSE_REF = '{http://www.niso.org/schemas/ali/1.0/}license_ref'
+XLINK_HREF = '{http://www.w3.org/1999/xlink}href'
+CC_RE = re.compile(
+    r'creativecommons\.org/(licenses|publicdomain)/([a-z0-9\-]+)(?:/([0-9.]+))?', re.I)
+# Articles released only under the COVID-19 emergency permission. WHO ended the
+# declaration on 2023-05-05, so the grant it was scoped to has lapsed.
+WHO_GRANT = 'World Health Organization'
+WITHHELD = 'withheld'
 
 KEEP_SECTYPE = ('intro', 'background', 'discussion', 'conclusion')
 KEEP_TITLE = re.compile(
@@ -100,6 +118,40 @@ def authors(art):
   return names[:12]
 
 
+def licence(art):
+  """Return (tier, label, url) for the article's <permissions> block.
+
+  The tier doubles as output subdirectory and rights-register prefix, so anything
+  that does not carry an explicit redistribution grant must land on WITHHELD
+  rather than a cc-* tier. Absence of a licence is not permission.
+  """
+  perms = art.find('.//permissions')
+  if perms is None:
+    return (WITHHELD, 'no permissions block', '')
+  url = ''
+  for ref in perms.iter(ALI_LICENSE_REF):
+    url = (ref.text or '').strip()
+    if url:
+      break
+  if not url:
+    for el in perms.iter():
+      href = el.get(XLINK_HREF, '')
+      if 'creativecommons.org' in href:
+        url = href.strip()
+        break
+  m = CC_RE.search(url)
+  if m:
+    kind, code, version = m.group(1).lower(), m.group(2).lower(), m.group(3)
+    if kind == 'publicdomain' or code in ('zero', 'mark'):
+      return ('cc0', 'CC0' + (f' {version}' if version else ''), url)
+    label = 'CC ' + code.upper() + (f' {version}' if version else '')
+    return ('cc-' + code, label, url)
+  prose = ' '.join(norm(text_of(el)) for el in perms.iter('license-p'))
+  if WHO_GRANT in prose:
+    return (WITHHELD, 'expired COVID-19 emergency grant', '')
+  return (WITHHELD, 'no machine-readable licence', '')
+
+
 def section_blocks(body):
   blocks = []
   for sec in body.findall('sec'):
@@ -154,6 +206,7 @@ def extract(path):
   words = sum(len(b.split()) for _, b in blocks)
   if words < MIN_WORDS or not title:
     return {'skip': True, 'pmcid': pmcid, 'words': words, 'title': title}
+  tier, lic_label, lic_url = licence(art)
   header = [f'# {title}', '']
   if who:
     header.append(f'- Authors: {", ".join(who)}')
@@ -162,19 +215,30 @@ def extract(path):
     f'- Year: {year}',
     f'- PMCID: PMC{pmcid}',
     f'- Source URL: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC{pmcid}/',
-    '- License: PMC Open Access',
+  ]
+  if tier == WITHHELD:
+    header.append(f'- License: NOT LICENSED FOR REDISTRIBUTION ({lic_label})')
+  else:
+    header.append(f'- License: {lic_label}')
+    if lic_url:
+      header.append(f'- License URL: {lic_url}')
+  header += [
+    f'- Rights tier: {tier}',
     '- Ingested: evobio (narrative sections only)',
     '',
   ]
   body_md = '\n\n'.join(f'## {h}\n\n{t}' for h, t in blocks)
   fname = f'PMC{pmcid}-{slug(title)}.md'
-  (OUT / fname).write_text('\n'.join(header) + '\n' + body_md + '\n', encoding='utf-8')
-  return {'skip': False, 'file': fname, 'words': words}
+  dest = OUT / tier
+  dest.mkdir(parents=True, exist_ok=True)
+  (dest / fname).write_text('\n'.join(header) + '\n' + body_md + '\n', encoding='utf-8')
+  return {'skip': False, 'file': f'{tier}/{fname}', 'words': words, 'tier': tier}
 
 
 def main():
   OUT.mkdir(parents=True, exist_ok=True)
   kept = skipped = 0
+  tiers = {}
   for path in sorted(RAW.glob('*.xml')):
     try:
       r = extract(path)
@@ -187,8 +251,15 @@ def main():
       print(f'  - skip {path.name} ({w} words)')
     else:
       kept += 1
+      tiers[r['tier']] = tiers.get(r['tier'], 0) + 1
       print(f"  ok {r['file']} ({r['words']} words)")
   print(f'\nkept={kept} skipped={skipped} -> {OUT}')
+  print('rights tiers:')
+  for tier in sorted(tiers):
+    print(f'  {tiers[tier]:5d}  {tier}')
+  if tiers.get(WITHHELD):
+    print(f"\n! {tiers[WITHHELD]} article(s) carry no redistribution grant "
+          f"and are filed under {WITHHELD}/ — never export their text.")
 
 
 if __name__ == '__main__':

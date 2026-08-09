@@ -4,7 +4,20 @@
 # Tiers:
 #   original      — Gary Dean's own work or AI-generated content; full text publishable (CC BY 4.0)
 #   public-domain — verified public-domain work AND translation; full text publishable
+#   cc0           — dedicated to the public domain by the rights holder; full text publishable
+#   cc-by         — Creative Commons Attribution; full text publishable with attribution
+#   cc-by-nc      — Attribution-NonCommercial; NOT exported (release carries no NC terms)
+#   cc-by-nc-nd   — Attribution-NonCommercial-NoDerivatives; NOT exported (see note below)
+#   cc-by-nc-sa   — Attribution-NonCommercial-ShareAlike; NOT exported
 #   copyrighted   — third-party in-copyright (or unverified); catalogue metadata only, text NEVER exported
+#
+# Only original, public-domain, cc0 and cc-by are exportable; mk-hf-catalogue.sh
+# holds that allowlist and decides text_included from it. Adding a tier name here
+# does NOT make it exportable — the allowlist must be changed deliberately.
+#
+# ▲ NoDerivatives: extracted articles store narrative sections only, i.e. an
+# abridgement. Distributing that is making a derivative, so ND material stays
+# unexported even where non-commercial use would otherwise be fine.
 #
 # Defaults are conservative: everything unrecognised is marked copyrighted.
 # Sub-paths may override their parent group (longest match wins), e.g. zenquotes/discourse.md below.
@@ -42,7 +55,12 @@ emergence-of-subcultures.md	copyrighted	# 1 docs
 enlightenment	copyrighted	# 4 docs
 Enlightenment_Now	copyrighted	# 1 docs
 Evan-Thompson_Waking-Dreaming-Being-Self-and-Consciousness.md	copyrighted	# 1 docs
-evobio	copyrighted	# 641 docs, PMC OA full-text, metadata-only for export
+evobio	copyrighted	# flat pre-2026-08-09 layout (553 ingested docs); superseded by evobio/<tier>/ below
+evobio/cc-by	cc-by	# 511 docs — full text exportable with attribution
+evobio/cc-by-nc	cc-by-nc	# 99 docs — non-commercial only, not exported
+evobio/cc-by-nc-nd	cc-by-nc-nd	# 19 docs — no derivatives; stored text is abridged, not exported
+evobio/cc-by-nc-sa	cc-by-nc-sa	# 8 docs — share-alike, not exported
+evobio/withheld	copyrighted	# 4 docs — no redistribution grant at all; 2 rely on the COVID-19 emergency permission that lapsed with the WHO declaration (2023-05-05), 2 carry no licence element
 evolutionary_perspectives	copyrighted	# 5 docs
 facts-about-out-existence.md	copyrighted	# 1 docs
 faqs	original	# 11 docs

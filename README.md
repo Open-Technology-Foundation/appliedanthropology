@@ -49,19 +49,30 @@ There is no third route. Requests for the database, the index files, or the stag
 
 ### How rights are tracked
 
-Rights are recorded per source group in `hf-rights.tsv` and resolved by longest-matching path prefix, in three tiers: `copyrighted`, `original`, and `public-domain`. An unrecognised prefix resolves to `copyrighted`, so the failure mode of an incomplete register is to withhold text rather than leak it.
+Rights are recorded per source group in `hf-rights.tsv` and resolved by longest-matching path prefix. An unrecognised prefix resolves to `copyrighted`, so the failure mode of an incomplete register is to withhold text rather than leak it.
 
-`mk-hf-catalogue.sh` builds a bibliographic catalogue from that register, carrying the tier into every record and setting a `text_included` flag from it. The catalogue is generated locally and has **not** been published; the dataset export remains pending. Its current 13,567 records break down as:
+Two decisions are kept deliberately separate. The register records **what the licence is**; `mk-hf-catalogue.sh` holds a short allowlist deciding **which licences may be exported** — currently `original`, `public-domain`, `cc0`, and `cc-by`. Naming a new tier in the register therefore grants nothing on its own. This matters because the earlier rule exported anything that was merely "not copyrighted", which quietly authorises every tier nobody has thought of yet.
+
+| Tier | Meaning | Text exported |
+|---|---|:--|
+| `original` | Gary Dean's own work, or AI-generated | Yes |
+| `public-domain` | Work *and* translation verified out of copyright | Yes |
+| `cc0` | Dedicated to the public domain by the rights holder | Yes |
+| `cc-by` | Creative Commons Attribution | Yes, with attribution |
+| `cc-by-nc`, `cc-by-nc-nd`, `cc-by-nc-sa` | Non-commercial variants | No |
+| `copyrighted` | In copyright, or unverified | No |
+
+The non-commercial variants are withheld because this release carries no NC terms. NoDerivatives is withheld for a second, independent reason: extracted articles store narrative sections only, so the stored text is an abridgement, and distributing it would be making a derivative.
+
+`mk-hf-catalogue.sh` builds a bibliographic catalogue from the register, carrying the tier into every record and setting `text_included` from the allowlist. The catalogue is generated locally and has **not** been published; the dataset export remains pending. Its current 16,157 records break down as:
 
 | Rights tier | Records | Text included |
 |---|---:|:---|
-| `copyrighted` | 9,662 | No |
-| `original` | 3,889 | Yes |
+| `copyrighted` | 11,821 | No |
+| `original` | 4,320 | Yes |
 | `public-domain` | 16 | Yes |
 
-So roughly 71% of catalogued works are represented by bibliographic metadata, topic assignments, and a segment count — and by no source text whatever. Text travels only for material that is original to this project or verifiably out of copyright.
-
-▲ `hf-rights.tsv` describes itself as a machine-guessed skeleton requiring review. Any tier in it should be confirmed by a human before it governs an actual export.
+▲ `hf-rights.tsv` describes itself as a machine-guessed skeleton requiring review, and that review is **not yet complete**. Several `original` and `public-domain` prefixes are known to be wrong and are being corrected group by group. No tier should govern an actual export until it has been confirmed against the source documents themselves — filenames and metadata years both mislead, and a public-domain *work* does not imply a public-domain *translation*.
 
 ---
 
