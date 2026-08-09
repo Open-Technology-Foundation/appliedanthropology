@@ -198,7 +198,7 @@ Figures verified against the live database on 2026-08-09.
 ```
 appliedanthropology/
 ├── appliedanthropology.cfg               # Main configuration (persona, retrieval, WAHID)
-├── appliedanthropology.build.conf        # Build settings and default test query
+├── appliedanthropology.build.conf        # Legacy, unread — see note below
 ├── appliedanthropology.faiss.meta        # Index provenance (model, dimensions, vectors)
 ├── appliedanthropology.context.md        # Query-time context file
 ├── appliedanthropology_primary_prompt.md # DrAA persona prompt
@@ -292,9 +292,10 @@ The database exposes two tables: `docs` (segments, metadata, BM25 tokens) and `f
 
 ### Configuration Files
 
-- **appliedanthropology.cfg**: Retrieval parameters, DrAA persona, WAHID catalogue entry
-- **appliedanthropology.build.conf**: Build pipeline settings and the default test query
+- **appliedanthropology.cfg**: The single source of truth — retrieval parameters, DrAA persona, WAHID catalogue entry, and the `[BUILD]` section that drives `customkb build`
 - **appliedanthropology_primary_prompt.md**: AI assistant personality and response guidelines
+
+▲ **appliedanthropology.build.conf is legacy and unread.** It was configuration for the retired `0_build.sh`; nothing in customkb references it. Build settings live in the `[BUILD]` section of the `.cfg`. Because that section currently sets only `staging_script`, stage `-6` warns and skips rather than running the test query written in `.build.conf`.
 
 ### System Requirements
 
