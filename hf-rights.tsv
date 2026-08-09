@@ -41,7 +41,8 @@ Christopher_Boehm	copyrighted	# 13 docs
 Civilisations	copyrighted	# 11 docs
 Cornelia-C-Walther_Why-ProSocial-AI-Is-ProPlanetary-AI_A-Promise-For-Planetary-Harmony.md	copyrighted	# 1 docs
 Cory-Doctorow_How-to-Destroy-Surveillance-Capitalism_2021.md	copyrighted	# 1 docs
-DD	original	# 110 docs
+DD	original	# Defining Dharma — numbered chapter dirs (0-preface … 8-future) are Gary's own
+DD/sources	copyrighted	# 480 docs — third-party reference material scraped for the book: Guardian, The Spinoff, Stanford Encyclopedia of Philosophy, Wikipedia, PhilPapers. NEVER original.
 definition	copyrighted	# 6 docs
 dharma-research	copyrighted	# 7 docs
 Dharmic_Existentialist_Ethics	copyrighted	# 1 docs
@@ -80,7 +81,7 @@ james_c_scott	copyrighted	# 2 docs
 James-J-Fox	copyrighted	# 1 docs
 Jared-Henderson	copyrighted	# 1 docs
 J-Draper_We-Didnt-Start-The-Class-War_The-Tudor-Homelessness-Crisis.md	copyrighted	# 1 docs
-Jean-Jacques-Rousseau	public-domain	# 1 docs	# PD original — verify translation vintage
+Jean-Jacques-Rousseau	copyrighted	# Penguin Classics edn, tr. Maurice Cranston (d.1993) — in copyright to ~2064. The 1755 work is PD; this translation is not. Frontmatter says year 1755, filename says _1985.
 Jeff_Hawkins	copyrighted	# 1 docs
 Josh-Chin+Liza-Lin_Surveillance-State.md	copyrighted	# 1 docs
 Judaism-Unpacked_Why-So-Many-Jews-Fall-In-Love-With-Buddhism.md	copyrighted	# 1 docs
@@ -111,7 +112,7 @@ Robert-D-Putnam	copyrighted	# 1 docs
 Rupert-Bozeat	copyrighted	# 1 docs
 samin	copyrighted	# 11 docs
 Sapolsky	copyrighted	# 6 docs
-Schopenhauer	public-domain	# 4 docs	# PD original — verify translation vintage
+Schopenhauer	copyrighted	# 3 of 4 docs are modern third-party (a Nietzsche Podcast transcript, two "inspired by" essays). The-Wisdom-of-Life is very likely the PD Saunders 1890 translation but names no translator in the file — confirm, then give it its own public-domain line.
 Secret_Of_Our_Success	copyrighted	# 1 docs
 secular_dharma_primary_prompt.md	original	# 1 docs
 singularity	copyrighted	# 1 docs
@@ -128,7 +129,8 @@ the-controversial-science-of-iq-culture.txt	copyrighted	# 1 docs
 The-Dhammapada.md	copyrighted	# 1 docs
 the-end-of-the-open-society.md	copyrighted	# 1 docs
 the_network_state.md	copyrighted	# 1 docs
-the_prince	public-domain	# 3 docs	# PD original — verify translation vintage
+the_prince	copyrighted	# dir default: Machiavelli_lecture.md is a modern lecture; the-art-of-war-in-the-modern-world.md is a 2023 piece built round JFK's 1961 address
+the_prince/the_prince.md	public-domain	# tr. W. K. Marriott (1908) — translator stated in the file
 The-Republic_Plato.md	public-domain	# 1 docs	# PD original — verify translation vintage
 The_World_As_Will_And_Idea.md	public-domain	# 1 docs	# PD original — verify translation vintage
 Tom-Scryleus_The-Scary-Truth-About-Work.md	copyrighted	# 1 docs

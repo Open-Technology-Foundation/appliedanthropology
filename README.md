@@ -68,11 +68,15 @@ The non-commercial variants are withheld because this release carries no NC term
 
 | Rights tier | Records | Text included |
 |---|---:|:---|
-| `copyrighted` | 11,821 | No |
-| `original` | 4,320 | Yes |
-| `public-domain` | 16 | Yes |
+| `copyrighted` | 12,308 | No |
+| `original` | 3,840 | Yes |
+| `public-domain` | 9 | Yes |
 
-▲ `hf-rights.tsv` describes itself as a machine-guessed skeleton requiring review, and that review is **not yet complete**. Several `original` and `public-domain` prefixes are known to be wrong and are being corrected group by group. No tier should govern an actual export until it has been confirmed against the source documents themselves — filenames and metadata years both mislead, and a public-domain *work* does not imply a public-domain *translation*.
+That is 17,262 segments carrying text against 245,285 held as metadata only — around 7%.
+
+▲ `hf-rights.tsv` began as a machine-guessed skeleton, and human review is **in progress, not finished**. The permissive tiers have now been checked against the source documents, which is how the register learned that a directory named for a philosopher can hold a podcast transcript, and that a file whose metadata says 1755 can be a translation published in 1985. Three entries remain unresolved and are held at `copyrighted` until someone decides: the Urantia text (public domain in the US on the 2003 Tenth Circuit ruling, contested elsewhere), a 1926 Spinoza edition whose editorial apparatus outlives its US term abroad, and a Schopenhauer translation that is almost certainly the public-domain 1890 one but names no translator.
+
+The working rule is that a permissive tier must be earned by evidence in the document itself. Filenames and metadata years both mislead, absence of a licence is not permission, and a public-domain *work* never implies a public-domain *translation*.
 
 ---
 
