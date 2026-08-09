@@ -2,7 +2,7 @@
 
 What if you could query a curated library on human nature, cultural evolution, and ethics in seconds? **DrAA** (Doctor of Applied Anthropology) is an AI expert built on 262,547 document segments drawn from 16,157 source works by leading thinkers including David Graeber, Robert Sapolsky, Christopher Boehm, Stephen Batchelor, and Richard Wrangham. It provides evidence-based insights into secular dharma, evolutionary anthropology, and the science of human behavior.
 
-◉ This repository holds the **configuration, tooling, and documentation** for the knowledgebase. The corpus itself — the SQLite database, the FAISS index, and the BM25 index — is built locally and is not tracked in version control.
+▲ **This repository does not contain the corpus, and the corpus is not distributed.** What is published here is the configuration, tooling, and documentation. The underlying data — the source text, the SQLite database, and the FAISS and BM25 indexes — includes copyrighted material and is not publicly available in any form. Access is granted to approved researchers through the yatti-api interface only. See [Corpus Availability and Rights](#corpus-availability-and-rights).
 
 ---
 
@@ -29,6 +29,39 @@ yatti-api query appliedanthropology "What distinguishes secular dharma from reli
 ```
 
 See the [yatti-api repository](https://github.com/Open-Technology-Foundation/yatti-api) for prerequisites and detailed documentation.
+
+---
+
+## Corpus Availability and Rights
+
+The corpus is **not downloadable, not redistributable, and not published** — not here, not as a dataset release, and not on request as a bulk copy.
+
+A substantial part of it is in-copyright: books, articles, and transcripts held under standard commercial terms. They were assembled for research use, and nothing in that assembly grants any right to redistribute them. This applies to every derived artefact as well. A FAISS index and a set of BM25 token counts are not a loophole — they are computed from the source text, and a segment database reconstitutes it directly.
+
+### What access exists
+
+Query access is mediated, and mediation is the point. Both routes return synthesised answers and bounded reference segments, never bulk text:
+
+- **[wah.id](https://wah.id)** — open web interface, no installation
+- **[yatti-api](https://github.com/Open-Technology-Foundation/yatti-api)** — programmatic access for approved researchers; request credentials from admin@yatti.id
+
+There is no third route. Requests for the database, the index files, or the staging text cannot be granted regardless of affiliation or intended use.
+
+### How rights are tracked
+
+Rights are recorded per source group in `hf-rights.tsv` and resolved by longest-matching path prefix, in three tiers: `copyrighted`, `original`, and `public-domain`. An unrecognised prefix resolves to `copyrighted`, so the failure mode of an incomplete register is to withhold text rather than leak it.
+
+`mk-hf-catalogue.sh` builds a bibliographic catalogue from that register, carrying the tier into every record and setting a `text_included` flag from it. The catalogue is generated locally and has **not** been published; the dataset export remains pending. Its current 13,567 records break down as:
+
+| Rights tier | Records | Text included |
+|---|---:|:---|
+| `copyrighted` | 9,662 | No |
+| `original` | 3,889 | Yes |
+| `public-domain` | 16 | Yes |
+
+So roughly 71% of catalogued works are represented by bibliographic metadata, topic assignments, and a segment count — and by no source text whatever. Text travels only for material that is original to this project or verifiably out of copyright.
+
+▲ `hf-rights.tsv` describes itself as a machine-guessed skeleton requiring review. Any tier in it should be confirmed by a human before it governs an actual export.
 
 ---
 
@@ -215,11 +248,13 @@ appliedanthropology/
 └── projects/                             # Ad-hoc query scripts
 ```
 
-Build outputs (`*.db`, `*.faiss`, `*.bm25.*`), `staging.text/`, `logs/`, and `backups/` are generated locally and excluded from version control.
+Build outputs (`*.db`, `*.faiss`, `*.bm25.*`), `staging.text/`, `logs/`, and `backups/` are excluded from version control. They are not merely untracked for tidiness — they carry the corpus, and publishing them would redistribute copyrighted source material.
 
 ---
 
 ## Working with the Knowledgebase
+
+◉ This section is for maintainers who already hold the source material. The commands below operate on a local corpus; they will not fetch or reconstruct one, and running them without the source text produces an empty knowledgebase.
 
 ### Build Pipeline
 
@@ -336,7 +371,9 @@ Shell scripts follow the Bash Coding Standard (BCS) and are checked with `shellc
 
 ## License
 
-GPL-3.0. See [LICENSE](LICENSE).
+GPL-3.0 covers **the contents of this repository** — the configuration, scripts, and documentation. See [LICENSE](LICENSE).
+
+▲ It does not cover the corpus. The source material carries the rights of its respective publishers and authors, is not licensed under GPL-3.0 or any other open licence, and is not distributed with this repository. See [Corpus Availability and Rights](#corpus-availability-and-rights).
 
 ---
 
