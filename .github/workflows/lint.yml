@@ -1,0 +1,48 @@
+name: lint
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  shellcheck:
+    name: ShellCheck
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install shellcheck
+        run: sudo apt-get update && sudo apt-get install -y shellcheck
+
+      - name: Lint shell scripts
+        run: |
+          shopt -s nullglob
+          mapfile -t scripts < <(git ls-files '*.sh' '*.script')
+          if ((${#scripts[@]} == 0)); then
+            echo "no shell scripts tracked"
+            exit 0
+          fi
+          printf 'checking: %s\n' "${scripts[@]}"
+          shellcheck --shell=bash --severity=warning "${scripts[@]}"
+
+  python:
+    name: Python syntax
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Compile-check Python sources
+        run: |
+          mapfile -t sources < <(git ls-files '*.py')
+          if ((${#sources[@]} == 0)); then
+            echo "no python sources tracked"
+            exit 0
+          fi
+          printf 'checking: %s\n' "${sources[@]}"
+          python -m py_compile "${sources[@]}"

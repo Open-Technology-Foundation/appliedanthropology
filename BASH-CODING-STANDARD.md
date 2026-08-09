@@ -1,1 +1,0 @@
-/usr/local/share/yatti/BCS/data/BASH-CODING-STANDARD.md

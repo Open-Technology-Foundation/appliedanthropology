@@ -87,7 +87,7 @@ echo "$(find -L "$staging_text"/ -type f |wc -l) total files in $staging_text"
 ln -fs "$VECTORDBS"/prosocial.world/embed_data.text/ prosocial.world
 ln -fs "$VECTORDBS"/wayang.net/embed_data/mdfiles/ wayang.net
 ln -fs "$VECTORDBS"/appliedanthropology/docs/ docs_research
-ln -fs "$VECTORDBS"/appliedanthropology/README.md
+ln -fs "$VECTORDBS"/appliedanthropology/README.md README.md
 
 # create staging.text zip file for yatti.id ==========================================
 cd "$PRGDIR"
