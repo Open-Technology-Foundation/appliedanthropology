@@ -68,13 +68,17 @@ The non-commercial variants are withheld because this release carries no NC term
 
 | Rights tier | Records | Text included |
 |---|---:|:---|
-| `copyrighted` | 12,308 | No |
+| `copyrighted` | 12,310 | No |
 | `original` | 3,840 | Yes |
-| `public-domain` | 9 | Yes |
+| `public-domain` | 7 | Yes |
 
-That is 17,262 segments carrying text against 245,285 held as metadata only — around 7%.
+That is 13,294 segments carrying text against 249,253 held as metadata only — around 5%.
 
-▲ `hf-rights.tsv` began as a machine-guessed skeleton, and human review is **in progress, not finished**. The permissive tiers have now been checked against the source documents, which is how the register learned that a directory named for a philosopher can hold a podcast transcript, and that a file whose metadata says 1755 can be a translation published in 1985. Three entries remain unresolved and are held at `copyrighted` until someone decides: the Urantia text (public domain in the US on the 2003 Tenth Circuit ruling, contested elsewhere), a 1926 Spinoza edition whose editorial apparatus outlives its US term abroad, and a Schopenhauer translation that is almost certainly the public-domain 1890 one but names no translator.
+Every one of the seven public-domain documents now names its translator in the file, or is an English original: Montaigne (Cotton, 1877), Kropotkin's *Mutual Aid*, Spinoza's *Ethics* (Elwes, 1883), Plato's *Republic* and *Apology* (Jowett), Schopenhauer's *The World As Will And Idea* (Haldane and Kemp), and Machiavelli's *The Prince* (Marriott, 1908).
+
+▲ `hf-rights.tsv` began as a machine-guessed skeleton and every permissive tier has now been checked against the source documents. That review is what taught the register that a directory named for a philosopher can hold a podcast transcript, that a file whose metadata says 1755 can be a translation published in 1985, and that an article can carry a licence which expired with the WHO pandemic declaration.
+
+Three items are held at `copyrighted` by decision rather than by evidence of infringement, and could move if someone resolves them: the Urantia text (public domain in the US on the 2003 Tenth Circuit ruling, contested elsewhere, so a global release cannot rely on it), Joseph Ratner's 1926 Spinoza edition (public domain in the US, but his editorial apparatus runs to 2049 in the UK and EU), and a Schopenhauer translation that is very likely the public-domain 1890 one but names no translator.
 
 The working rule is that a permissive tier must be earned by evidence in the document itself. Filenames and metadata years both mislead, absence of a licence is not permission, and a public-domain *work* never implies a public-domain *translation*.
 
