@@ -1,6 +1,6 @@
 # Applied Anthropology Knowledgebase
 
-What if you could query a curated library on human nature, cultural evolution, and ethics in seconds? **DrAA** (Doctor of Applied Anthropology) is an AI expert built on 262,547 document segments drawn from 16,157 source works by leading thinkers including David Graeber, Robert Sapolsky, Christopher Boehm, Stephen Batchelor, and Richard Wrangham. It provides evidence-based insights into secular dharma, evolutionary anthropology, and the science of human behavior.
+What if you could query a curated library on human nature, cultural evolution, and ethics in seconds? **DrAA** (Doctor of Applied Anthropology) is an AI expert built on 264,512 document segments drawn from 16,282 source works by leading thinkers including David Graeber, Robert Sapolsky, Christopher Boehm, Stephen Batchelor, and Richard Wrangham. It provides evidence-based insights into secular dharma, evolutionary anthropology, and the science of human behavior.
 
 ▲ **This repository does not contain the corpus, and the corpus is not distributed.** What is published here is the configuration, tooling, and documentation. The underlying data — the source text, the SQLite database, and the FAISS and BM25 indexes — includes copyrighted material and is not publicly available in any form. Access is granted to approved researchers through the yatti-api interface only. See [Corpus Availability and Rights](#corpus-availability-and-rights).
 
@@ -64,7 +64,7 @@ Two decisions are kept deliberately separate. The register records **what the li
 
 The non-commercial variants are withheld because this release carries no NC terms. NoDerivatives is withheld for a second, independent reason: extracted articles store narrative sections only, so the stored text is an abridgement, and distributing it would be making a derivative.
 
-`mk-hf-catalogue.sh` builds a bibliographic catalogue from the register, carrying the tier into every record and setting `text_included` from the allowlist. The catalogue is generated locally and has **not** been published; the dataset export remains pending. Its current 16,157 records break down as:
+`mk-hf-catalogue.sh` builds a bibliographic catalogue from the register, carrying the tier into every record and setting `text_included` from the allowlist. The catalogue is generated locally and has **not** been published; the dataset export remains pending. As generated from the 2026-08-09 register snapshot, its 16,157 records break down as:
 
 | Rights tier | Records | Text included |
 |---|---:|:---|
@@ -209,22 +209,22 @@ yatti-api query appliedanthropology "dharma" --context-only
 
 ### Scale and Storage
 
-Figures verified against the live database on 2026-08-09.
+Figures verified against the live database on 2026-08-18.
 
 | Measure | Value |
 |---------|-------|
-| Document segments | 262,547 |
-| Source works | 16,157 |
-| Embedded segments | 262,547 (100%) |
-| FAISS vectors | 249,772 (12,775 duplicate-text segments share a vector) |
-| BM25-indexed segments | 261,524 |
-| SQLite database | 1.6GB apparent |
-| FAISS index | 983MB apparent |
-| BM25 index | 270MB apparent |
+| Document segments | 264,512 |
+| Source works | 16,282 |
+| Embedded segments | 264,512 (100%) |
+| FAISS vectors | 253,744 (10,768 duplicate-text segments share a vector) |
+| BM25-indexed segments | 264,404 |
+| SQLite database | 1.7GB apparent |
+| FAISS index | 998MB apparent |
+| BM25 index | 272MB apparent |
 
-▲ Apparent sizes. The pool is ZFS with compression enabled, so `du` without `--apparent-size` reports considerably less (roughly 511MB and 685MB for the database and index respectively).
+▲ Apparent sizes. The pool is ZFS with compression enabled, so `du` without `--apparent-size` reports considerably less (roughly 515MB and 693MB for the database and index respectively).
 
-◉ The 1,023 segments missing from the BM25 index are degenerate chunks that tokenise to nothing — bare pandoc `:::` div fences and similar extraction residue. Their exclusion is by design, not a gap.
+◉ The 108 segments missing from the BM25 index are degenerate chunks that tokenise to nothing — stopword runs, bare list numerals, OCR residue, and non-Latin-script fragments. Their exclusion is by design, not a gap. (The former pandoc `:::` div-fence junk was purged from the corpus entirely.)
 
 ### Technology Stack
 
