@@ -1,6 +1,6 @@
 # Applied Anthropology Knowledgebase
 
-What if you could query a curated library on human nature, cultural evolution, and ethics in seconds? **DrAA** (Doctor of Applied Anthropology) is an AI expert built on 264,591 document segments drawn from 16,289 source works by leading thinkers including David Graeber, Robert Sapolsky, Christopher Boehm, Stephen Batchelor, and Richard Wrangham. It provides evidence-based insights into secular dharma, evolutionary anthropology, and the science of human behavior.
+What if you could query a curated library on human nature, cultural evolution, and ethics in seconds? **DrAA** (Doctor of Applied Anthropology) is an AI expert built on 266,296 document segments drawn from 16,303 source works by leading thinkers including David Graeber, Robert Sapolsky, Christopher Boehm, Stephen Batchelor, and Richard Wrangham. It provides evidence-based insights into secular dharma, evolutionary anthropology, and the science of human behavior.
 
 ▲ **This repository does not contain the corpus, and the corpus is not distributed.** What is published here is the configuration, tooling, and documentation. The underlying data — the source text, the SQLite database, and the FAISS and BM25 indexes — includes copyrighted material and is not publicly available in any form. Access is granted to approved researchers through the yatti-api interface only. See [Corpus Availability and Rights](#corpus-availability-and-rights).
 
@@ -209,20 +209,20 @@ yatti-api query appliedanthropology "dharma" --context-only
 
 ### Scale and Storage
 
-Figures verified against the live database on 2026-08-20.
+Figures verified against the live database on 2026-09-02.
 
 | Measure | Value |
 |---------|-------|
-| Document segments | 264,591 |
-| Source works | 16,289 |
-| Embedded segments | 264,591 (100%) |
-| FAISS vectors | 254,194 (253,638 distinct texts; 10,953 rows share a vector, plus 556 orphans from re-imported rows) |
-| BM25-indexed segments | 264,483 |
+| Document segments | 266,296 |
+| Source works | 16,303 |
+| Embedded segments | 266,296 (100%) |
+| FAISS vectors | 255,898 (255,193 distinct texts; 11,103 rows share a vector, plus 705 orphans from re-imported rows) |
+| BM25-indexed segments | 266,188 |
 | SQLite database | 1.6GB apparent |
-| FAISS index | 999MB apparent |
-| BM25 index | 272MB apparent |
+| FAISS index | 1007MB apparent |
+| BM25 index | 275MB apparent |
 
-▲ Apparent sizes. The pool is ZFS with compression enabled, so `du` without `--apparent-size` reports considerably less (roughly 518MB and 696MB for the database and index respectively).
+▲ Apparent sizes. The pool is ZFS with compression enabled, so `du` without `--apparent-size` reports considerably less (roughly 521MB and 701MB for the database and index respectively).
 
 ◉ The 108 segments missing from the BM25 index are degenerate chunks that tokenise to nothing — stopword runs, bare list numerals, OCR residue, and non-Latin-script fragments. Their exclusion is by design, not a gap. (The former pandoc `:::` div-fence junk was purged from the corpus entirely.)
 
