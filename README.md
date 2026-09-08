@@ -1,6 +1,6 @@
 # Applied Anthropology Knowledgebase
 
-What if you could query a curated library on human nature, cultural evolution, and ethics in seconds? **DrAA** (Doctor of Applied Anthropology) is an AI expert built on 267,319 document segments drawn from 16,307 source works by leading thinkers including David Graeber, Robert Sapolsky, Christopher Boehm, Stephen Batchelor, and Richard Wrangham. It provides evidence-based insights into secular dharma, evolutionary anthropology, and the science of human behavior.
+What if you could query a curated library on human nature, cultural evolution, and ethics in seconds? **DrAA** (Doctor of Applied Anthropology) is an AI expert built on 275,931 document segments drawn from 16,386 source works by leading thinkers including David Graeber, Robert Sapolsky, Christopher Boehm, Stephen Batchelor, and Richard Wrangham. It provides evidence-based insights into secular dharma, evolutionary anthropology, and the science of human behavior.
 
 ▲ **This repository does not contain the corpus, and the corpus is not distributed.** What is published here is the configuration, tooling, and documentation. The underlying data — the source text, the SQLite database, and the FAISS and BM25 indexes — includes copyrighted material and is not publicly available in any form. Access is granted to approved researchers through the yatti-api interface only. See [Corpus Availability and Rights](#corpus-availability-and-rights).
 
@@ -64,19 +64,23 @@ Two decisions are kept deliberately separate. The register records **what the li
 
 The non-commercial variants are withheld because this release carries no NC terms. NoDerivatives is withheld for a second, independent reason: extracted articles store narrative sections only, so the stored text is an abridgement, and distributing it would be making a derivative.
 
-`mk-hf-catalogue.sh` builds a bibliographic catalogue from the register, carrying the tier into every record and setting `text_included` from the allowlist. The catalogue is generated locally and has **not** been published; the dataset export remains pending. As generated from the 2026-08-09 register snapshot, its 16,157 records break down as:
+`mk-hf-catalogue.sh` builds a bibliographic catalogue from the register, carrying the tier into every record and setting `text_included` from the allowlist. The catalogue is generated locally and has **not** been published; the dataset export remains pending. As generated on 2026-09-08, its 16,386 records break down as:
 
-| Rights tier | Records | Text included |
-|---|---:|:---|
-| `copyrighted` | 12,309 | No |
-| `original` | 3,840 | Yes |
-| `public-domain` | 8 | Yes |
+| Rights tier | Records | Segments | Text included |
+|---|---:|---:|:---|
+| `copyrighted` | 12,150 | 256,924 | No |
+| `original` | 3,855 | 9,810 | Yes |
+| `public-domain` | 9 | 5,780 | Yes |
+| `cc-by` | 274 | 2,475 | Yes |
+| `cc-by-nc` | 76 | 721 | No |
+| `cc-by-nc-nd` | 19 | 185 | No |
+| `cc-by-nc-sa` | 3 | 36 | No |
 
-That is 13,432 segments carrying text against 249,115 held as metadata only — around 5%.
+That is 18,065 segments carrying text against 257,866 held as metadata only — around 6.5%.
 
-The translation behind each of the eight public-domain documents is identified: Montaigne (Cotton, 1877), Kropotkin's *Mutual Aid* (English original), Spinoza's *Ethics* (Elwes, 1883), Plato's *Republic* and *Apology* (Jowett), Schopenhauer's *The World As Will And Idea* (Haldane and Kemp) and *The Wisdom of Life* (Saunders, 1890), and Machiavelli's *The Prince* (Marriott, 1908).
+The translation behind each of the nine public-domain documents is identified: Montaigne (Cotton, 1877), Kropotkin's *Mutual Aid* (English original), Spinoza's *Ethics* (Elwes, 1883), Plato's *Republic* and *Apology* (Jowett), Schopenhauer's *The World As Will And Idea* (Haldane and Kemp) and *The Wisdom of Life* (Saunders, 1890), Machiavelli's *The Prince* (Marriott, 1908), and Frazer's *The Golden Bough* (English original, the author's own 1922 abridgement; the 1996 Penguin edition's introduction by George Stocking is in copyright and was excluded at conversion).
 
-Seven of the eight name their translator in the file. *The Wisdom of Life* does not, and was confirmed externally instead: its title and the opening of its Introduction match the Project Gutenberg edition of Saunders' translation verbatim, and its Translator's Notes date themselves by referring to the 1800s as "the present century".
+Eight of the nine name their translator or original-language status in the file. *The Wisdom of Life* does not, and was confirmed externally instead: its title and the opening of its Introduction match the Project Gutenberg edition of Saunders' translation verbatim, and its Translator's Notes date themselves by referring to the 1800s as "the present century".
 
 ▲ `hf-rights.tsv` began as a machine-guessed skeleton and every permissive tier has now been checked against the source documents. That review is what taught the register that a directory named for a philosopher can hold a podcast transcript, that a file whose metadata says 1755 can be a translation published in 1985, and that an article can carry a licence which expired with the WHO pandemic declaration.
 
@@ -209,17 +213,17 @@ yatti-api query appliedanthropology "dharma" --context-only
 
 ### Scale and Storage
 
-Figures verified against the live database on 2026-09-02.
+Figures verified against the live database on 2026-09-08.
 
 | Measure | Value |
 |---------|-------|
-| Document segments | 267,319 |
-| Source works | 16,307 |
-| Embedded segments | 267,319 (100%) |
+| Document segments | 275,931 |
+| Source works | 16,386 |
+| Embedded segments | 275,931 (100%) |
 | FAISS vectors | 256,921 (256,216 distinct texts; 11,103 rows share a vector, plus 705 orphans from re-imported rows) |
-| BM25-indexed segments | 267,211 |
-| SQLite database | 1.6GB apparent |
-| FAISS index | 1011MB apparent |
+| BM25-indexed segments | 275,823 |
+| SQLite database | 1.7GB apparent |
+| FAISS index | 1044MB apparent |
 | BM25 index | 276MB apparent |
 
 ▲ Apparent sizes. The pool is ZFS with compression enabled, so `du` without `--apparent-size` reports considerably less (roughly 522MB and 702MB for the database and index respectively).
