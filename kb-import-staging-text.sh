@@ -130,11 +130,14 @@ collect_files() {
 
   >&2 printf 'Finding md and txt files in %s/\n' "$PWD"
   local -a files=()
+  # .transcripts/ dirs hold untranslated source-language originals kept beside their
+  # translations (e.g. sumarah/lia); only the translations are corpus content.
   # -L is INTENTIONAL: workshops/ may hold required symlinks to content that must be
   # collected. `readlink -f` canonicalises each hit and `sort -u` dedupes, so symlink
   # aliases collapse to a single real file — do NOT strip -L to "fix duplicates".
   readarray -t files < <(
     find -L . -type f \( -name '*.txt' -o -name '*.md' \) ! -name 'README.md' \
+        ! -path '*/.transcripts/*' \
         -exec readlink -f -- {} + \
       | sort -u
   )
