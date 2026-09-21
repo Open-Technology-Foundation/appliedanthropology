@@ -1,26 +1,42 @@
 #!/bin/bash
 # import-staging-text — collect source text files into staging.text/ for KB build
-set -euo pipefail
-shopt -s inherit_errexit
+#
+# Dual-purpose: executed for a KB build, or sourced by a test harness to reach the
+# functions. Everything above the source fence only declares; strict mode, PATH
+# pinning, root escalation and the library load are script-mode only, below it.
 
-declare -rx PATH=/usr/local/bin:/usr/bin:/bin
+# Idempotent initialisation: the globals are readonly, so a second `source` in the
+# same shell must skip this block rather than trip over them.
+[[ -v KB_IMPORT_STAGING_LOADED ]] || {
+  declare -r KB_IMPORT_STAGING_LOADED=1
+  declare -r VERSION=1.0.0
+  # PATH is scoped to this one command: the script-wide `declare -rx PATH` has to stay
+  # below the source fence (setting it here would replace a sourcing caller's PATH),
+  # yet realpath must not be looked up through whatever PATH the caller supplied.
+  #shellcheck disable=SC2155  # realpath of this file's own path cannot fail
+  declare -r SCRIPT_PATH=$(PATH=/usr/bin:/bin realpath -- "${BASH_SOURCE[0]}")
+  declare -r SCRIPT_DIR=${SCRIPT_PATH%/*} SCRIPT_NAME=${SCRIPT_PATH##*/}
 
-declare -r VERSION=1.0.0
-#shellcheck disable=SC2155
-declare -r SCRIPT_PATH=$(realpath -- "$0")
-declare -r SCRIPT_DIR=${SCRIPT_PATH%/*} SCRIPT_NAME=${SCRIPT_PATH##*/}
+  declare -i VERBOSE=1
 
-# Root escalation (required for /ai/media/ access)
-((EUID)) && [[ ${KIST_TEST_SOURCE:-} != 1 ]] && { sudo "$0" "$@"; exit $?; } ||:
+  if [[ -t 1 && -t 2 ]]; then
+    declare -r RED=$'\033[0;31m' YELLOW=$'\033[0;33m' CYAN=$'\033[0;36m' NC=$'\033[0m'
+  else
+    declare -r RED='' YELLOW='' CYAN='' NC=''
+  fi
 
-# Messaging
-declare -i VERBOSE=1
-
-if [[ -t 1 && -t 2 ]]; then
-  declare -r RED=$'\033[0;31m' YELLOW=$'\033[0;33m' CYAN=$'\033[0;36m' NC=$'\033[0m'
-else
-  declare -r RED='' YELLOW='' CYAN='' NC=''
-fi
+  declare -r VECTORDBS=${VECTORDBS:-/var/lib/vectordbs}
+  declare -r WORKSHOPS="$SCRIPT_DIR"/workshops
+  declare -r STAGING_TEXT="$SCRIPT_DIR"/staging.text
+  # Read transcripts from the canonical pool, NOT channels/. The channels/ tree is a
+  # graph of slug/cross-ref symlinks into this pool; `find -L` over it follows
+  # self-referential links (`<id> -> videos/<id>`) and detects filesystem loops, while
+  # revisiting the same ~1.6k transcripts ~73x. The pool holds one real dir per video.
+  declare -r TRANSCRIPTS_DIR=/ai/media/youtube/videos
+  declare -r TRANSDIR="$WORKSHOPS"/yt_transcripts
+  # Resolved and made readonly in script mode, below the source fence.
+  declare -- KB_STAMP_LIB=''
+}
 
 # Define Messaging Functions (add/remove as required by the specific script)
 _msg() { >&2 printf "$SCRIPT_NAME: $1 %s\n" "${@:2}"; }
@@ -28,26 +44,6 @@ error()   { _msg "$RED✗$NC" "$@"; }
 die()     { (($# < 2)) || error "${@:2}"; exit "${1:-0}"; }
 warn()    { _msg "$YELLOW▲$NC" "$@"; }
 info()    { ((VERBOSE)) || return 0; _msg "$CYAN◉$NC" "$@"; }
-
-# Frontmatter metadata stamping — shared machinery (load_metadata, yaml_quote,
-# emit_frontmatter, write_stamped + META/_rv globals) lives in the dual-mode
-# kb-stamp-frontmatter tool; sourcing it defines functions only.
-KB_STAMP_LIB=$(command -v kb-stamp-frontmatter) || KB_STAMP_LIB=/ai/scripts/customkb.bash/kb-stamp-frontmatter
-[[ -f $KB_STAMP_LIB ]] || { >&2 echo "$SCRIPT_NAME: kb-stamp-frontmatter not found"; exit 3; }
-#shellcheck source=/ai/scripts/customkb.bash/kb-stamp-frontmatter
-source "$KB_STAMP_LIB"
-declare -r KB_STAMP_LIB
-
-# Globals
-declare -r VECTORDBS=${VECTORDBS:-/var/lib/vectordbs}
-declare -r WORKSHOPS="$SCRIPT_DIR"/workshops
-declare -r STAGING_TEXT="$SCRIPT_DIR"/staging.text
-# Read transcripts from the canonical pool, NOT channels/. The channels/ tree is a
-# graph of slug/cross-ref symlinks into this pool; `find -L` over it follows
-# self-referential links (`<id> -> videos/<id>`) and detects filesystem loops, while
-# revisiting the same ~1.6k transcripts ~73x. The pool holds one real dir per video.
-declare -r TRANSCRIPTS_DIR=/ai/media/youtube/videos
-declare -r TRANSDIR="$WORKSHOPS"/yt_transcripts
 
 show_help() {
   cat <<HELP
@@ -67,16 +63,20 @@ HELP
 }
 
 process_transcripts() {
-  cd "$WORKSHOPS"
-  rm -rf "${TRANSDIR:?}"
-  mkdir -p "$TRANSDIR"
+  cd -- "$WORKSHOPS" || die 3 "Directory ${WORKSHOPS@Q} not found"
 
+  # List BEFORE wiping TRANSDIR: a failed find must not be mistaken for "no
+  # transcripts" after the previous set has already been removed.
+  local -- found
   local -a files=()
-  readarray -t files < <(
-    find "$TRANSCRIPTS_DIR" -mindepth 2 -maxdepth 2 -type f -name '*.transcript.txt' | sort -u
-  )
+  found=$(find -- "$TRANSCRIPTS_DIR" -mindepth 2 -maxdepth 2 -type f -name '*.transcript.txt' | sort -u) \
+    || die 1 "Failed to list transcripts in ${TRANSCRIPTS_DIR@Q}"
+  [[ -z $found ]] || readarray -t files <<<"$found"
   local -i total_files=${#files[@]}
-  >&2 printf '%d transcript files\n' "$total_files"
+  info "$total_files transcript files"
+
+  rm -rf -- "${TRANSDIR:?}" || die 1 "Failed to clear ${TRANSDIR@Q}"
+  mkdir -p -- "$TRANSDIR" || die 1 "Failed to create ${TRANSDIR@Q}"
 
   local -- file newfile file_dir video_name_slug
   local -- vals vtitle vurl vchannel
@@ -88,18 +88,18 @@ process_transcripts() {
     vtitle='' vurl='' vchannel=''
     if [[ -f "$file_dir"/video_info.sh ]]; then
       # video_info.sh is a sourceable bash file (`declare -- video_name_slug=...`).
-      # Source in a subshell with strict mode off so its vars never leak into ours
-      # and a malformed file degrades to an empty slug rather than aborting the run.
+      # Source in a subshell so its vars never leak into ours. A malformed file
+      # aborts only the subshell; `|| true` then degrades it to an empty slug rather
+      # than aborting the run.
       # video_dir comes from video_info.sh itself (it declares its own video_dir,
       # e.g. .../channels/<id>/videos/<vid>), not from our canonical-pool file_dir.
       vals=$(
-        set +euo pipefail
         # shellcheck source=/dev/null
-        source "$file_dir"/video_info.sh 2>/dev/null
-        # shellcheck disable=SC2154  # video_dir: set by the sourced video_info.sh above
-        ch="${video_dir%%/videos/*}"/channel_info.sh
+        source -- "$file_dir"/video_info.sh 2>/dev/null
+        ch=${video_dir:-}
+        ch="${ch%%/videos/*}"/channel_info.sh
         # shellcheck source=/dev/null
-        [[ ! -f $ch ]] || source "$ch" 2>/dev/null
+        [[ ! -f $ch ]] || source -- "$ch" 2>/dev/null
         printf '%s\x1f%s\x1f%s\x1f%s' \
           "${video_name_slug:-}" "${video_title:-}" "${video_url:-}" "${channel_name:-}"
       ) || true
@@ -115,73 +115,81 @@ process_transcripts() {
     if [[ -n $vtitle || -n $vchannel || -n $vurl ]]; then
       { emit_frontmatter '' "$vchannel" "$vtitle" '' "$vurl" 'video-transcript'
         cat -- "$file"
-      } > "$TRANSDIR"/"$newfile"
-      touch -r "$file" -- "$TRANSDIR"/"$newfile"
+      } > "$TRANSDIR"/"$newfile" || die 1 "Failed to write ${newfile@Q}"
+      touch -r "$file" -- "$TRANSDIR"/"$newfile" || die 1 "Failed to set mtime on ${newfile@Q}"
     else
-      cp -p -- "$file" "$TRANSDIR"/"$newfile"
+      cp -p -- "$file" "$TRANSDIR"/"$newfile" || die 1 "Failed to copy ${file@Q}"
     fi
   done
 }
 
 collect_files() {
-  cd "$WORKSHOPS"
-  #shellcheck disable=SC2155
-  local -r REAL_WORKSHOPS=$(realpath -- "$PWD")
+  cd -- "$WORKSHOPS" || die 3 "Directory ${WORKSHOPS@Q} not found"
+  local -- real_workshops
+  real_workshops=$(realpath -- "$PWD") || die 1 "Cannot resolve ${WORKSHOPS@Q}"
 
-  >&2 printf 'Finding md and txt files in %s/\n' "$PWD"
+  info "Finding md and txt files in $PWD/"
+  local -- found
   local -a files=()
   # .transcripts/ dirs hold untranslated source-language originals kept beside their
   # translations (e.g. sumarah/lia); only the translations are corpus content.
   # -L is INTENTIONAL: workshops/ may hold required symlinks to content that must be
   # collected. `readlink -f` canonicalises each hit and `sort -u` dedupes, so symlink
   # aliases collapse to a single real file — do NOT strip -L to "fix duplicates".
-  readarray -t files < <(
+  # Captured, not fed through <( ): a failed or partial find must abort the build
+  # rather than be staged as if the short list were complete.
+  found=$(
     find -L . -type f \( -name '*.txt' -o -name '*.md' \) ! -name 'README.md' \
         ! -path '*/.transcripts/*' \
         -exec readlink -f -- {} + \
       | sort -u
-  )
-  >&2 printf '%d embed files\n' "${#files[@]}"
+  ) || die 1 "Failed to list source files in ${WORKSHOPS@Q}"
+  [[ -z $found ]] || readarray -t files <<<"$found"
+  info "${#files[@]} embed files"
 
   local -- file rel base
   local -i file_count=0
   for file in "${files[@]}"; do
-    rel=${file#"$REAL_WORKSHOPS"/}
+    rel=${file#"$real_workshops"/}
     if [[ $rel == */* ]]; then
-      mkdir -p "$STAGING_TEXT"/"${rel%/*}"
+      mkdir -p -- "$STAGING_TEXT"/"${rel%/*}" || die 1 "Failed to create directory for ${rel@Q}"
     fi
     base=${file##*/}
     if [[ $base == *.md && -n ${META[$base]:-} ]]; then
       write_stamped "$file" "$STAGING_TEXT"/"$rel" "${META[$base]}"
     else
-      cp -p -- "$file" "$STAGING_TEXT"/"$rel"
+      cp -p -- "$file" "$STAGING_TEXT"/"$rel" || die 1 "Failed to copy ${file@Q}"
     fi
     file_count+=1
-    [[ -t 2 ]] && >&2 printf '\r%d files ' "$file_count" ||:
+    #bcscheck disable=BCS0705  # \r progress meter: info() always appends a newline
+    ((VERBOSE)) && [[ -t 2 ]] && >&2 printf '\r%d files ' "$file_count" ||:
   done
-  [[ -t 2 ]] && >&2 echo ||:
+  #bcscheck disable=BCS0705  # terminates the \r progress meter above
+  ((VERBOSE)) && [[ -t 2 ]] && >&2 echo ||:
 }
 
 cleanup_staging() {
-  cd "$STAGING_TEXT"
-  >&2 printf 'Data cleanup in %s/\n' "$STAGING_TEXT"
-  find "$STAGING_TEXT" -type f -size -10c -delete
-  find-dupes "$STAGING_TEXT" --delete --force
+  cd -- "$STAGING_TEXT" || die 3 "Directory ${STAGING_TEXT@Q} not found"
+  info "Data cleanup in $STAGING_TEXT/"
+  find -- "$STAGING_TEXT" -type f -size -10c -delete \
+    || die 1 "Failed to prune near-empty files in ${STAGING_TEXT@Q}"
+  find-dupes --delete --force -- "$STAGING_TEXT" \
+    || die 1 "find-dupes failed in ${STAGING_TEXT@Q}"
 
   # Count real staged files only. NO -L: create_symlinks() later plants cross-KB
   # symlinks here (prosocial.world, wayang.net, docs_research); following them would
   # miscount foreign files and risk filesystem loops if an external tree links back.
   local -i total
-  total=$(find "$STAGING_TEXT"/ -type f | wc -l)
-  >&2 printf '%d total files in %s\n' "$total" "$STAGING_TEXT"
+  total=$(find -- "$STAGING_TEXT"/ -type f | wc -l) || die 1 "Failed to count files in ${STAGING_TEXT@Q}"
+  info "$total total files in $STAGING_TEXT"
 }
 
 create_symlinks() {
-  cd "$STAGING_TEXT"
-  ln -fs "$VECTORDBS"/prosocial.world/staging.text/ prosocial.world
-  ln -fs "$VECTORDBS"/wayang.net/staging.text/mdfiles/ wayang.net
-  ln -fs "$VECTORDBS"/appliedanthropology/docs/ docs_research
-  ln -fs "$VECTORDBS"/appliedanthropology/README.md .
+  cd -- "$STAGING_TEXT" || die 3 "Directory ${STAGING_TEXT@Q} not found"
+  ln -fs -- "$VECTORDBS"/prosocial.world/staging.text/ prosocial.world
+  ln -fs -- "$VECTORDBS"/wayang.net/staging.text/mdfiles/ wayang.net
+  ln -fs -- "$VECTORDBS"/appliedanthropology/docs/ docs_research
+  ln -fs -- "$VECTORDBS"/appliedanthropology/README.md .
 }
 
 main() {
@@ -197,12 +205,12 @@ main() {
     esac
     shift
   done
+  readonly VERBOSE
 
-  cd "$WORKSHOPS" || die 3 "Directory ${WORKSHOPS@Q} not found"
+  cd -- "$WORKSHOPS" || die 3 "Directory ${WORKSHOPS@Q} not found"
 
-  # Clear staging area
-  rm -rf "${STAGING_TEXT:?}"
-  mkdir -p "$STAGING_TEXT"
+  rm -rf -- "${STAGING_TEXT:?}" || die 1 "Failed to clear ${STAGING_TEXT@Q}"
+  mkdir -p -- "$STAGING_TEXT" || die 1 "Failed to create ${STAGING_TEXT@Q}"
 
   load_metadata "$WORKSHOPS"/corpus-metadata.db
 
@@ -215,5 +223,33 @@ main() {
   create_symlinks
 }
 
-[[ ${KIST_TEST_SOURCE:-} == 1 ]] || main "$@"
+# --- source fence ---
+[[ ${BASH_SOURCE[0]} == "$0" ]] || return 0
+
+# --- Script mode only ---
+set -euo pipefail
+shopt -s inherit_errexit
+
+declare -rx PATH=/usr/local/bin:/usr/bin:/bin
+
+# Root escalation (required for /ai/media/ access)
+((EUID)) && { sudo -- "$0" "$@"; exit $?; } ||:
+
+# Frontmatter metadata stamping — shared machinery (load_metadata, yaml_quote,
+# emit_frontmatter, write_stamped + META/_rv globals) lives in the dual-mode
+# kb-stamp-frontmatter tool; sourcing it defines functions only.
+KB_STAMP_LIB=$(command -v kb-stamp-frontmatter) || KB_STAMP_LIB=/ai/scripts/customkb.bash/kb-stamp-frontmatter
+[[ -f $KB_STAMP_LIB ]] || die 3 "kb-stamp-frontmatter not found at ${KB_STAMP_LIB@Q}"
+#shellcheck source=/ai/scripts/customkb.bash/kb-stamp-frontmatter
+source -- "$KB_STAMP_LIB"
+readonly KB_STAMP_LIB
+
+# sqlite3 runs inside < <( ) in load_metadata(), so without this check a missing
+# binary would stage the whole corpus unstamped and say nothing.
+declare -- cmd
+for cmd in find-dupes sqlite3; do
+  command -v "$cmd" >/dev/null || die 18 "Required: ${cmd@Q}"
+done
+
+main "$@"
 #fin
