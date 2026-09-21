@@ -1,7 +1,7 @@
 {
   "model": "bge-m3",
   "dimensions": 1024,
-  "total_vectors": 265500,
+  "total_vectors": 265698,
   "index_type": "IndexIDMap",
-  "verified": "2026-09-08"
+  "verified": "2026-09-21"
 }
