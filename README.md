@@ -220,7 +220,7 @@ Figures verified against the live database on 2026-09-26.
 | Document segments | 276,225 |
 | Source works | 16,403 |
 | Embedded segments | 276,225 (100%) |
-| FAISS vectors | 265,878 (265,089 distinct texts; 11,136 rows share a vector, plus 789 orphans from re-imported rows) |
+| FAISS vectors | 265,933 (265,089 distinct texts; 11,136 rows share a vector, plus 844 orphans from re-imported rows) |
 | BM25-indexed segments | 276,117 |
 | SQLite database | 1.7GB apparent |
 | FAISS index | 1045MB apparent |
