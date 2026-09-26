@@ -1,6 +1,6 @@
 # Applied Anthropology Knowledgebase
 
-What if you could query a curated library on human nature, cultural evolution, and ethics in seconds? **DrAA** (Doctor of Applied Anthropology) is an AI expert built on 276,213 document segments drawn from 16,401 source works by leading thinkers including David Graeber, Robert Sapolsky, Christopher Boehm, Stephen Batchelor, and Richard Wrangham. It provides evidence-based insights into secular dharma, evolutionary anthropology, and the science of human behavior.
+What if you could query a curated library on human nature, cultural evolution, and ethics in seconds? **DrAA** (Doctor of Applied Anthropology) is an AI expert built on 276,225 document segments drawn from 16,403 source works by leading thinkers including David Graeber, Robert Sapolsky, Christopher Boehm, Stephen Batchelor, and Richard Wrangham. It provides evidence-based insights into secular dharma, evolutionary anthropology, and the science of human behavior.
 
 ▲ **This repository does not contain the corpus, and the corpus is not distributed.** What is published here is the configuration, tooling, and documentation. The underlying data — the source text, the SQLite database, and the FAISS and BM25 indexes — includes copyrighted material and is not publicly available in any form. Access is granted to approved researchers through the yatti-api interface only. See [Corpus Availability and Rights](#corpus-availability-and-rights).
 
@@ -217,11 +217,11 @@ Figures verified against the live database on 2026-09-26.
 
 | Measure | Value |
 |---------|-------|
-| Document segments | 276,213 |
-| Source works | 16,401 |
-| Embedded segments | 276,213 (100%) |
-| FAISS vectors | 265,782 (265,077 distinct texts; 11,136 rows share a vector, plus 705 orphans from re-imported rows) |
-| BM25-indexed segments | 276,105 |
+| Document segments | 276,225 |
+| Source works | 16,403 |
+| Embedded segments | 276,225 (100%) |
+| FAISS vectors | 265,878 (265,089 distinct texts; 11,136 rows share a vector, plus 789 orphans from re-imported rows) |
+| BM25-indexed segments | 276,117 |
 | SQLite database | 1.7GB apparent |
 | FAISS index | 1045MB apparent |
 | BM25 index | 290MB apparent |
