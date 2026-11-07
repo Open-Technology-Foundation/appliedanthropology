@@ -131,16 +131,20 @@ collect_files() {
   info "Finding md and txt files in $PWD/"
   local -- found
   local -a files=()
-  # .transcripts/ dirs hold untranslated source-language originals kept beside their
-  # translations (e.g. sumarah/lia); only the translations are corpus content.
+  # Dot dirs and dot files are never corpus content: .private/ holds drafts not for
+  # the KB, .transcripts/ untranslated originals kept beside their translations
+  # (e.g. sumarah/lia), .gudang/ purged material. `-name '.?*' -prune` skips every
+  # dot entry at any depth without descending (the start point `.` itself never
+  # matches '.?*'). Nothing may symlink INTO a dot path: readlink -f below would
+  # collect it under the link's own, dot-free name.
   # -L is INTENTIONAL: workshops/ may hold required symlinks to content that must be
   # collected. `readlink -f` canonicalises each hit and `sort -u` dedupes, so symlink
   # aliases collapse to a single real file — do NOT strip -L to "fix duplicates".
   # Captured, not fed through <( ): a failed or partial find must abort the build
   # rather than be staged as if the short list were complete.
   found=$(
-    find -L . -type f \( -name '*.txt' -o -name '*.md' \) ! -name 'README.md' \
-        ! -path '*/.transcripts/*' \
+    find -L . -name '.?*' -prune \
+        -o -type f \( -name '*.txt' -o -name '*.md' \) ! -name 'README.md' \
         -exec readlink -f -- {} + \
       | sort -u
   ) || die 1 "Failed to list source files in ${WORKSHOPS@Q}"
