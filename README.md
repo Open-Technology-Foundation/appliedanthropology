@@ -1,6 +1,6 @@
 # Applied Anthropology Knowledgebase
 
-What if you could query a curated library on human nature, cultural evolution, and ethics in seconds? **DrAA** (Doctor of Applied Anthropology) is an AI expert built on 277,239 document segments drawn from 16,431 source works by leading thinkers including David Graeber, Robert Sapolsky, Christopher Boehm, Stephen Batchelor, and Richard Wrangham. It provides evidence-based insights into secular dharma, evolutionary anthropology, and the science of human behavior.
+What if you could query a curated library on human nature, cultural evolution, and ethics in seconds? **DrAA** (Doctor of Applied Anthropology) is an AI expert built on 277,515 document segments drawn from 16,444 source works by leading thinkers including David Graeber, Robert Sapolsky, Christopher Boehm, Stephen Batchelor, and Richard Wrangham. It provides evidence-based insights into secular dharma, evolutionary anthropology, and the science of human behavior.
 
 ▲ **This repository does not contain the corpus, and the corpus is not distributed.** What is published here is the configuration, tooling, and documentation. The underlying data — the source text, the SQLite database, and the FAISS and BM25 indexes — includes copyrighted material and is not publicly available in any form. Access is granted to approved researchers through the yatti-api interface only. See [Corpus Availability and Rights](#corpus-availability-and-rights).
 
@@ -213,18 +213,18 @@ yatti-api query appliedanthropology "dharma" --context-only
 
 ### Scale and Storage
 
-Figures verified against the live database on 2026-11-08.
+Figures verified against the live database on 2026-11-19.
 
 | Measure | Value |
 |---------|-------|
-| Document segments | 277,239 |
-| Source works | 16,431 |
-| Embedded segments | 277,239 (100%) |
-| FAISS vectors | 267,987 (266,439 distinct texts; 10,800 rows share a vector, plus 1,548 orphans from deleted or re-imported rows) |
-| BM25-indexed segments | 277,131 |
+| Document segments | 277,515 |
+| Source works | 16,444 |
+| Embedded segments | 277,515 (100%) |
+| FAISS vectors | 268,421 (266,714 distinct texts; 10,801 rows duplicate another row's text, plus 1,707 surplus vectors, nearly all orphans from deleted or re-imported rows) |
+| BM25-indexed segments | 277,407 |
 | SQLite database | 1.7GB apparent |
-| FAISS index | 1054MB apparent |
-| BM25 index | 291MB apparent |
+| FAISS index | 1056MB apparent |
+| BM25 index | 292MB apparent |
 
 ▲ Apparent sizes. The pool is ZFS with compression enabled, so `du` without `--apparent-size` reports considerably less (roughly 541MB and 731MB for the database and index respectively).
 
